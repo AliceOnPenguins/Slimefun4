@@ -460,7 +460,7 @@ public class SlimefunProfiler {
 
     public String getThreadPoolStatus() {
         StringBuilder sb = new StringBuilder();
-        sb.append("线程池状态 [ 运行中 | 已完成 | 总任务 | 队列大小 ]\n");
+        sb.append("Stav thread poolu [ Běžící | Dokončené | Celkem úkolů | Velikost fronty ]\n");
 
         for (SlimefunPoolExecutor executor : threadPools) {
             sb.append(executor.getName())

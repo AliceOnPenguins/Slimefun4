@@ -81,6 +81,7 @@ public class GitHubService {
         // Artists
         addContributor("Fuffles_", "&dArtist");
         addContributor("IMS_Art", "https://github.com/IAmSorryArt", "&dArtist", 0);
+        addContributor("AliceOnPenguins", "https://github.com/AliceOnPenguins", "&fTranslator", 0);
 
         // Addon Jam winners
         addContributor("nahkd123", "&aWinner of the 2020 Addon Jam");

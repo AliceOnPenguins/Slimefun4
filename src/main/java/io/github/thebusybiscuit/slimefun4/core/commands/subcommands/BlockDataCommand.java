@@ -11,11 +11,6 @@ import org.bukkit.block.Block;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-/**
- * 该指令可直接对 Slimefun 方块数据进行设置。
- *
- * @author ybw0014
- */
 class BlockDataCommand extends SubCommand {
     @ParametersAreNonnullByDefault
     BlockDataCommand(Slimefun plugin, SlimefunCommand cmd) {
@@ -53,7 +48,7 @@ class BlockDataCommand extends SubCommand {
         var blockData = StorageCacheUtils.getDataContainer(target.getLocation());
 
         if (target == null || target.getType().isAir() || blockData == null) {
-            ChatUtils.sendMessage(player, "&c你需要看向一个 Slimefun 方块才能执行该指令!");
+            ChatUtils.sendMessage(player, "&cMusíš se dívat na Slimefun blok, abys mohl použít tento příkaz!");
             return;
         }
 
@@ -64,7 +59,7 @@ class BlockDataCommand extends SubCommand {
                 String value = blockData.getData(key);
                 ChatUtils.sendMessage(
                         player,
-                        "&a该方块 &b%key% &a的值为: &e%value%",
+                        "&aHodnota &b%key% &atohoto bloku je: &e%value%",
                         msg -> msg.replace("%key%", key).replace("%value%", value == null ? "null" : value));
             }
             case "set" -> {
@@ -79,7 +74,7 @@ class BlockDataCommand extends SubCommand {
                 }
 
                 if (key.equalsIgnoreCase("id")) {
-                    ChatUtils.sendMessage(player, "&c你不能修改方块的 ID!");
+                    ChatUtils.sendMessage(player, "&cNemůžeš změnit ID bloku!");
                     return;
                 }
 
@@ -88,17 +83,17 @@ class BlockDataCommand extends SubCommand {
                 blockData.setData(key, value);
                 ChatUtils.sendMessage(
                         player,
-                        "&a已设置该方块 &b%key% &a的值为: &e%value%",
+                        "&aHodnota &b%key% &atohoto bloku byla nastavena na: &e%value%",
                         msg -> msg.replace("%key%", key).replace("%value%", value));
             }
             case "remove" -> {
                 if (key.equalsIgnoreCase("id")) {
-                    ChatUtils.sendMessage(player, "&c你不能修改方块的 ID!");
+                    ChatUtils.sendMessage(player, "&cNemůžeš změnit ID bloku!");
                     return;
                 }
 
                 blockData.removeData(key);
-                ChatUtils.sendMessage(player, "&a已移除该方块 &b%key% &a的值", msg -> msg.replace("%key%", key));
+                ChatUtils.sendMessage(player, "&aHodnota &b%key% &atohoto bloku byla odstraněna", msg -> msg.replace("%key%", key));
             }
             default -> {
                 Slimefun.getLocalization()
