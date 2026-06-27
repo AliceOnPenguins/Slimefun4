@@ -8,7 +8,7 @@ import net.milkbowl.vault.economy.Economy;
 import org.bukkit.OfflinePlayer;
 
 /**
- * Vault 集成类, 用于处理游戏币相关的操作.
+ * Integrační třída pro Vault, slouží ke správě operací s herními mincemi.
  *
  * @author StarWishsama
  */
@@ -20,12 +20,16 @@ public class VaultIntegration {
             var rsp = plugin.getServer().getServicesManager().getRegistration(Economy.class);
             if (rsp != null) {
                 econ = rsp.getProvider();
-                plugin.getLogger().log(Level.INFO, "成功接入 Vault");
+                plugin.getLogger().log(Level.INFO, "Vault byl úspěšně propojen");
             } else {
-                plugin.getLogger().log(Level.WARNING, "无法接入 Vault. 如果你是 CMI 用户, 请至配置文件启用经济系统");
+                plugin.getLogger()
+                        .log(
+                                Level.WARNING,
+                                "Nepodařilo se propojit s Vault. Pokud používáš CMI, povol ekonomický systém v konfiguraci");
             }
         } else {
-            plugin.getLogger().log(Level.WARNING, "服务端未安装 Vault, 游戏币解锁研究特性将无法使用");
+            plugin.getLogger()
+                    .log(Level.WARNING, "Vault není nainstalován, odemykání výzkumů za herní mince nebude dostupné");
         }
     }
 
@@ -36,14 +40,12 @@ public class VaultIntegration {
     public static double getPlayerBalance(OfflinePlayer p) {
         Objects.requireNonNull(p, "Player cannot be null!");
         Objects.requireNonNull(econ, "Vault instance cannot be null!");
-
         return econ.getBalance(p);
     }
 
     public static void withdrawPlayer(OfflinePlayer p, double withdraw) {
         Objects.requireNonNull(p, "Player cannot be null!");
         Objects.requireNonNull(econ, "Vault instance cannot be null!");
-
         econ.withdrawPlayer(p, withdraw);
     }
 

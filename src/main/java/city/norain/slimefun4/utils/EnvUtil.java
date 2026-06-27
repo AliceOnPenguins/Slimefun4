@@ -13,16 +13,14 @@ public class EnvUtil {
     public void init() {
         try (var resource = Slimefun.class.getResourceAsStream("/git.properties")) {
             if (resource == null) {
-                Slimefun.logger().warning("无法加载构建信息: 未找到 /git.properties");
+                Slimefun.logger().warning("Nelze načíst informace o buildu: /git.properties nenalezeno");
                 return;
             }
-
             var prop = new Properties();
             prop.load(resource);
-
             gitInfo = prop;
         } catch (IOException e) {
-            Slimefun.logger().log(Level.WARNING, "无法加载构建信息", e);
+            Slimefun.logger().log(Level.WARNING, "Nelze načíst informace o buildu", e);
         }
     }
 
@@ -30,7 +28,6 @@ public class EnvUtil {
         if (gitInfo == null) {
             return "unknown";
         }
-
         String value = gitInfo.getProperty(key);
         return value == null || value.isBlank() ? "unknown" : value;
     }

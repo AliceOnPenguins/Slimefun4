@@ -16,67 +16,45 @@ import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
 
 public class DataUtils {
-    /**
-     * 使用 {@link BukkitObjectOutputStream} 序列化 {@link ItemStack}
-     * 为 Base64 字符串，用于数据库存储.
-     *
-     * @param itemStack 要序列化的 {@link ItemStack}
-     * @return 序列化后的 Base64 字符串
-     */
     public static String serializeItemStack(ItemStack itemStack) {
         Debug.log(TestCase.BACKPACK, "Serializing itemstack: " + itemStack);
-
         if (itemStack == null) {
             return "";
         }
-
         try (var stream = new ByteArrayOutputStream();
                 var bs = new BukkitObjectOutputStream(stream)) {
             bs.writeObject(itemStack);
             var itemStr = Base64.getEncoder().encodeToString(stream.toByteArray());
-
             if (!Slimefun.getConfigManager().isBypassItemLengthCheck()
                     && Slimefun.getDatabaseManager().getBlockDataStorageType() == StorageType.MYSQL
                     && itemStr.length() > 65535) {
-
-                throw new IllegalArgumentException("检测到过大物品, 请联系物品对应插件开发者解决: " + StringUtil.itemStackToString(itemStack)
-                        + ", size = " + itemStr.length());
+                throw new IllegalArgumentException(
+                        "Nalezen příliš velký předmět, kontaktuj prosím vývojáře příslušného pluginu: "
+                                + StringUtil.itemStackToString(itemStack) + ", size = " + itemStr.length());
             }
-
             return itemStr;
         } catch (Throwable e) {
-            Slimefun.logger().log(Level.SEVERE, "序列化物品时出现错误, 将存储空值", e);
+            Slimefun.logger().log(Level.SEVERE, "Chyba při serializaci předmětu, bude uložena prázdná hodnota", e);
             return "";
         }
     }
 
-    /**
-     * 使用 {@link BukkitObjectInputStream} 反序列化 Base64 字符串
-     * 为 {@link ItemStack} 对象.
-     *
-     * @param base64Str 要反序列化的 Base64 字符串
-     * @return 反序列化后的 {@link ItemStack} 对象
-     */
     @Nullable public static ItemStack deserializeItemStack(String base64Str) {
         if (base64Str == null || base64Str.isEmpty() || base64Str.isBlank()) {
             return null;
         }
-
         Debug.log(TestCase.BACKPACK, "Deserializing itemstack: " + base64Str);
-
         try (var stream = new ByteArrayInputStream(Base64.getMimeDecoder().decode(base64Str));
                 var bs = new BukkitObjectInputStream(stream)) {
             var result = (ItemStack) bs.readObject();
-
             Debug.log(TestCase.BACKPACK, "Deserialized itemstack: " + result);
-
             if (result.getType().isAir()) {
-                Slimefun.logger().log(Level.SEVERE, "反序列化数据库中的物品失败! 对应物品无法显示.");
+                Slimefun.logger()
+                        .log(Level.SEVERE, "Nepodařilo se deserializovat předmět z databáze! Předmět nelze zobrazit.");
             }
-
             return result;
         } catch (Exception ex) {
-            throw new RuntimeException("反序列化物品时出现错误, 对应物品无法显示", ex);
+            throw new RuntimeException("Chyba při deserializaci předmětu, předmět nelze zobrazit", ex);
         }
     }
 

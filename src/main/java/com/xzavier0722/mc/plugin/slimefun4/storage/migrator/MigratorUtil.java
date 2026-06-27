@@ -16,12 +16,10 @@ class MigratorUtil {
             var oldDataDir = new File("data-storage/Slimefun/old_data/");
             oldDataDir.mkdirs();
             var backupPath = Path.of("data-storage/Slimefun/old_data/" + dir.getName() + ".zip");
-
             if (Files.exists(backupPath, LinkOption.NOFOLLOW_LINKS)) {
-                Slimefun.logger().log(Level.WARNING, "检测到已存在的备份数据, 跳过备份");
+                Slimefun.logger().log(Level.WARNING, "Nalezena existující záloha, přeskakuji zálohování");
                 return true;
             }
-
             var zipPath = Files.createFile(backupPath);
             try (var zs = new ZipOutputStream(Files.newOutputStream(zipPath))) {
                 var src = dir.toPath();
@@ -33,14 +31,15 @@ class MigratorUtil {
                             Files.copy(path, zs);
                             zs.closeEntry();
                         } catch (IOException e) {
-                            Slimefun.logger().log(Level.WARNING, "备份旧数据 " + dir.getName() + " 时出现问题", e);
+                            Slimefun.logger()
+                                    .log(Level.WARNING, "Chyba při zálohování starých dat " + dir.getName(), e);
                         }
                     });
                 }
             }
             return true;
         } catch (Exception e) {
-            Slimefun.logger().log(Level.WARNING, "备份旧数据 " + dir.getName() + " 时出现问题", e);
+            Slimefun.logger().log(Level.WARNING, "Chyba při zálohování starých dat " + dir.getName(), e);
             return false;
         }
     }
@@ -52,10 +51,9 @@ class MigratorUtil {
                     Files.delete(file.toPath());
                 }
             }
-
             Files.delete(dir.toPath());
         } catch (Exception e) {
-            Slimefun.logger().log(Level.WARNING, "删除文件夹 " + dir.getAbsolutePath() + " 时出现问题", e);
+            Slimefun.logger().log(Level.WARNING, "Chyba při mazání složky " + dir.getAbsolutePath(), e);
         }
     }
 

@@ -35,10 +35,6 @@ public class PlayerProfileMigrator implements IMigrator {
                 && (playerFolder.exists() && playerFolder.listFiles() != null && playerFolder.listFiles().length > 0);
     }
 
-    /**
-     * To check the existence of old player data stored as yml
-     * and try to migrate them to database
-     */
     @Override
     public MigrateStatus migrateData() {
         if (migrateLock) {
@@ -68,7 +64,8 @@ public class PlayerProfileMigrator implements IMigrator {
                 var p = Bukkit.getOfflinePlayer(uuid);
 
                 if (!p.hasPlayedBefore()) {
-                    Slimefun.logger().log(Level.INFO, "检测到从未加入服务器玩家的数据, 已自动跳过: " + uuid);
+                    Slimefun.logger()
+                            .log(Level.INFO, "Nalezena data hráče, který se nikdy nepřipojil, přeskakuji: " + uuid);
                     total--;
                     continue;
                 }
@@ -76,22 +73,29 @@ public class PlayerProfileMigrator implements IMigrator {
                 migratePlayerProfile(p);
 
                 migratedCount++;
-                Slimefun.logger().log(Level.INFO, "成功迁移玩家数据: " + p.getName() + "(" + migratedCount + "/" + total + ")");
+                Slimefun.logger()
+                        .log(
+                                Level.INFO,
+                                "Úspěšně migrována data hráče: " + p.getName() + "(" + migratedCount + "/" + total
+                                        + ")");
             } catch (IllegalArgumentException ignored) {
                 result = MigrateStatus.FAILED;
-                Slimefun.logger().log(Level.WARNING, "检测到不合法命名的玩家数据文件: '" + file.getName() + "'");
-                // illegal player name, skip
+                Slimefun.logger().log(Level.WARNING, "Nalezen soubor s neplatným názvem: '" + file.getName() + "'");
             }
         }
 
         if (MigratorUtil.createDirBackup(playerFolder)) {
             Slimefun.logger()
-                    .log(Level.INFO, "成功迁移 {0} 个玩家数据! 迁移前的数据已储存在 ./data-storage/Slimefun/old_data 下", migratedCount);
+                    .log(
+                            Level.INFO,
+                            "Úspěšně migrována data {0} hráčů! Stará data jsou uložena v ./data-storage/Slimefun/old_data",
+                            migratedCount);
             try {
                 Files.deleteIfExists(playerFolder.toPath());
             } catch (IOException e) {
                 result = MigrateStatus.FAILED;
-                Slimefun.logger().log(Level.WARNING, "删除旧玩家数据文件夹失败, 请手动删除", e);
+                Slimefun.logger()
+                        .log(Level.WARNING, "Nepodařilo se smazat složku starých dat hráčů, smaž ji prosím ručně", e);
             }
         }
 
@@ -114,7 +118,6 @@ public class PlayerProfileMigrator implements IMigrator {
             profile = controller.createProfile(p);
         }
 
-        // Research migrate
         for (String researchID : configFile.getKeys("researches")) {
             var research = Research.getResearchByID(Integer.parseInt(researchID));
 
@@ -125,7 +128,6 @@ public class PlayerProfileMigrator implements IMigrator {
             profile.setResearched(research.get(), true);
         }
 
-        // Backpack migrate
         var max = 0;
         for (String backpackID : configFile.getKeys("backpacks")) {
             var bpID = Integer.parseInt(backpackID);
@@ -136,13 +138,10 @@ public class PlayerProfileMigrator implements IMigrator {
 
             var bp = controller.createBackpack(p, "", bpID, size);
 
-            //            var changedSlot = new HashSet<Integer>();
-
             for (String key : configFile.getKeys("backpacks." + bpID + ".contents")) {
                 var bpKey = Integer.parseInt(key);
                 var item = configFile.getItem("backpacks." + bpID + ".contents." + bpKey);
                 bp.getInventory().setItem(bpKey, item);
-                //                changedSlot.add(bpKey);
             }
 
             controller.saveBackpackInventory(bp);
