@@ -92,6 +92,7 @@ public class SlimefunItem implements Placeable {
      * This is a reference to the associated {@link Research}, can be null.
      */
     private Research research;
+
     private ItemStack[] recipe;
     private RecipeType recipeType;
     protected ItemStack recipeOutput;

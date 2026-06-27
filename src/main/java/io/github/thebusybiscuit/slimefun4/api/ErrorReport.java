@@ -57,7 +57,8 @@ public class ErrorReport<T extends Throwable> {
             stream.println("  Y: " + l.getBlockY());
             stream.println("  Z: " + l.getBlockZ());
             stream.println("  Typ bloku: " + l.getBlock().getType());
-            stream.println("  BlockData: " + l.getBlock().getBlockData().getClass().getName());
+            stream.println(
+                    "  BlockData: " + l.getBlock().getBlockData().getClass().getName());
             stream.println("  Stav: " + l.getBlock().getState().getClass().getName());
             stream.println();
 
@@ -76,7 +77,8 @@ public class ErrorReport<T extends Throwable> {
             stream.println("Slimefun data:");
             stream.println("  ID: " + item.getId());
 
-            var blockData = Slimefun.getDatabaseManager().getBlockDataController().getBlockData(l);
+            var blockData =
+                    Slimefun.getDatabaseManager().getBlockDataController().getBlockData(l);
             if (blockData == null) {
                 Slimefun.runSync(() -> Slimefun.getBlockDataService()
                         .getUniversalDataUUID(l.getBlock())
@@ -176,10 +178,7 @@ public class ErrorReport<T extends Throwable> {
             addon.getLogger().log(Level.WARNING, "");
             addon.getLogger().log(Level.WARNING, "Došlo k chybě! Byla uložena jako:");
             addon.getLogger().log(Level.WARNING, "/plugins/Slimefun/error-reports/{0}", file.getName());
-            addon.getLogger()
-                    .log(
-                            Level.WARNING,
-                            "Nahraj tento soubor na https://pastebin.com/ a nahlás to vývojáři.");
+            addon.getLogger().log(Level.WARNING, "Nahraj tento soubor na https://pastebin.com/ a nahlás to vývojáři.");
             if (addon.getBugTrackerURL() != null) {
                 addon.getLogger().log(Level.WARNING, "Bug Tracker: {0}", addon.getBugTrackerURL());
             }
@@ -190,8 +189,7 @@ public class ErrorReport<T extends Throwable> {
                     .log(
                             Level.SEVERE,
                             x,
-                            () -> "Došlo k chybě při ukládání chybového reportu pro Slimefun "
-                                    + Slimefun.getVersion());
+                            () -> "Došlo k chybě při ukládání chybového reportu pro Slimefun " + Slimefun.getVersion());
         }
     }
 
@@ -199,16 +197,20 @@ public class ErrorReport<T extends Throwable> {
         String dependency = "Slimefun";
         for (Plugin plugin : Bukkit.getPluginManager().getPlugins()) {
             if (Bukkit.getPluginManager().isPluginEnabled(plugin)) {
-                plugins.add(" + " + plugin.getName() + ' ' + plugin.getDescription().getVersion());
+                plugins.add(
+                        " + " + plugin.getName() + ' ' + plugin.getDescription().getVersion());
                 if (plugin.getDescription().getDepend().contains(dependency)
                         || plugin.getDescription().getSoftDepend().contains(dependency)) {
-                    addons.add(" + " + plugin.getName() + ' ' + plugin.getDescription().getVersion());
+                    addons.add(" + " + plugin.getName() + ' '
+                            + plugin.getDescription().getVersion());
                 }
             } else {
-                plugins.add(" - " + plugin.getName() + ' ' + plugin.getDescription().getVersion());
+                plugins.add(
+                        " - " + plugin.getName() + ' ' + plugin.getDescription().getVersion());
                 if (plugin.getDescription().getDepend().contains(dependency)
                         || plugin.getDescription().getSoftDepend().contains(dependency)) {
-                    addons.add(" - " + plugin.getName() + ' ' + plugin.getDescription().getVersion());
+                    addons.add(" - " + plugin.getName() + ' '
+                            + plugin.getDescription().getVersion());
                 }
             }
         }

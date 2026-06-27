@@ -11,21 +11,17 @@ import java.util.Locale;
 import javax.annotation.Nonnull;
 
 /**
- * This utility class provides a few handy methods and constants to build the lore of any
- * {@link SlimefunItemStack}. It is mostly used directly inside the class {@link SlimefunItems}.
- *
- * @author TheBusyBiscuit
- *
- * @see SlimefunItems
- *
+ * Tato pomocná třída poskytuje několik užitečných metod a konstant pro vytváření popisu (lore)
+ * u {@link SlimefunItemStack}. Nejčastěji se používá přímo ve třídě {@link SlimefunItems}.
  */
 public final class LoreBuilder {
 
-    public static final String HAZMAT_SUIT_REQUIRED = "&8\u21E8 &4需要防化服!";
-    public static final String RAINBOW = "&d轮番展现彩虹的颜色!";
-    public static final String RIGHT_CLICK_TO_USE = "&e右键&7 使用";
-    public static final String RIGHT_CLICK_TO_OPEN = "&e右键&7 打开";
-    public static final String CROUCH_TO_USE = "&e按住 &e蹲下&7 使用";
+    public static final String HAZMAT_SUIT_REQUIRED = "&8\u21E8 &4Vyžaduje ochranný oblek proti radiaci!";
+    public static final String RAINBOW = "&dStřídavě zobrazuje duhové barvy!";
+    public static final String RIGHT_CLICK_TO_USE = "&ePravý klik&7 pro použití";
+    public static final String RIGHT_CLICK_TO_OPEN = "&ePravý klik&7 pro otevření";
+    public static final String CROUCH_TO_USE = "&eDrž &eCrouch &7pro použití";
+
     private static final DecimalFormat hungerFormat =
             new DecimalFormat("#.0", DecimalFormatSymbols.getInstance(Locale.ROOT));
 
@@ -40,11 +36,11 @@ public final class LoreBuilder {
     }
 
     public static @Nonnull String speed(float speed) {
-        return "&8\u21E8 &b\u26A1 &7速度: &b" + speed + 'x';
+        return "&8\u21E8 &b\u26A1 &7Rychlost: &b" + speed + 'x';
     }
 
     public static @Nonnull String powerBuffer(int power) {
-        return power(power, " 可储存");
+        return power(power, " uloženo");
     }
 
     public static @Nonnull String powerPerSecond(int power) {
@@ -60,18 +56,18 @@ public final class LoreBuilder {
     }
 
     public static @Nonnull String material(String material) {
-        return "&8\u21E8 &7材料: &b" + material;
+        return "&8\u21E8 &7Materiál: &b" + material;
     }
 
     public static @Nonnull String hunger(double value) {
-        return "&7&o恢复 &b&o" + hungerFormat.format(value) + " &7&o点饥饿值";
+        return "&7&oObnoví &b&o" + hungerFormat.format(value) + " &7&obodu hladu";
     }
 
     public static @Nonnull String range(int blocks) {
-        return "&7范围: &c" + blocks + " 格";
+        return "&7Dosah: &c" + blocks + " bloků";
     }
 
     public static @Nonnull String usesLeft(int usesLeft) {
-        return "&7还可以使用 &e" + usesLeft + " 次";
+        return "&7Zbývá použití: &e" + usesLeft + "×";
     }
 }

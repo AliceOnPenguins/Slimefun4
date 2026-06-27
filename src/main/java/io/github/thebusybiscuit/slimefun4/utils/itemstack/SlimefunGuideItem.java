@@ -14,7 +14,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 /**
- * This is just a helper {@link ItemStack} class for the {@link SlimefunGuide} {@link ItemStack}.
+ * Pomocná třída {@link ItemStack} pro {@link SlimefunGuide} {@link ItemStack}.
  *
  * @author TheBusyBiscuit
  *
@@ -23,24 +23,18 @@ import org.bukkit.inventory.meta.ItemMeta;
  *
  */
 public class SlimefunGuideItem extends ItemStack {
-
     public SlimefunGuideItem(@Nonnull SlimefunGuideImplementation implementation, @Nonnull String name) {
         super(Material.ENCHANTED_BOOK);
-
         ItemMeta meta = getItemMeta();
         meta.setDisplayName(ChatColors.color(name));
-
         List<String> lore = new ArrayList<>();
         SlimefunGuideMode type = implementation.getMode();
-        lore.add(type == SlimefunGuideMode.CHEAT_MODE ? ChatColors.color("&4&l仅限管理员使用") : "");
-        lore.add(ChatColors.color("&e右键 &8\u21E8 &7浏览物品"));
-        lore.add(ChatColors.color("&eShift + 右键 &8\u21E8 &7打开 设置 / 关于"));
-
+        lore.add(type == SlimefunGuideMode.CHEAT_MODE ? ChatColors.color("&4&lPouze pro administrátory") : "");
+        lore.add(ChatColors.color("&ePravý klik &8\u21E8 &7Procházet předměty"));
+        lore.add(ChatColors.color("&eShift + Pravý klik &8\u21E8 &7Otevřít Nastavení / O aplikaci"));
         meta.setLore(lore);
-
         PersistentDataAPI.setString(meta, Slimefun.getRegistry().getGuideDataKey(), type.name());
         Slimefun.getItemTextureService().setTexture(meta, "SLIMEFUN_GUIDE");
-
         setItemMeta(meta);
     }
 }

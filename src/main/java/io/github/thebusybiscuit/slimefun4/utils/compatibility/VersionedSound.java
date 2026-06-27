@@ -9,14 +9,13 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.Sound;
 
 /**
- * Sound 多版本兼容
+ * Kompatibilita Sound napříč verzemi
  *
  * @author ybw0014
  */
 public final class VersionedSound {
-
     private VersionedSound() {
-        // utility class
+        // pomocná třída
     }
 
     private static final boolean IS_ENUM;
@@ -27,7 +26,6 @@ public final class VersionedSound {
         boolean isEnum = false;
         Method getKeyMethod = null;
         Method valueOfMethod = null;
-
         try {
             if (Sound.class.isEnum()) {
                 isEnum = true;
@@ -36,9 +34,8 @@ public final class VersionedSound {
             }
             valueOfMethod = Sound.class.getMethod("valueOf", String.class);
         } catch (Exception e) {
-            Slimefun.logger().severe("无法确定 Sound 类型：" + e.getMessage());
+            Slimefun.logger().severe("Nelze určit typ Sound: " + e.getMessage());
         }
-
         IS_ENUM = isEnum;
         GET_KEY_METHOD = getKeyMethod;
         VALUE_OF_METHOD = valueOfMethod;
@@ -47,12 +44,11 @@ public final class VersionedSound {
     public static boolean isEnum() {
         return IS_ENUM;
     }
-
     /**
-     * 获取 Sound 的名称
+     * Získá název Sound
      *
-     * @param sound Sound 对象
-     * @return Sound 名称
+     * @param sound objekt Sound
+     * @return název Sound
      */
     @Nonnull
     public static String getSoundName(@Nonnull Sound sound) {
@@ -62,38 +58,34 @@ public final class VersionedSound {
             } else if (GET_KEY_METHOD != null) {
                 Object key = GET_KEY_METHOD.invoke(sound);
                 if (!(key instanceof NamespacedKey nsKey)) {
-                    throw new IllegalStateException("Sound.getKey() 返回的不是 NamespacedKey");
+                    throw new IllegalStateException("Sound.getKey() nevrátilo NamespacedKey");
                 }
                 return nsKey.getKey();
             }
         } catch (Exception e) {
-            Slimefun.logger().severe("获取 Sound 名称失败: " + e.getMessage());
+            Slimefun.logger().severe("Získání názvu Sound selhalo: " + e.getMessage());
         }
-
-        // fallback
+        // záložní řešení
         return sound.toString();
     }
-
     /**
-     * valueOf() 方法兼容
+     * Kompatibilita metody valueOf()
      *
-     * @param name Sound 名称
-     * @return Sound 对象
-     * @throws IllegalArgumentException 名称无效
+     * @param name název Sound
+     * @return objekt Sound
+     * @throws IllegalArgumentException neplatný název
      */
     @Nonnull
     public static Sound valueOf(@Nonnull String name) throws IllegalArgumentException {
-        Preconditions.checkArgument(name != null, "Sound 名称不能为空");
-
+        Preconditions.checkArgument(name != null, "Název Sound nesmí být prázdný");
         String enumName = name.toUpperCase(Locale.ROOT).replace('.', '_').replace('-', '_');
         try {
             if (VALUE_OF_METHOD != null) {
                 return (Sound) VALUE_OF_METHOD.invoke(null, enumName);
             }
         } catch (Exception e) {
-            throw new IllegalArgumentException("无法调用 Sound.valueOf: " + name, e);
+            throw new IllegalArgumentException("Nelze zavolat Sound.valueOf: " + name, e);
         }
-
-        throw new IllegalArgumentException("Sound.valueOf 方法不可用");
+        throw new IllegalArgumentException("Metoda Sound.valueOf není dostupná");
     }
 }

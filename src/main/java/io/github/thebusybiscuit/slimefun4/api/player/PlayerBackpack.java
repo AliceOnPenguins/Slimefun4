@@ -7,7 +7,6 @@ import io.github.bakedlibs.dough.common.ChatColors;
 import io.github.bakedlibs.dough.common.CommonPatterns;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun4.implementation.items.backpacks.SlimefunBackpack;
-import io.github.thebusybiscuit.slimefun4.implementation.listeners.BackpackListener;
 import io.github.thebusybiscuit.slimefun4.utils.ThreadUtils;
 import java.util.Optional;
 import java.util.OptionalInt;

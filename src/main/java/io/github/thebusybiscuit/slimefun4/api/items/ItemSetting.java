@@ -1,6 +1,5 @@
 package io.github.thebusybiscuit.slimefun4.api.items;
 
-import io.github.bakedlibs.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
 import java.util.List;
 import java.util.Objects;
@@ -96,7 +95,9 @@ public class ItemSetting<T> {
         } else {
             this.value = defaultValue;
 
-            String found = configuredValue == null ? "null" : configuredValue.getClass().getSimpleName();
+            String found = configuredValue == null
+                    ? "null"
+                    : configuredValue.getClass().getSimpleName();
 
             item.warn("Nalezena neplatná konfigurace v Items.yml!"
                     + "\nPoužívejte pouze platné hodnoty."

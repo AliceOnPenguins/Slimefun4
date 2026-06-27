@@ -41,22 +41,27 @@ class EnvironmentChecker {
         try {
             Class.forName("cpw.mods.modlauncher.Launcher", false, ClassLoader.getSystemClassLoader());
             return true;
-        } catch (ClassNotFoundException ignored) {}
+        } catch (ClassNotFoundException ignored) {
+        }
 
         try {
-            Class.forName("net.minecraftforge.server.console.TerminalHandler", false, ClassLoader.getSystemClassLoader());
+            Class.forName(
+                    "net.minecraftforge.server.console.TerminalHandler", false, ClassLoader.getSystemClassLoader());
             return true;
-        } catch (ClassNotFoundException ignored) {}
+        } catch (ClassNotFoundException ignored) {
+        }
 
         try {
             Class.forName("org.cardboardpowered.mixin.CardboardMixinPlugin", false, ClassLoader.getSystemClassLoader());
             return true;
-        } catch (ClassNotFoundException ignored) {}
+        } catch (ClassNotFoundException ignored) {
+        }
 
         try {
             Class.forName("net.fabricmc.loader.impl.FabricLoaderImpl", false, ClassLoader.getSystemClassLoader());
             return true;
-        } catch (ClassNotFoundException ignored) {}
+        } catch (ClassNotFoundException ignored) {
+        }
 
         if (Bukkit.getPluginCommand("mohist") != null) {
             return true;
@@ -74,7 +79,10 @@ class EnvironmentChecker {
                             if (Bukkit.getPluginManager().getPlugin("SlimeGlue") == null) {
                                 sf.getLogger().log(Level.WARNING, "Nebyl nalezen plugin SlimeGlue (粘液胶).");
                                 sf.getLogger().log(Level.WARNING, "Budeš mít chybějící ochranu u některých pluginů!");
-                                sf.getLogger().log(Level.WARNING, "Stáhni si ho zde: https://github.com/Xzavier0722/SlimeGlue");
+                                sf.getLogger()
+                                        .log(
+                                                Level.WARNING,
+                                                "Stáhni si ho zde: https://github.com/Xzavier0722/SlimeGlue");
                             }
                         },
                         300); // 15 sekund
