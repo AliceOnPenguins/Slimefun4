@@ -17,6 +17,7 @@ import org.apache.logging.log4j.core.config.Configurator;
 import org.bukkit.Server;
 
 public final class SlimefunExtended {
+
     private static SlimefunMigrateListener migrateListener = new SlimefunMigrateListener();
 
     @Getter
@@ -31,26 +32,25 @@ public final class SlimefunExtended {
     }
 
     /**
-     * 返回当前服务器的 Minecraft 版本详情，包含主版本号、次版本号和补丁版本号。
-     * 例如：26.1.2 将返回 (26, 1, 2)，而 26.1 将返回 (26, 1, 0)。
+     * Vrátí podrobnosti o verzi Minecraft aktuálního serveru (hlavní verze, vedlejší verze a patch).
+     * Například: 26.1.2 vrátí (26, 1, 2), 26.1 vrátí (26, 1, 0).
      *
-     * 当无法识别服务器版本时，返回 null。
+     * Pokud se nepodaří verzi rozpoznat, vrátí null.
      *
      * @since 2026.1
-     * @param server
-     * @return
+     * @param server Server
+     * @return ServerVersion nebo null
      */
     public static ServerVersion getServerVerDetail(Server server) {
         String mcVersion = server.getMinecraftVersion();
-
         if (mcVersion.isBlank()) {
             return null;
         }
 
-        // 提取版本号中的数字部分
+        // Extrahuje číselné části verze
         String[] versionPart = mcVersion.split("\\.");
 
-        // 可能是快照版本或者是预发布版?
+        // Může to být snapshot nebo pre-release?
         if (versionPart.length < 2) {
             return null;
         }
@@ -58,25 +58,23 @@ public final class SlimefunExtended {
         try {
             int majorVersion = Integer.parseInt(versionPart[0]);
 
-            // 自 26.1 开始，Minecraft 版本号格式变为以年份作为主版本号
+            // Od 26.1 je formát verzí Minecraftu založený na roce
             if (majorVersion != 1 && majorVersion < 26) {
                 return null;
             }
 
             int minorVersion = Integer.parseInt(versionPart[1]);
             int patchVersion = versionPart.length > 2 ? Integer.parseInt(versionPart[2]) : 0;
+
             return new ServerVersion(majorVersion, minorVersion, patchVersion);
         } catch (NumberFormatException e) {
-            server.getLogger().log(Level.WARNING, "无法解析当前服务器版本号: " + mcVersion, e);
+            server.getLogger().log(Level.WARNING, "Nepodařilo se rozpoznat verzi serveru: " + mcVersion, e);
             return null;
         }
     }
 
     /**
      * @since 2026.1
-     * @param major the major version number (e.g., 26 for Minecraft 26.1)
-     * @param minor
-     * @return
      */
     public static boolean isAtLeast(int major, int minor) {
         return MinecraftVersionUtil.isAtLeast(major, minor);
@@ -84,9 +82,6 @@ public final class SlimefunExtended {
 
     /**
      * @since 2026.1
-     * @param major the major version number (e.g., 26 for Minecraft 26.1)
-     * @param minor
-     * @return
      */
     public static boolean isAtLeast(int major, int minor, int patch) {
         return MinecraftVersionUtil.isAtLeast(major, minor, patch);
@@ -95,9 +90,8 @@ public final class SlimefunExtended {
     private static void checkDebug() {
         if ("true".equals(System.getProperty("slimefun.database.debug"))) {
             databaseDebugMode = true;
-
             Slimefun.getSQLProfiler().start();
-            Slimefun.logger().log(Level.INFO, "已启动数据库调试模式");
+            Slimefun.logger().log(Level.INFO, "Byl aktivován režim ladění databáze");
         } else {
             Configurator.setLevel(HikariConfig.class.getName(), org.apache.logging.log4j.Level.OFF);
             Configurator.setLevel(HikariDataSource.class.getName(), org.apache.logging.log4j.Level.OFF);
@@ -109,7 +103,7 @@ public final class SlimefunExtended {
         try {
             minecraftVersion = MinecraftVersion.of(sf.getServer());
         } catch (UnknownServerVersionException ignored) {
-            // sf.getLogger().log(Level.WARNING, "无法识别你正在使用的服务端版本 :(");
+            // sf.getLogger().log(Level.WARNING, "Nepodařilo se rozpoznat verzi serveru :(");
             // return false;
         }
 
@@ -117,9 +111,9 @@ public final class SlimefunExtended {
             sf.getLogger().log(Level.WARNING, "#######################################################");
             sf.getLogger().log(Level.WARNING, "");
             sf.getLogger().log(Level.WARNING, "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            sf.getLogger().log(Level.WARNING, "检测到正在使用混合端, Slimefun 将会被禁用!");
-            sf.getLogger().log(Level.WARNING, "混合端已被多个用户报告有使用问题,");
-            sf.getLogger().log(Level.WARNING, "强制绕过检测将不受任何反馈支持.");
+            sf.getLogger().log(Level.WARNING, "Byl detekován hybridní server, Slimefun bude vypnut!");
+            sf.getLogger().log(Level.WARNING, "Hybridní servery byly mnoha uživateli nahlášeny jako problematické.");
+            sf.getLogger().log(Level.WARNING, "Vynucené obejití kontroly nebude podporováno.");
             sf.getLogger().log(Level.WARNING, "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             sf.getLogger().log(Level.WARNING, "");
             sf.getLogger().log(Level.WARNING, "#######################################################");
@@ -130,8 +124,8 @@ public final class SlimefunExtended {
             sf.getLogger().log(Level.WARNING, "#######################################################");
             sf.getLogger().log(Level.WARNING, "");
             sf.getLogger().log(Level.WARNING, "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-            sf.getLogger().log(Level.WARNING, "检测到你禁用了环境兼容性检查!");
-            sf.getLogger().log(Level.WARNING, "未通过兼容性检查将无法受到反馈支持.");
+            sf.getLogger().log(Level.WARNING, "Byla vypnuta kontrola kompatibility prostředí!");
+            sf.getLogger().log(Level.WARNING, "Problémy způsobené nekompatibilitou nebudou podporovány.");
             sf.getLogger().log(Level.WARNING, "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
             sf.getLogger().log(Level.WARNING, "");
             sf.getLogger().log(Level.WARNING, "#######################################################");
@@ -143,23 +137,16 @@ public final class SlimefunExtended {
 
     public static void init(@Nonnull Slimefun sf) {
         EnvironmentChecker.scheduleSlimeGlueCheck(sf);
-
         EnvUtil.init();
-
         checkDebug();
-
         VaultIntegration.register(sf);
-
         migrateListener.register(sf);
-
         VersionedEvent.init();
     }
 
     public static void shutdown() {
         migrateListener = null;
-
         VaultIntegration.cleanup();
-
         databaseDebugMode = false;
     }
 }

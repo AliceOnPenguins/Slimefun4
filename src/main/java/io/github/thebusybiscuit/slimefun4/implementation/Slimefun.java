@@ -344,7 +344,10 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         int networkSize = config.getInt("networks.max-size");
         // Make sure that the network size is a valid input
         if (networkSize < 1) {
-            logger.log(Level.WARNING, "'networks.max-size' je nastaveno špatně! Musí být větší než 1, zadal jsi: {0}", networkSize);
+            logger.log(
+                    Level.WARNING,
+                    "'networks.max-size' je nastaveno špatně! Musí být větší než 1, zadal jsi: {0}",
+                    networkSize);
             networkSize = 1;
         }
 
@@ -742,11 +745,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         try {
             SlimefunItemSetup.setup(this);
         } catch (Exception | LinkageError x) {
-            getLogger()
-                    .log(
-                            Level.SEVERE,
-                            x,
-                            () -> "Došlo k chybě při načítání předmětů Slimefun " + getVersion());
+            getLogger().log(Level.SEVERE, x, () -> "Došlo k chybě při načítání předmětů Slimefun " + getVersion());
         }
     }
 
@@ -757,11 +756,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         try {
             ResearchSetup.setupResearches();
         } catch (Exception | LinkageError x) {
-            getLogger()
-                    .log(
-                            Level.SEVERE,
-                            x,
-                            () -> "Došlo k chybě při načítání výzkumů Slimefun " + getVersion());
+            getLogger().log(Level.SEVERE, x, () -> "Došlo k chybě při načítání výzkumů Slimefun " + getVersion());
         }
     }
 

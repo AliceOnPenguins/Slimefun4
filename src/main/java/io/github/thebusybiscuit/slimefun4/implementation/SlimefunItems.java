@@ -42,17 +42,41 @@ public final class SlimefunItems {
             "",
             LoreBuilder.RIGHT_CLICK_TO_OPEN);
     public static final SlimefunItemStack PORTABLE_DUSTBIN = new SlimefunItemStack(
-            "PORTABLE_DUSTBIN", HeadTexture.TRASH_CAN, "&6Přenosný odpadkový koš", "&rSnadno likviduje nepotřebné věci", "", LoreBuilder.RIGHT_CLICK_TO_OPEN);
+            "PORTABLE_DUSTBIN",
+            HeadTexture.TRASH_CAN,
+            "&6Přenosný odpadkový koš",
+            "&rSnadno likviduje nepotřebné věci",
+            "",
+            LoreBuilder.RIGHT_CLICK_TO_OPEN);
     public static final SlimefunItemStack ENDER_BACKPACK = new SlimefunItemStack(
-            "ENDER_BACKPACK", HeadTexture.ENDER_BACKPACK, "&6Ender batoh", "&a&oPřenosný ender chest", "", LoreBuilder.RIGHT_CLICK_TO_OPEN);
+            "ENDER_BACKPACK",
+            HeadTexture.ENDER_BACKPACK,
+            "&6Ender batoh",
+            "&a&oPřenosný ender chest",
+            "",
+            LoreBuilder.RIGHT_CLICK_TO_OPEN);
     public static final SlimefunItemStack MAGIC_EYE_OF_ENDER = new SlimefunItemStack(
-            "MAGIC_EYE_OF_ENDER", Material.ENDER_EYE, "&6&lMagické Ender oko", "&4&lVyžaduje kompletní Ender zbroj", "", "&7&ePravý klik&7 pro vystřelení ender perly");
+            "MAGIC_EYE_OF_ENDER",
+            Material.ENDER_EYE,
+            "&6&lMagické Ender oko",
+            "&4&lVyžaduje kompletní Ender zbroj",
+            "",
+            "&7&ePravý klik&7 pro vystřelení ender perly");
     public static final SlimefunItemStack BROKEN_SPAWNER = new SlimefunItemStack(
-            "BROKEN_SPAWNER", Material.SPAWNER, "&cPoškozený spawner", "&7Typ: &b<typ>", "", "&cPoškozený, opravit lze na starověkém oltáři");
+            "BROKEN_SPAWNER",
+            Material.SPAWNER,
+            "&cPoškozený spawner",
+            "&7Typ: &b<typ>",
+            "",
+            "&cPoškozený, opravit lze na starověkém oltáři");
     public static final SlimefunItemStack REPAIRED_SPAWNER =
             new SlimefunItemStack("REINFORCED_SPAWNER", Material.SPAWNER, "&bOpravený spawner", "&7Typ: &b<typ>");
-    public static final SlimefunItemStack INFERNAL_BONEMEAL =
-            new SlimefunItemStack("INFERNAL_BONEMEAL", Material.BONE_MEAL, "&4Pekelný kostní prach", "", "&cZrychluje růst netherových výrůstků");
+    public static final SlimefunItemStack INFERNAL_BONEMEAL = new SlimefunItemStack(
+            "INFERNAL_BONEMEAL",
+            Material.BONE_MEAL,
+            "&4Pekelný kostní prach",
+            "",
+            "&cZrychluje růst netherových výrůstků");
     public static final SlimefunItemStack TAPE_MEASURE = new SlimefunItemStack(
             "TAPE_MEASURE",
             "180d5c43a6cf5bb7769fd0c8240e1e70d2ae38ef9d78a1db401aca6a2cb36f65",
@@ -62,26 +86,50 @@ public final class SlimefunItems {
             "&ePravý klik &7změří vzdálenost");
 
     /*		 Gadgets 		*/
-    public static final SlimefunItemStack GOLD_PAN =
-            new SlimefunItemStack("GOLD_PAN", Material.BOWL, "&6Zlatá pánev", "&a&oMůžeš získat různé rudy", "", "&7&ePravý klik&7 na štěrk pro získání zlata");
-    public static final SlimefunItemStack NETHER_GOLD_PAN =
-            new SlimefunItemStack("NETHER_GOLD_PAN", Material.BOWL, "&4Netherová zlatá pánev", "", "&7&ePravý klik&7 na soul sand pro získání zlata");
+    public static final SlimefunItemStack GOLD_PAN = new SlimefunItemStack(
+            "GOLD_PAN",
+            Material.BOWL,
+            "&6Zlatá pánev",
+            "&a&oMůžeš získat různé rudy",
+            "",
+            "&7&ePravý klik&7 na štěrk pro získání zlata");
+    public static final SlimefunItemStack NETHER_GOLD_PAN = new SlimefunItemStack(
+            "NETHER_GOLD_PAN",
+            Material.BOWL,
+            "&4Netherová zlatá pánev",
+            "",
+            "&7&ePravý klik&7 na soul sand pro získání zlata");
     public static final SlimefunItemStack PARACHUTE = new SlimefunItemStack(
             "PARACHUTE", Material.LEATHER_CHESTPLATE, Color.WHITE, "&r&lPadák", "", LoreBuilder.CROUCH_TO_USE);
     public static final SlimefunItemStack GRAPPLING_HOOK =
             new SlimefunItemStack("GRAPPLING_HOOK", Material.LEAD, "&6Háček", "", LoreBuilder.RIGHT_CLICK_TO_USE);
-    public static final SlimefunItemStack SOLAR_HELMET =
-            new SlimefunItemStack("SOLAR_HELMET", Material.IRON_HELMET, "&bSolární helma", "", "&a&oDobíjí předměty a zbroj, které držíš");
+    public static final SlimefunItemStack SOLAR_HELMET = new SlimefunItemStack(
+            "SOLAR_HELMET", Material.IRON_HELMET, "&bSolární helma", "", "&a&oDobíjí předměty a zbroj, které držíš");
     public static final SlimefunItemStack CLOTH = new SlimefunItemStack("CLOTH", Material.PAPER, "&bLátka");
     public static final SlimefunItemStack REINFORCED_CLOTH = new SlimefunItemStack(
-            "REINFORCED_CLOTH", Material.PAPER, "&bVyztužená látka", "", "&fTato látka zesílená olovem", "&fchrání před negativními účinky radiace");
+            "REINFORCED_CLOTH",
+            Material.PAPER,
+            "&bVyztužená látka",
+            "",
+            "&fTato látka zesílená olovem",
+            "&fchrání před negativními účinky radiace");
     public static final SlimefunItemStack TIN_CAN = new SlimefunItemStack("CAN", HeadTexture.TIN_CAN, "&rPlechovka");
     public static final SlimefunItemStack NIGHT_VISION_GOGGLES = new SlimefunItemStack(
-            "NIGHT_VISION_GOGGLES", Material.LEATHER_HELMET, Color.BLACK, "&aBrýle nočního vidění", "", "&9+ Efekt nočního vidění");
+            "NIGHT_VISION_GOGGLES",
+            Material.LEATHER_HELMET,
+            Color.BLACK,
+            "&aBrýle nočního vidění",
+            "",
+            "&9+ Efekt nočního vidění");
     public static final SlimefunItemStack ELYTRA_CAP = new SlimefunItemStack(
-            "ELYTRA_CAP", Material.LEATHER_HELMET, Color.PURPLE, "&5Čepice s elytrami", "", "&7Zabraňuje ti spadnout při létání s elytrami");
-    public static final SlimefunItemStack FARMER_SHOES =
-            new SlimefunItemStack("FARMER_SHOES", Material.LEATHER_BOOTS, Color.YELLOW, "&eFarmářské boty", "", "&6&oZabraňuje ničení polí");
+            "ELYTRA_CAP",
+            Material.LEATHER_HELMET,
+            Color.PURPLE,
+            "&5Čepice s elytrami",
+            "",
+            "&7Zabraňuje ti spadnout při létání s elytrami");
+    public static final SlimefunItemStack FARMER_SHOES = new SlimefunItemStack(
+            "FARMER_SHOES", Material.LEATHER_BOOTS, Color.YELLOW, "&eFarmářské boty", "", "&6&oZabraňuje ničení polí");
     public static final SlimefunItemStack INFUSED_MAGNET = new SlimefunItemStack(
             "INFUSED_MAGNET",
             HeadTexture.MAGNET,
@@ -115,7 +163,15 @@ public final class SlimefunItems {
             "",
             LoreBuilder.RIGHT_CLICK_TO_USE);
     public static final SlimefunItemStack SPLINT = new SlimefunItemStack(
-            "SPLINT", Material.STICK, "&cDlaha", "", "&aLékařský zásobník úrovně 1", "", "&rObnoví 2 HP", "", LoreBuilder.RIGHT_CLICK_TO_USE);
+            "SPLINT",
+            Material.STICK,
+            "&cDlaha",
+            "",
+            "&aLékařský zásobník úrovně 1",
+            "",
+            "&rObnoví 2 HP",
+            "",
+            LoreBuilder.RIGHT_CLICK_TO_USE);
     public static final SlimefunItemStack VITAMINS = new SlimefunItemStack(
             "VITAMINS",
             Material.NETHER_WART,
@@ -141,11 +197,20 @@ public final class SlimefunItems {
             "&rVyléčí otravu / wither / radiaci",
             "",
             "&7&ePravý klik&7 pro vypití");
-    public static final SlimefunItemStack MAGICAL_ZOMBIE_PILLS =
-            new SlimefunItemStack("MAGICAL_ZOMBIE_PILLS", Material.NETHER_WART, "&6Pilulky oživení", "", "&ePravý klik pro okamžité vyléčení &7zombie vesničana / piglina");
+    public static final SlimefunItemStack MAGICAL_ZOMBIE_PILLS = new SlimefunItemStack(
+            "MAGICAL_ZOMBIE_PILLS",
+            Material.NETHER_WART,
+            "&6Pilulky oživení",
+            "",
+            "&ePravý klik pro okamžité vyléčení &7zombie vesničana / piglina");
 
     public static final SlimefunItemStack FLASK_OF_KNOWLEDGE = new SlimefunItemStack(
-            "FLASK_OF_KNOWLEDGE", Material.GLASS_BOTTLE, "&cLáhev vědění", "", "&rUmožňuje ukládat zkušenosti do láhve", "&7Spotřebuje &a1 level");
+            "FLASK_OF_KNOWLEDGE",
+            Material.GLASS_BOTTLE,
+            "&cLáhev vědění",
+            "",
+            "&rUmožňuje ukládat zkušenosti do láhve",
+            "&7Spotřebuje &a1 level");
     public static final SlimefunItemStack FILLED_FLASK_OF_KNOWLEDGE =
             new SlimefunItemStack("FILLED_FLASK_OF_KNOWLEDGE", Material.EXPERIENCE_BOTTLE, "&aLáhev vědění");
 
@@ -526,12 +591,12 @@ public final class SlimefunItems {
     /*		 Food 		*/
     public static final SlimefunItemStack FORTUNE_COOKIE =
             new SlimefunItemStack("FORTUNE_COOKIE", Material.COOKIE, "&6Štěstíčko", "", "&a&oŘekne ti budoucnost :o");
-    public static final SlimefunItemStack DIET_COOKIE =
-            new SlimefunItemStack("DIET_COOKIE", Material.COOKIE, "&6Dietní sušenka", "", "&aVelmi &olehká&r&a sušenka");
+    public static final SlimefunItemStack DIET_COOKIE = new SlimefunItemStack(
+            "DIET_COOKIE", Material.COOKIE, "&6Dietní sušenka", "", "&aVelmi &olehká&r&a sušenka");
     public static final SlimefunItemStack MAGIC_SUGAR =
             new SlimefunItemStack("MAGIC_SUGAR", Material.SUGAR, "&6Magický cukr", "", "&a&oCítíš sílu Herma!");
-    public static final SlimefunItemStack MONSTER_JERKY =
-            new SlimefunItemStack("MONSTER_JERKY", Material.ROTTEN_FLESH, "&6Sušené monstrum", "", "&a&oDodává energii a utišuje hlad");
+    public static final SlimefunItemStack MONSTER_JERKY = new SlimefunItemStack(
+            "MONSTER_JERKY", Material.ROTTEN_FLESH, "&6Sušené monstrum", "", "&a&oDodává energii a utišuje hlad");
     public static final SlimefunItemStack APPLE_JUICE = new SlimefunItemStack(
             "APPLE_JUICE",
             Color.RED,
@@ -575,7 +640,10 @@ public final class SlimefunItems {
             "",
             LoreBuilder.hunger(3));
     public static final SlimefunItemStack GOLDEN_APPLE_JUICE = new SlimefunItemStack(
-            "GOLDEN_APPLE_JUICE", Color.YELLOW, new PotionEffect(PotionEffectType.ABSORPTION, 20 * 20, 0), "&bDžus ze zlatého jablka");
+            "GOLDEN_APPLE_JUICE",
+            Color.YELLOW,
+            new PotionEffect(PotionEffectType.ABSORPTION, 20 * 20, 0),
+            "&bDžus ze zlatého jablka");
 
     public static final SlimefunItemStack BEEF_JERKY =
             new SlimefunItemStack("BEEF_JERKY", Material.COOKED_BEEF, "&6Sušené hovězí", "", "&rUtíší hlad!");
@@ -589,7 +657,8 @@ public final class SlimefunItems {
             new SlimefunItemStack("RABBIT_JERKY", Material.COOKED_RABBIT, "&6Sušený králík", "", "&rUtíší hlad!");
     public static final SlimefunItemStack FISH_JERKY =
             new SlimefunItemStack("FISH_JERKY", Material.COOKED_COD, "&6Sušená ryba", "", "&rUtíší hlad!");
-    public static final SlimefunItemStack KELP_COOKIE = new SlimefunItemStack("KELP_COOKIE", Material.COOKIE, "&2Sušenka z chaluh");
+    public static final SlimefunItemStack KELP_COOKIE =
+            new SlimefunItemStack("KELP_COOKIE", Material.COOKIE, "&2Sušenka z chaluh");
 
     /*		Christmas		*/
     public static final SlimefunItemStack CHRISTMAS_MILK = new SlimefunItemStack(
@@ -652,7 +721,12 @@ public final class SlimefunItems {
 
     /*		Easter			*/
     public static final SlimefunItemStack EASTER_EGG = new SlimefunItemStack(
-            "EASTER_EGG", HeadTexture.EASTER_EGG, "&rVelikonoční vajíčko", "&dVeselé Velikonoce! Otevři ho.", "", LoreBuilder.RIGHT_CLICK_TO_OPEN);
+            "EASTER_EGG",
+            HeadTexture.EASTER_EGG,
+            "&rVelikonoční vajíčko",
+            "&dVeselé Velikonoce! Otevři ho.",
+            "",
+            LoreBuilder.RIGHT_CLICK_TO_OPEN);
     public static final SlimefunItemStack EASTER_CARROT_PIE =
             new SlimefunItemStack("CARROT_PIE", Material.PUMPKIN_PIE, "&6Mrkvový koláč");
     public static final SlimefunItemStack EASTER_APPLE_PIE =
@@ -664,11 +738,29 @@ public final class SlimefunItems {
     public static final SlimefunItemStack GRANDPAS_WALKING_STICK =
             new SlimefunItemStack("GRANDPAS_WALKING_STICK", Material.STICK, "&7Dědečkova hůl");
     public static final SlimefunItemStack SWORD_OF_BEHEADING = new SlimefunItemStack(
-            "SWORD_OF_BEHEADING", Material.IRON_SWORD, "&6Meč stětí", "&7Stětí II", "", "&rMá šanci useknout hlavu", "&r(zvyšuje šanci na wither skeleton skull)");
+            "SWORD_OF_BEHEADING",
+            Material.IRON_SWORD,
+            "&6Meč stětí",
+            "&7Stětí II",
+            "",
+            "&rMá šanci useknout hlavu",
+            "&r(zvyšuje šanci na wither skeleton skull)");
     public static final SlimefunItemStack BLADE_OF_VAMPIRES = new SlimefunItemStack(
-            "BLADE_OF_VAMPIRES", Material.GOLDEN_SWORD, "&cUpíří čepel", "&7Životní krádež I", "", "&r45% šance při útoku", "obnovit 2 HP");
+            "BLADE_OF_VAMPIRES",
+            Material.GOLDEN_SWORD,
+            "&cUpíří čepel",
+            "&7Životní krádež I",
+            "",
+            "&r45% šance při útoku",
+            "obnovit 2 HP");
     public static final SlimefunItemStack SEISMIC_AXE = new SlimefunItemStack(
-            "SEISMIC_AXE", Material.IRON_AXE, "&aSeizmická sekera", "", "&7&oZpůsobí zemětřesení...", "", LoreBuilder.RIGHT_CLICK_TO_USE);
+            "SEISMIC_AXE",
+            Material.IRON_AXE,
+            "&aSeizmická sekera",
+            "",
+            "&7&oZpůsobí zemětřesení...",
+            "",
+            LoreBuilder.RIGHT_CLICK_TO_USE);
 
     static {
         GRANDMAS_WALKING_STICK.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
@@ -680,22 +772,33 @@ public final class SlimefunItems {
     }
 
     /*		Bows		*/
-    public static final SlimefunItemStack EXPLOSIVE_BOW =
-            new SlimefunItemStack("EXPLOSIVE_BOW", Material.BOW, "&cExplozivní luk", "&rŠípy z tohoto luku vyhodí cíl do vzduchu");
-    public static final SlimefunItemStack ICY_BOW =
-            new SlimefunItemStack("ICY_BOW", Material.BOW, "&bLedový luk", "&rŠípy z tohoto luku", "&rzpůsobí zmrazení (2 sekundy)");
+    public static final SlimefunItemStack EXPLOSIVE_BOW = new SlimefunItemStack(
+            "EXPLOSIVE_BOW", Material.BOW, "&cExplozivní luk", "&rŠípy z tohoto luku vyhodí cíl do vzduchu");
+    public static final SlimefunItemStack ICY_BOW = new SlimefunItemStack(
+            "ICY_BOW", Material.BOW, "&bLedový luk", "&rŠípy z tohoto luku", "&rzpůsobí zmrazení (2 sekundy)");
 
     /*		 Tools		*/
-    public static final SlimefunItemStack SMELTERS_PICKAXE =
-            new SlimefunItemStack("SMELTERS_PICKAXE", Material.DIAMOND_PICKAXE, "&6Tavičský krumpáč", "&c&lAutomatické tavení", "", "&9Při těžbě má efekt štěstí");
-    public static final SlimefunItemStack LUMBER_AXE =
-            new SlimefunItemStack("LUMBER_AXE", Material.DIAMOND_AXE, "&6Dřevorubecká sekera", "&a&oKácí celé stromy...");
-    public static final SlimefunItemStack PICKAXE_OF_CONTAINMENT =
-            new SlimefunItemStack("PICKAXE_OF_CONTAINMENT", Material.IRON_PICKAXE, "&cKrumpáč na spawners", "", "&9Může získat spawner");
+    public static final SlimefunItemStack SMELTERS_PICKAXE = new SlimefunItemStack(
+            "SMELTERS_PICKAXE",
+            Material.DIAMOND_PICKAXE,
+            "&6Tavičský krumpáč",
+            "&c&lAutomatické tavení",
+            "",
+            "&9Při těžbě má efekt štěstí");
+    public static final SlimefunItemStack LUMBER_AXE = new SlimefunItemStack(
+            "LUMBER_AXE", Material.DIAMOND_AXE, "&6Dřevorubecká sekera", "&a&oKácí celé stromy...");
+    public static final SlimefunItemStack PICKAXE_OF_CONTAINMENT = new SlimefunItemStack(
+            "PICKAXE_OF_CONTAINMENT", Material.IRON_PICKAXE, "&cKrumpáč na spawners", "", "&9Může získat spawner");
     public static final SlimefunItemStack EXPLOSIVE_PICKAXE = new SlimefunItemStack(
-            "EXPLOSIVE_PICKAXE", Material.DIAMOND_PICKAXE, "&eExplozivní krumpáč", "", "&rRychlá těžba pomocí explozí", "", "&9Podporuje štěstí");
-    public static final SlimefunItemStack EXPLOSIVE_SHOVEL =
-            new SlimefunItemStack("EXPLOSIVE_SHOVEL", Material.DIAMOND_SHOVEL, "&eExplozivní lopata", "", "&rNajednou vykope mnoho bloků");
+            "EXPLOSIVE_PICKAXE",
+            Material.DIAMOND_PICKAXE,
+            "&eExplozivní krumpáč",
+            "",
+            "&rRychlá těžba pomocí explozí",
+            "",
+            "&9Podporuje štěstí");
+    public static final SlimefunItemStack EXPLOSIVE_SHOVEL = new SlimefunItemStack(
+            "EXPLOSIVE_SHOVEL", Material.DIAMOND_SHOVEL, "&eExplozivní lopata", "", "&rNajednou vykope mnoho bloků");
     public static final SlimefunItemStack PICKAXE_OF_THE_SEEKER = new SlimefunItemStack(
             "PICKAXE_OF_THE_SEEKER",
             Material.DIAMOND_PICKAXE,
@@ -707,9 +810,20 @@ public final class SlimefunItems {
     public static final SlimefunItemStack COBALT_PICKAXE =
             new SlimefunItemStack("COBALT_PICKAXE", Material.IRON_PICKAXE, "&9Kobaltový krumpáč");
     public static final SlimefunItemStack PICKAXE_OF_VEIN_MINING = new SlimefunItemStack(
-            "PICKAXE_OF_VEIN_MINING", Material.DIAMOND_PICKAXE, "&eŽilní krumpáč", "", "&rTento krumpáč vytěží", "&rcelou žílu...");
+            "PICKAXE_OF_VEIN_MINING",
+            Material.DIAMOND_PICKAXE,
+            "&eŽilní krumpáč",
+            "",
+            "&rTento krumpáč vytěží",
+            "&rcelou žílu...");
     public static final SlimefunItemStack CLIMBING_PICK = new SlimefunItemStack(
-            "CLIMBING_PICK", Material.IRON_PICKAXE, "&bLezecký krumpáč", "", "&fUmožňuje ti lézt po stěnách", "&fpo pravém kliknutí.", "&fEfekt efektivity zvyšuje rychlost");
+            "CLIMBING_PICK",
+            Material.IRON_PICKAXE,
+            "&bLezecký krumpáč",
+            "",
+            "&fUmožňuje ti lézt po stěnách",
+            "&fpo pravém kliknutí.",
+            "&fEfekt efektivity zvyšuje rychlost");
 
     static {
         COBALT_PICKAXE.addUnsafeEnchantment(VersionedEnchantment.UNBREAKING, 10);
@@ -718,7 +832,14 @@ public final class SlimefunItems {
 
     /*		 Armor 		*/
     public static final SlimefunItemStack GLOWSTONE_HELMET = new SlimefunItemStack(
-            "GLOWSTONE_HELMET", Material.LEATHER_HELMET, Color.YELLOW, "&e&lHelma z glowstone", "", "&a&oSvítí jako slunce!", "", "&9+ Noční vidění");
+            "GLOWSTONE_HELMET",
+            Material.LEATHER_HELMET,
+            Color.YELLOW,
+            "&e&lHelma z glowstone",
+            "",
+            "&a&oSvítí jako slunce!",
+            "",
+            "&9+ Noční vidění");
     public static final SlimefunItemStack GLOWSTONE_CHESTPLATE = new SlimefunItemStack(
             "GLOWSTONE_CHESTPLATE",
             Material.LEATHER_CHESTPLATE,
@@ -738,23 +859,60 @@ public final class SlimefunItems {
             "",
             "&9+ Noční vidění");
     public static final SlimefunItemStack GLOWSTONE_BOOTS = new SlimefunItemStack(
-            "GLOWSTONE_BOOTS", Material.LEATHER_BOOTS, Color.YELLOW, "&e&lBoty z glowstone", "", "&a&oSvítí jako slunce!", "", "&9+ Noční vidění");
-    public static final SlimefunItemStack RAINBOW_LEATHER =
-            new SlimefunItemStack("RAINBOW_LEATHER", Material.RABBIT_HIDE, Color.FUCHSIA, "&dDuhová kůže", "", "&fPoužívá se k výrobě duhové výbavy");
+            "GLOWSTONE_BOOTS",
+            Material.LEATHER_BOOTS,
+            Color.YELLOW,
+            "&e&lBoty z glowstone",
+            "",
+            "&a&oSvítí jako slunce!",
+            "",
+            "&9+ Noční vidění");
+    public static final SlimefunItemStack RAINBOW_LEATHER = new SlimefunItemStack(
+            "RAINBOW_LEATHER",
+            Material.RABBIT_HIDE,
+            Color.FUCHSIA,
+            "&dDuhová kůže",
+            "",
+            "&fPoužívá se k výrobě duhové výbavy");
     public static final SlimefunItemStack RAINBOW_HELMET = new SlimefunItemStack(
             "RAINBOW_HELMET", Material.LEATHER_HELMET, Color.FUCHSIA, "&d&lDuhová helma", "", LoreBuilder.RAINBOW);
     public static final SlimefunItemStack RAINBOW_CHESTPLATE = new SlimefunItemStack(
-            "RAINBOW_CHESTPLATE", Material.LEATHER_CHESTPLATE, Color.FUCHSIA, "&d&lDuhový hrudní plát", "", LoreBuilder.RAINBOW);
+            "RAINBOW_CHESTPLATE",
+            Material.LEATHER_CHESTPLATE,
+            Color.FUCHSIA,
+            "&d&lDuhový hrudní plát",
+            "",
+            LoreBuilder.RAINBOW);
     public static final SlimefunItemStack RAINBOW_LEGGINGS = new SlimefunItemStack(
-            "RAINBOW_LEGGINGS", Material.LEATHER_LEGGINGS, Color.FUCHSIA, "&d&lDuhové kalhoty", "", LoreBuilder.RAINBOW);
+            "RAINBOW_LEGGINGS",
+            Material.LEATHER_LEGGINGS,
+            Color.FUCHSIA,
+            "&d&lDuhové kalhoty",
+            "",
+            LoreBuilder.RAINBOW);
     public static final SlimefunItemStack RAINBOW_BOOTS = new SlimefunItemStack(
             "RAINBOW_BOOTS", Material.LEATHER_BOOTS, Color.FUCHSIA, "&d&lDuhové boty", "", LoreBuilder.RAINBOW);
     public static final SlimefunItemStack ENDER_HELMET = new SlimefunItemStack(
-            "ENDER_HELMET", Material.LEATHER_HELMET, Color.fromRGB(28, 25, 112), "&5&lEnder helma", "", "&a&oVolný pohyb");
+            "ENDER_HELMET",
+            Material.LEATHER_HELMET,
+            Color.fromRGB(28, 25, 112),
+            "&5&lEnder helma",
+            "",
+            "&a&oVolný pohyb");
     public static final SlimefunItemStack ENDER_CHESTPLATE = new SlimefunItemStack(
-            "ENDER_CHESTPLATE", Material.LEATHER_CHESTPLATE, Color.fromRGB(28, 25, 112), "&5&lEnder hrudní plát", "", "&a&oVolný pohyb");
+            "ENDER_CHESTPLATE",
+            Material.LEATHER_CHESTPLATE,
+            Color.fromRGB(28, 25, 112),
+            "&5&lEnder hrudní plát",
+            "",
+            "&a&oVolný pohyb");
     public static final SlimefunItemStack ENDER_LEGGINGS = new SlimefunItemStack(
-            "ENDER_LEGGINGS", Material.LEATHER_LEGGINGS, Color.fromRGB(28, 25, 112), "&5&lEnder kalhoty", "", "&a&oVolný pohyb");
+            "ENDER_LEGGINGS",
+            Material.LEATHER_LEGGINGS,
+            Color.fromRGB(28, 25, 112),
+            "&5&lEnder kalhoty",
+            "",
+            "&a&oVolný pohyb");
     public static final SlimefunItemStack ENDER_BOOTS = new SlimefunItemStack(
             "ENDER_BOOTS",
             Material.LEATHER_BOOTS,
@@ -765,12 +923,24 @@ public final class SlimefunItems {
             "",
             "&9+ Bez poškození při použití ender perly");
 
-    public static final SlimefunItemStack SLIME_HELMET =
-            new SlimefunItemStack("SLIME_HELMET", Material.LEATHER_HELMET, Color.LIME, "&a&lSlizová helma", "", "&a&oPružný pocit");
+    public static final SlimefunItemStack SLIME_HELMET = new SlimefunItemStack(
+            "SLIME_HELMET", Material.LEATHER_HELMET, Color.LIME, "&a&lSlizová helma", "", "&a&oPružný pocit");
     public static final SlimefunItemStack SLIME_CHESTPLATE = new SlimefunItemStack(
-            "SLIME_CHESTPLATE", Material.LEATHER_CHESTPLATE, Color.LIME, "&a&lSlizový hrudní plát", "", "&a&oPružný pocit");
+            "SLIME_CHESTPLATE",
+            Material.LEATHER_CHESTPLATE,
+            Color.LIME,
+            "&a&lSlizový hrudní plát",
+            "",
+            "&a&oPružný pocit");
     public static final SlimefunItemStack SLIME_LEGGINGS = new SlimefunItemStack(
-            "SLIME_LEGGINGS", Material.LEATHER_LEGGINGS, Color.LIME, "&a&lSlizové kalhoty", "", "&a&oPružný pocit", "", "&9+ Rychlost");
+            "SLIME_LEGGINGS",
+            Material.LEATHER_LEGGINGS,
+            Color.LIME,
+            "&a&lSlizové kalhoty",
+            "",
+            "&a&oPružný pocit",
+            "",
+            "&9+ Rychlost");
     public static final SlimefunItemStack SLIME_BOOTS = new SlimefunItemStack(
             "SLIME_BOOTS",
             Material.LEATHER_BOOTS,
@@ -784,8 +954,8 @@ public final class SlimefunItems {
 
     public static final SlimefunItemStack CACTUS_HELMET =
             new SlimefunItemStack("CACTUS_HELMET", Material.LEATHER_HELMET, Color.GREEN, "&2Kaktusová helma");
-    public static final SlimefunItemStack CACTUS_CHESTPLATE =
-            new SlimefunItemStack("CACTUS_CHESTPLATE", Material.LEATHER_CHESTPLATE, Color.GREEN, "&2Kaktusový hrudní plát");
+    public static final SlimefunItemStack CACTUS_CHESTPLATE = new SlimefunItemStack(
+            "CACTUS_CHESTPLATE", Material.LEATHER_CHESTPLATE, Color.GREEN, "&2Kaktusový hrudní plát");
     public static final SlimefunItemStack CACTUS_LEGGINGS =
             new SlimefunItemStack("CACTUS_LEGGINGS", Material.LEATHER_LEGGINGS, Color.GREEN, "&2Kaktusové kalhoty");
     public static final SlimefunItemStack CACTUS_BOOTS =
@@ -793,8 +963,8 @@ public final class SlimefunItems {
 
     public static final SlimefunItemStack DAMASCUS_STEEL_HELMET =
             new SlimefunItemStack("DAMASCUS_STEEL_HELMET", Material.IRON_HELMET, "&7Damascénská ocelová helma");
-    public static final SlimefunItemStack DAMASCUS_STEEL_CHESTPLATE =
-            new SlimefunItemStack("DAMASCUS_STEEL_CHESTPLATE", Material.IRON_CHESTPLATE, "&7Damascénský ocelový hrudní plát");
+    public static final SlimefunItemStack DAMASCUS_STEEL_CHESTPLATE = new SlimefunItemStack(
+            "DAMASCUS_STEEL_CHESTPLATE", Material.IRON_CHESTPLATE, "&7Damascénský ocelový hrudní plát");
     public static final SlimefunItemStack DAMASCUS_STEEL_LEGGINGS =
             new SlimefunItemStack("DAMASCUS_STEEL_LEGGINGS", Material.IRON_LEGGINGS, "&7Damascénské ocelové kalhoty");
     public static final SlimefunItemStack DAMASCUS_STEEL_BOOTS =
@@ -802,8 +972,8 @@ public final class SlimefunItems {
 
     public static final SlimefunItemStack REINFORCED_ALLOY_HELMET =
             new SlimefunItemStack("REINFORCED_ALLOY_HELMET", Material.IRON_HELMET, "&bVyztužená slitinová helma");
-    public static final SlimefunItemStack REINFORCED_ALLOY_CHESTPLATE =
-            new SlimefunItemStack("REINFORCED_ALLOY_CHESTPLATE", Material.IRON_CHESTPLATE, "&bVyztužený slitinový hrudní plát");
+    public static final SlimefunItemStack REINFORCED_ALLOY_CHESTPLATE = new SlimefunItemStack(
+            "REINFORCED_ALLOY_CHESTPLATE", Material.IRON_CHESTPLATE, "&bVyztužený slitinový hrudní plát");
     public static final SlimefunItemStack REINFORCED_ALLOY_LEGGINGS =
             new SlimefunItemStack("REINFORCED_ALLOY_LEGGINGS", Material.IRON_LEGGINGS, "&bVyztužené slitinové kalhoty");
     public static final SlimefunItemStack REINFORCED_ALLOY_BOOTS =
@@ -818,12 +988,26 @@ public final class SlimefunItems {
         hazmatLore.add(ChatColor.YELLOW + "- Imunita vůči včelám");
     }
 
-    public static final SlimefunItemStack SCUBA_HELMET =
-            new SlimefunItemStack("SCUBA_HELMET", Material.LEATHER_HELMET, Color.ORANGE, "&cPotápěčská helma", "", "&7Umožňuje dýchat pod vodou");
+    public static final SlimefunItemStack SCUBA_HELMET = new SlimefunItemStack(
+            "SCUBA_HELMET",
+            Material.LEATHER_HELMET,
+            Color.ORANGE,
+            "&cPotápěčská helma",
+            "",
+            "&7Umožňuje dýchat pod vodou");
     public static final SlimefunItemStack HAZMAT_CHESTPLATE = new SlimefunItemStack(
-            "HAZMAT_CHESTPLATE", Material.LEATHER_CHESTPLATE, Color.ORANGE, "&cOchranný oblek", "", "&7Umožňuje chodit v ohni a lávě");
+            "HAZMAT_CHESTPLATE",
+            Material.LEATHER_CHESTPLATE,
+            Color.ORANGE,
+            "&cOchranný oblek",
+            "",
+            "&7Umožňuje chodit v ohni a lávě");
     public static final SlimefunItemStack HAZMAT_LEGGINGS = new SlimefunItemStack(
-            "HAZMAT_LEGGINGS", Material.LEATHER_LEGGINGS, Color.ORANGE, "&cOchranné kalhoty", hazmatLore.toArray(new String[0]));
+            "HAZMAT_LEGGINGS",
+            Material.LEATHER_LEGGINGS,
+            Color.ORANGE,
+            "&cOchranné kalhoty",
+            hazmatLore.toArray(new String[0]));
     public static final SlimefunItemStack HAZMAT_BOOTS = new SlimefunItemStack(
             "RUBBER_BOOTS", Material.LEATHER_BOOTS, Color.BLACK, "&cOchranné boty", hazmatLore.toArray(new String[0]));
 
@@ -843,8 +1027,8 @@ public final class SlimefunItems {
 
     public static final SlimefunItemStack GILDED_IRON_HELMET =
             new SlimefunItemStack("GILDED_IRON_HELMET", Material.GOLDEN_HELMET, "&6Pozlacená železná helma");
-    public static final SlimefunItemStack GILDED_IRON_CHESTPLATE =
-            new SlimefunItemStack("GILDED_IRON_CHESTPLATE", Material.GOLDEN_CHESTPLATE, "&6Pozlacený železný hrudní plát");
+    public static final SlimefunItemStack GILDED_IRON_CHESTPLATE = new SlimefunItemStack(
+            "GILDED_IRON_CHESTPLATE", Material.GOLDEN_CHESTPLATE, "&6Pozlacený železný hrudní plát");
     public static final SlimefunItemStack GILDED_IRON_LEGGINGS =
             new SlimefunItemStack("GILDED_IRON_LEGGINGS", Material.GOLDEN_LEGGINGS, "&6Pozlacené železné kalhoty");
     public static final SlimefunItemStack GILDED_IRON_BOOTS =
@@ -852,19 +1036,31 @@ public final class SlimefunItems {
 
     public static final SlimefunItemStack GOLDEN_HELMET_12K =
             new SlimefunItemStack("GOLD_12K_HELMET", Material.GOLDEN_HELMET, "&6Zlatá helma", "&912 karátů");
-    public static final SlimefunItemStack GOLDEN_CHESTPLATE_12K =
-            new SlimefunItemStack("GOLD_12K_CHESTPLATE", Material.GOLDEN_CHESTPLATE, "&6Zlatý hrudní plát", "&912 karátů");
+    public static final SlimefunItemStack GOLDEN_CHESTPLATE_12K = new SlimefunItemStack(
+            "GOLD_12K_CHESTPLATE", Material.GOLDEN_CHESTPLATE, "&6Zlatý hrudní plát", "&912 karátů");
     public static final SlimefunItemStack GOLDEN_LEGGINGS_12K =
             new SlimefunItemStack("GOLD_12K_LEGGINGS", Material.GOLDEN_LEGGINGS, "&6Zlaté kalhoty", "&912 karátů");
     public static final SlimefunItemStack GOLDEN_BOOTS_12K =
             new SlimefunItemStack("GOLD_12K_BOOTS", Material.GOLDEN_BOOTS, "&6Zlaté boty", "&912 karátů");
 
-    public static final SlimefunItemStack SLIME_HELMET_STEEL =
-            new SlimefunItemStack("SLIME_STEEL_HELMET", Material.IRON_HELMET, "&a&lSlizová helma", "&7&oVyztužená", "", "&a&oPružný pocit");
+    public static final SlimefunItemStack SLIME_HELMET_STEEL = new SlimefunItemStack(
+            "SLIME_STEEL_HELMET", Material.IRON_HELMET, "&a&lSlizová helma", "&7&oVyztužená", "", "&a&oPružný pocit");
     public static final SlimefunItemStack SLIME_CHESTPLATE_STEEL = new SlimefunItemStack(
-            "SLIME_STEEL_CHESTPLATE", Material.IRON_CHESTPLATE, "&a&lSlizový hrudní plát", "&7&oVyztužený", "", "&a&oPružný pocit");
+            "SLIME_STEEL_CHESTPLATE",
+            Material.IRON_CHESTPLATE,
+            "&a&lSlizový hrudní plát",
+            "&7&oVyztužený",
+            "",
+            "&a&oPružný pocit");
     public static final SlimefunItemStack SLIME_LEGGINGS_STEEL = new SlimefunItemStack(
-            "SLIME_STEEL_LEGGINGS", Material.IRON_LEGGINGS, "&a&lSlizové kalhoty", "&7&oVyztužené", "", "&a&oPružný pocit", "", "&9+ Rychlost");
+            "SLIME_STEEL_LEGGINGS",
+            Material.IRON_LEGGINGS,
+            "&a&lSlizové kalhoty",
+            "&7&oVyztužené",
+            "",
+            "&a&oPružný pocit",
+            "",
+            "&9+ Rychlost");
     public static final SlimefunItemStack SLIME_BOOTS_STEEL = new SlimefunItemStack(
             "SLIME_STEEL_BOOTS",
             Material.IRON_BOOTS,
@@ -890,7 +1086,15 @@ public final class SlimefunItems {
     public static final SlimefunItemStack BEE_HELMET =
             new SlimefunItemStack("BEE_HELMET", Material.GOLDEN_HELMET, "&e&lVčelí helma", " ", "&fBzzz");
     public static final SlimefunItemStack BEE_WINGS = new SlimefunItemStack(
-            "BEE_WINGS", Material.ELYTRA, "&e&lVčelí křídla", " ", "&fBzzz", " ", "&9Při přiblížení k zemi", "&9aktivuje pomalý pád", " ");
+            "BEE_WINGS",
+            Material.ELYTRA,
+            "&e&lVčelí křídla",
+            " ",
+            "&fBzzz",
+            " ",
+            "&9Při přiblížení k zemi",
+            "&9aktivuje pomalý pád",
+            " ");
     public static final SlimefunItemStack BEE_LEGGINGS =
             new SlimefunItemStack("BEE_LEGGINGS", Material.GOLDEN_LEGGINGS, "&e&lVčelí kalhoty", " ", "&fBzzz");
     public static final SlimefunItemStack BEE_BOOTS = new SlimefunItemStack(
@@ -966,30 +1170,37 @@ public final class SlimefunItems {
     }
 
     /*		 Misc 		*/
-    public static final SlimefunItemStack MAGIC_LUMP_1 =
-            new SlimefunItemStack("MAGIC_LUMP_1", Material.GOLD_NUGGET, "&6Magická hrudka &7- &eI", "", "&c&oÚroveň: I");
-    public static final SlimefunItemStack MAGIC_LUMP_2 =
-            new SlimefunItemStack("MAGIC_LUMP_2", Material.GOLD_NUGGET, "&6Magická hrudka &7- &eII", "", "&c&oÚroveň: II");
-    public static final SlimefunItemStack MAGIC_LUMP_3 =
-            new SlimefunItemStack("MAGIC_LUMP_3", Material.GOLD_NUGGET, "&6Magická hrudka &7- &eIII", "", "&c&oÚroveň: III");
+    public static final SlimefunItemStack MAGIC_LUMP_1 = new SlimefunItemStack(
+            "MAGIC_LUMP_1", Material.GOLD_NUGGET, "&6Magická hrudka &7- &eI", "", "&c&oÚroveň: I");
+    public static final SlimefunItemStack MAGIC_LUMP_2 = new SlimefunItemStack(
+            "MAGIC_LUMP_2", Material.GOLD_NUGGET, "&6Magická hrudka &7- &eII", "", "&c&oÚroveň: II");
+    public static final SlimefunItemStack MAGIC_LUMP_3 = new SlimefunItemStack(
+            "MAGIC_LUMP_3", Material.GOLD_NUGGET, "&6Magická hrudka &7- &eIII", "", "&c&oÚroveň: III");
     public static final SlimefunItemStack ENDER_LUMP_1 =
             new SlimefunItemStack("ENDER_LUMP_1", Material.GOLD_NUGGET, "&5Ender hrudka &7- &eI", "", "&c&oÚroveň: I");
-    public static final SlimefunItemStack ENDER_LUMP_2 =
-            new SlimefunItemStack("ENDER_LUMP_2", Material.GOLD_NUGGET, "&5Ender hrudka &7- &eII", "", "&c&oÚroveň: II");
-    public static final SlimefunItemStack ENDER_LUMP_3 =
-            new SlimefunItemStack("ENDER_LUMP_3", Material.GOLD_NUGGET, "&5Ender hrudka &7- &eIII", "", "&c&oÚroveň: III");
-    public static final SlimefunItemStack MAGICAL_BOOK_COVER =
-            new SlimefunItemStack("MAGICAL_BOOK_COVER", Material.PAPER, "&6Magický obal na knihu", "", "&a&oPoužívá se pro magické knihy");
-    public static final SlimefunItemStack MAGICAL_GLASS =
-            new SlimefunItemStack("MAGICAL_GLASS", Material.GLASS_PANE, "&6Magické sklo", "", "&a&oPoužíváno mnoha magickými předměty");
+    public static final SlimefunItemStack ENDER_LUMP_2 = new SlimefunItemStack(
+            "ENDER_LUMP_2", Material.GOLD_NUGGET, "&5Ender hrudka &7- &eII", "", "&c&oÚroveň: II");
+    public static final SlimefunItemStack ENDER_LUMP_3 = new SlimefunItemStack(
+            "ENDER_LUMP_3", Material.GOLD_NUGGET, "&5Ender hrudka &7- &eIII", "", "&c&oÚroveň: III");
+    public static final SlimefunItemStack MAGICAL_BOOK_COVER = new SlimefunItemStack(
+            "MAGICAL_BOOK_COVER", Material.PAPER, "&6Magický obal na knihu", "", "&a&oPoužívá se pro magické knihy");
+    public static final SlimefunItemStack MAGICAL_GLASS = new SlimefunItemStack(
+            "MAGICAL_GLASS", Material.GLASS_PANE, "&6Magické sklo", "", "&a&oPoužíváno mnoha magickými předměty");
     public static final SlimefunItemStack SYNTHETIC_SHULKER_SHELL = new SlimefunItemStack(
-            "SYNTHETIC_SHULKER_SHELL", Material.SHULKER_SHELL, "&dUmělá schránka shulkera", "", "&fLze použít v crafting table", "&fjako normální schránka");
+            "SYNTHETIC_SHULKER_SHELL",
+            Material.SHULKER_SHELL,
+            "&dUmělá schránka shulkera",
+            "",
+            "&fLze použít v crafting table",
+            "&fjako normální schránka");
     public static final SlimefunItemStack BASIC_CIRCUIT_BOARD =
             new SlimefunItemStack("BASIC_CIRCUIT_BOARD", Material.ACTIVATOR_RAIL, "&bZákladní obvodová deska");
     public static final SlimefunItemStack ADVANCED_CIRCUIT_BOARD =
             new SlimefunItemStack("ADVANCED_CIRCUIT_BOARD", Material.POWERED_RAIL, "&bPokročilá obvodová deska");
-    public static final SlimefunItemStack WHEAT_FLOUR = new SlimefunItemStack("WHEAT_FLOUR", Material.SUGAR, "&rPšeničná mouka");
-    public static final SlimefunItemStack STEEL_PLATE = new SlimefunItemStack("STEEL_PLATE", Material.PAPER, "&7&lOcelový plát");
+    public static final SlimefunItemStack WHEAT_FLOUR =
+            new SlimefunItemStack("WHEAT_FLOUR", Material.SUGAR, "&rPšeničná mouka");
+    public static final SlimefunItemStack STEEL_PLATE =
+            new SlimefunItemStack("STEEL_PLATE", Material.PAPER, "&7&lOcelový plát");
     public static final SlimefunItemStack BATTERY = new SlimefunItemStack("BATTERY", HeadTexture.BATTERY, "&6Baterie");
     public static final SlimefunItemStack CARBON = new SlimefunItemStack("CARBON", HeadTexture.CARBON, "&eUhlík");
     public static final SlimefunItemStack COMPRESSED_CARBON =
@@ -1002,7 +1213,8 @@ public final class SlimefunItems {
             new SlimefunItemStack("POWER_CRYSTAL", HeadTexture.POWER_CRYSTAL, "&c&lEnergetický krystal");
     public static final SlimefunItemStack CHAIN = new SlimefunItemStack("CHAIN", Material.STRING, "&bŘetěz");
     public static final SlimefunItemStack HOOK = new SlimefunItemStack("HOOK", Material.FLINT, "&bHák");
-    public static final SlimefunItemStack SIFTED_ORE = new SlimefunItemStack("SIFTED_ORE", Material.GUNPOWDER, "&6Prosátá ruda");
+    public static final SlimefunItemStack SIFTED_ORE =
+            new SlimefunItemStack("SIFTED_ORE", Material.GUNPOWDER, "&6Prosátá ruda");
     public static final SlimefunItemStack STONE_CHUNK =
             new SlimefunItemStack("STONE_CHUNK", HeadTexture.STONE_CHUNK, "&6Kamenný úlomek");
     public static final SlimefunItemStack LAVA_CRYSTAL =
@@ -1010,8 +1222,13 @@ public final class SlimefunItems {
     public static final SlimefunItemStack SALT = new SlimefunItemStack("SALT", Material.SUGAR, "&rSůl");
     public static final SlimefunItemStack CHEESE = new SlimefunItemStack("CHEESE", HeadTexture.CHEESE, "&rSýr");
     public static final SlimefunItemStack BUTTER = new SlimefunItemStack("BUTTER", HeadTexture.BUTTER, "&rMáslo");
-    public static final SlimefunItemStack DUCT_TAPE =
-            new SlimefunItemStack("DUCT_TAPE", HeadTexture.DUCT_TAPE, "&8Duct tape", "", "&rLze použít v auto anvilu", "&rpro opravu předmětů");
+    public static final SlimefunItemStack DUCT_TAPE = new SlimefunItemStack(
+            "DUCT_TAPE",
+            HeadTexture.DUCT_TAPE,
+            "&8Duct tape",
+            "",
+            "&rLze použít v auto anvilu",
+            "&rpro opravu předmětů");
     public static final SlimefunItemStack HEAVY_CREAM =
             new SlimefunItemStack("HEAVY_CREAM", Material.SNOWBALL, "&rHustá smetana");
     public static final SlimefunItemStack CRUSHED_ORE =
@@ -1028,7 +1245,11 @@ public final class SlimefunItems {
             LoreBuilder.radioactive(Radioactivity.MODERATE),
             LoreBuilder.HAZMAT_SUIT_REQUIRED);
     public static final SlimefunItemStack TINY_URANIUM = new SlimefunItemStack(
-            "TINY_URANIUM", HeadTexture.URANIUM, "&cMalé množství uranu", "", LoreBuilder.radioactive(Radioactivity.LOW));
+            "TINY_URANIUM",
+            HeadTexture.URANIUM,
+            "&cMalé množství uranu",
+            "",
+            LoreBuilder.radioactive(Radioactivity.LOW));
 
     public static final SlimefunItemStack MAGNET = new SlimefunItemStack("MAGNET", HeadTexture.MAGNET, "&cMagnet");
     public static final SlimefunItemStack NECROTIC_SKULL =
@@ -1036,7 +1257,12 @@ public final class SlimefunItems {
     public static final SlimefunItemStack ESSENCE_OF_AFTERLIFE =
             new SlimefunItemStack("ESSENCE_OF_AFTERLIFE", Material.GUNPOWDER, "&4Esence posmrtného života");
     public static final SlimefunItemStack STRANGE_NETHER_GOO = new SlimefunItemStack(
-            "STRANGE_NETHER_GOO", Material.PURPLE_DYE, "&5Podivná netherová sliz", "", "&fPodivná hmota", "&fLze vyměnit s pigliny");
+            "STRANGE_NETHER_GOO",
+            Material.PURPLE_DYE,
+            "&5Podivná netherová sliz",
+            "",
+            "&fPodivná hmota",
+            "&fLze vyměnit s pigliny");
     public static final SlimefunItemStack ELECTRO_MAGNET =
             new SlimefunItemStack("ELECTRO_MAGNET", HeadTexture.MAGNET, "&cElektromagnet");
     public static final SlimefunItemStack HEATING_COIL =
@@ -1045,8 +1271,8 @@ public final class SlimefunItems {
             new SlimefunItemStack("COOLING_UNIT", HeadTexture.COOLING_UNIT, "&bChladící jednotka");
     public static final SlimefunItemStack ELECTRIC_MOTOR =
             new SlimefunItemStack("ELECTRIC_MOTOR", HeadTexture.MOTOR, "&cElektrický motor");
-    public static final SlimefunItemStack CARGO_MOTOR =
-            new SlimefunItemStack("CARGO_MOTOR", HeadTexture.CARGO_MOTOR, "&3Cargo motor", "", "&7Důležitá součást cargo sítě");
+    public static final SlimefunItemStack CARGO_MOTOR = new SlimefunItemStack(
+            "CARGO_MOTOR", HeadTexture.CARGO_MOTOR, "&3Cargo motor", "", "&7Důležitá součást cargo sítě");
     public static final SlimefunItemStack SCROLL_OF_DIMENSIONAL_TELEPOSITION = new SlimefunItemStack(
             "SCROLL_OF_DIMENSIONAL_TELEPOSITION",
             Material.PAPER,
@@ -1067,61 +1293,104 @@ public final class SlimefunItems {
             "&ePravý klik&7 pro svázání všech výzkumů",
             "",
             "&ePravý klik&7 pro získání výzkumů předchozího vlastníka");
-    public static final SlimefunItemStack HARDENED_GLASS =
-            new SlimefunItemStack("HARDENED_GLASS", Material.LIGHT_GRAY_STAINED_GLASS, "&7Tvrzené sklo", "", "&rOdolává explozím");
-    public static final SlimefunItemStack WITHER_PROOF_OBSIDIAN =
-            new SlimefunItemStack("WITHER_PROOF_OBSIDIAN", Material.OBSIDIAN, "&5Wither-proof obsidián", "", "&rOdolává explozím a", "&rútokům withera");
+    public static final SlimefunItemStack HARDENED_GLASS = new SlimefunItemStack(
+            "HARDENED_GLASS", Material.LIGHT_GRAY_STAINED_GLASS, "&7Tvrzené sklo", "", "&rOdolává explozím");
+    public static final SlimefunItemStack WITHER_PROOF_OBSIDIAN = new SlimefunItemStack(
+            "WITHER_PROOF_OBSIDIAN",
+            Material.OBSIDIAN,
+            "&5Wither-proof obsidián",
+            "",
+            "&rOdolává explozím a",
+            "&rútokům withera");
     public static final SlimefunItemStack WITHER_PROOF_GLASS = new SlimefunItemStack(
-            "WITHER_PROOF_GLASS", Material.PURPLE_STAINED_GLASS, "&5Wither-proof sklo", "", "&rOdolává explozím a", "&rútokům withera");
+            "WITHER_PROOF_GLASS",
+            Material.PURPLE_STAINED_GLASS,
+            "&5Wither-proof sklo",
+            "",
+            "&rOdolává explozím a",
+            "&rútokům withera");
     public static final SlimefunItemStack REINFORCED_PLATE =
             new SlimefunItemStack("REINFORCED_PLATE", Material.PAPER, "&7Vyztužený plát");
-    public static final SlimefunItemStack ANCIENT_PEDESTAL =
-            new SlimefunItemStack("ANCIENT_PEDESTAL", Material.DISPENSER, "&dStarověký podstavec", "", "&5Součást starověkého oltáře");
+    public static final SlimefunItemStack ANCIENT_PEDESTAL = new SlimefunItemStack(
+            "ANCIENT_PEDESTAL", Material.DISPENSER, "&dStarověký podstavec", "", "&5Součást starověkého oltáře");
     public static final SlimefunItemStack ANCIENT_ALTAR = new SlimefunItemStack(
-            "ANCIENT_ALTAR", Material.ENCHANTING_TABLE, "&dStarověký oltář", "", "&5Postav oltář ve světě", "&5a použij starověký rituál");
-    public static final SlimefunItemStack COPPER_WIRE =
-            new SlimefunItemStack("COPPER_WIRE", Material.STRING, "&6Měděný drát", "", "&6Důležitá součást elektroniky");
-    public static final SlimefunItemStack CRAFTING_MOTOR =
-            new SlimefunItemStack("CRAFTING_MOTOR", HeadTexture.CRAFTING_MOTOR, "&6Motor pro crafting", "", "&7Důležitá součást auto craftingu");
+            "ANCIENT_ALTAR",
+            Material.ENCHANTING_TABLE,
+            "&dStarověký oltář",
+            "",
+            "&5Postav oltář ve světě",
+            "&5a použij starověký rituál");
+    public static final SlimefunItemStack COPPER_WIRE = new SlimefunItemStack(
+            "COPPER_WIRE", Material.STRING, "&6Měděný drát", "", "&6Důležitá součást elektroniky");
+    public static final SlimefunItemStack CRAFTING_MOTOR = new SlimefunItemStack(
+            "CRAFTING_MOTOR",
+            HeadTexture.CRAFTING_MOTOR,
+            "&6Motor pro crafting",
+            "",
+            "&7Důležitá součást auto craftingu");
 
     public static final SlimefunItemStack RAINBOW_WOOL =
             new SlimefunItemStack("RAINBOW_WOOL", Material.WHITE_WOOL, "&5Duhová vlna", "", LoreBuilder.RAINBOW);
-    public static final SlimefunItemStack RAINBOW_GLASS =
-            new SlimefunItemStack("RAINBOW_GLASS", Material.WHITE_STAINED_GLASS, "&5Duhové sklo", "", LoreBuilder.RAINBOW);
-    public static final SlimefunItemStack RAINBOW_CLAY =
-            new SlimefunItemStack("RAINBOW_CLAY", Material.WHITE_TERRACOTTA, "&5Duhový terakotový blok", "", LoreBuilder.RAINBOW);
+    public static final SlimefunItemStack RAINBOW_GLASS = new SlimefunItemStack(
+            "RAINBOW_GLASS", Material.WHITE_STAINED_GLASS, "&5Duhové sklo", "", LoreBuilder.RAINBOW);
+    public static final SlimefunItemStack RAINBOW_CLAY = new SlimefunItemStack(
+            "RAINBOW_CLAY", Material.WHITE_TERRACOTTA, "&5Duhový terakotový blok", "", LoreBuilder.RAINBOW);
     public static final SlimefunItemStack RAINBOW_GLASS_PANE = new SlimefunItemStack(
-            "RAINBOW_GLASS_PANE", Material.WHITE_STAINED_GLASS_PANE, "&5Duhová skleněná tabule", "", LoreBuilder.RAINBOW);
-    public static final SlimefunItemStack RAINBOW_CONCRETE =
-            new SlimefunItemStack("RAINBOW_CONCRETE", Material.WHITE_CONCRETE, "&5Duhový beton", "", LoreBuilder.RAINBOW);
+            "RAINBOW_GLASS_PANE",
+            Material.WHITE_STAINED_GLASS_PANE,
+            "&5Duhová skleněná tabule",
+            "",
+            LoreBuilder.RAINBOW);
+    public static final SlimefunItemStack RAINBOW_CONCRETE = new SlimefunItemStack(
+            "RAINBOW_CONCRETE", Material.WHITE_CONCRETE, "&5Duhový beton", "", LoreBuilder.RAINBOW);
     public static final SlimefunItemStack RAINBOW_GLAZED_TERRACOTTA = new SlimefunItemStack(
-            "RAINBOW_GLAZED_TERRACOTTA", Material.WHITE_GLAZED_TERRACOTTA, "&5Duhová glazovaná terakota", "", LoreBuilder.RAINBOW);
+            "RAINBOW_GLAZED_TERRACOTTA",
+            Material.WHITE_GLAZED_TERRACOTTA,
+            "&5Duhová glazovaná terakota",
+            "",
+            LoreBuilder.RAINBOW);
 
     private static final String CHRISTMAS = ChatUtils.christmas("< Vánoční edice >");
 
     public static final SlimefunItemStack RAINBOW_WOOL_XMAS =
             new SlimefunItemStack("RAINBOW_WOOL_XMAS", Material.WHITE_WOOL, "&5Duhová vlna &7(Vánoční)", "", CHRISTMAS);
-    public static final SlimefunItemStack RAINBOW_GLASS_XMAS =
-            new SlimefunItemStack("RAINBOW_GLASS_XMAS", Material.WHITE_STAINED_GLASS, "&5Duhové sklo &7(Vánoční)", "", CHRISTMAS);
-    public static final SlimefunItemStack RAINBOW_CLAY_XMAS =
-            new SlimefunItemStack("RAINBOW_CLAY_XMAS", Material.WHITE_TERRACOTTA, "&5Duhový terakotový blok &7(Vánoční)", "", CHRISTMAS);
+    public static final SlimefunItemStack RAINBOW_GLASS_XMAS = new SlimefunItemStack(
+            "RAINBOW_GLASS_XMAS", Material.WHITE_STAINED_GLASS, "&5Duhové sklo &7(Vánoční)", "", CHRISTMAS);
+    public static final SlimefunItemStack RAINBOW_CLAY_XMAS = new SlimefunItemStack(
+            "RAINBOW_CLAY_XMAS", Material.WHITE_TERRACOTTA, "&5Duhový terakotový blok &7(Vánoční)", "", CHRISTMAS);
     public static final SlimefunItemStack RAINBOW_GLASS_PANE_XMAS = new SlimefunItemStack(
-            "RAINBOW_GLASS_PANE_XMAS", Material.WHITE_STAINED_GLASS_PANE, "&5Duhová skleněná tabule &7(Vánoční)", "", CHRISTMAS);
-    public static final SlimefunItemStack RAINBOW_CONCRETE_XMAS =
-            new SlimefunItemStack("RAINBOW_CONCRETE_XMAS", Material.WHITE_CONCRETE, "&5Duhový beton &7(Vánoční)", "", CHRISTMAS);
+            "RAINBOW_GLASS_PANE_XMAS",
+            Material.WHITE_STAINED_GLASS_PANE,
+            "&5Duhová skleněná tabule &7(Vánoční)",
+            "",
+            CHRISTMAS);
+    public static final SlimefunItemStack RAINBOW_CONCRETE_XMAS = new SlimefunItemStack(
+            "RAINBOW_CONCRETE_XMAS", Material.WHITE_CONCRETE, "&5Duhový beton &7(Vánoční)", "", CHRISTMAS);
     public static final SlimefunItemStack RAINBOW_GLAZED_TERRACOTTA_XMAS = new SlimefunItemStack(
-            "RAINBOW_GLAZED_TERRACOTTA_XMAS", Material.WHITE_GLAZED_TERRACOTTA, "&5Duhová glazovaná terakota &7(Vánoční)", "", CHRISTMAS);
+            "RAINBOW_GLAZED_TERRACOTTA_XMAS",
+            Material.WHITE_GLAZED_TERRACOTTA,
+            "&5Duhová glazovaná terakota &7(Vánoční)",
+            "",
+            CHRISTMAS);
 
     private static final String VALENTINES_DAY = "&d< Valentýnská edice >";
 
-    public static final SlimefunItemStack RAINBOW_WOOL_VALENTINE =
-            new SlimefunItemStack("RAINBOW_WOOL_VALENTINE", Material.PINK_WOOL, "&5Duhová vlna &7(Valentýn)", "", VALENTINES_DAY);
+    public static final SlimefunItemStack RAINBOW_WOOL_VALENTINE = new SlimefunItemStack(
+            "RAINBOW_WOOL_VALENTINE", Material.PINK_WOOL, "&5Duhová vlna &7(Valentýn)", "", VALENTINES_DAY);
     public static final SlimefunItemStack RAINBOW_GLASS_VALENTINE = new SlimefunItemStack(
             "RAINBOW_GLASS_VALENTINE", Material.PINK_STAINED_GLASS, "&5Duhové sklo &7(Valentýn)", "", VALENTINES_DAY);
     public static final SlimefunItemStack RAINBOW_CLAY_VALENTINE = new SlimefunItemStack(
-            "RAINBOW_CLAY_VALENTINE", Material.PINK_TERRACOTTA, "&5Duhový terakotový blok &7(Valentýn)", "", VALENTINES_DAY);
+            "RAINBOW_CLAY_VALENTINE",
+            Material.PINK_TERRACOTTA,
+            "&5Duhový terakotový blok &7(Valentýn)",
+            "",
+            VALENTINES_DAY);
     public static final SlimefunItemStack RAINBOW_GLASS_PANE_VALENTINE = new SlimefunItemStack(
-            "RAINBOW_GLASS_PANE_VALENTINE", Material.PINK_STAINED_GLASS_PANE, "&5Duhová skleněná tabule &7(Valentýn)", "", VALENTINES_DAY);
+            "RAINBOW_GLASS_PANE_VALENTINE",
+            Material.PINK_STAINED_GLASS_PANE,
+            "&5Duhová skleněná tabule &7(Valentýn)",
+            "",
+            VALENTINES_DAY);
     public static final SlimefunItemStack RAINBOW_CONCRETE_VALENTINE = new SlimefunItemStack(
             "RAINBOW_CONCRETE_VALENTINE", Material.PINK_CONCRETE, "&5Duhový beton &7(Valentýn)", "", VALENTINES_DAY);
     public static final SlimefunItemStack RAINBOW_GLAZED_TERRACOTTA_VALENTINE = new SlimefunItemStack(
@@ -1133,14 +1402,22 @@ public final class SlimefunItems {
 
     private static final String HALLOWEEN = "&6< Halloweenská edice >";
 
-    public static final SlimefunItemStack RAINBOW_WOOL_HALLOWEEN =
-            new SlimefunItemStack("RAINBOW_WOOL_HALLOWEEN", Material.ORANGE_WOOL, "&5Duhová vlna &7(Halloween)", "", HALLOWEEN);
+    public static final SlimefunItemStack RAINBOW_WOOL_HALLOWEEN = new SlimefunItemStack(
+            "RAINBOW_WOOL_HALLOWEEN", Material.ORANGE_WOOL, "&5Duhová vlna &7(Halloween)", "", HALLOWEEN);
     public static final SlimefunItemStack RAINBOW_GLASS_HALLOWEEN = new SlimefunItemStack(
             "RAINBOW_GLASS_HALLOWEEN", Material.ORANGE_STAINED_GLASS, "&5Duhové sklo &7(Halloween)", "", HALLOWEEN);
     public static final SlimefunItemStack RAINBOW_CLAY_HALLOWEEN = new SlimefunItemStack(
-            "RAINBOW_CLAY_HALLOWEEN", Material.ORANGE_TERRACOTTA, "&5Duhový terakotový blok &7(Halloween)", "", HALLOWEEN);
+            "RAINBOW_CLAY_HALLOWEEN",
+            Material.ORANGE_TERRACOTTA,
+            "&5Duhový terakotový blok &7(Halloween)",
+            "",
+            HALLOWEEN);
     public static final SlimefunItemStack RAINBOW_GLASS_PANE_HALLOWEEN = new SlimefunItemStack(
-            "RAINBOW_GLASS_PANE_HALLOWEEN", Material.ORANGE_STAINED_GLASS_PANE, "&5Duhová skleněná tabule &7(Halloween)", "", HALLOWEEN);
+            "RAINBOW_GLASS_PANE_HALLOWEEN",
+            Material.ORANGE_STAINED_GLASS_PANE,
+            "&5Duhová skleněná tabule &7(Halloween)",
+            "",
+            HALLOWEEN);
     public static final SlimefunItemStack RAINBOW_CONCRETE_HALLOWEEN = new SlimefunItemStack(
             "RAINBOW_CONCRETE_HALLOWEEN", Material.ORANGE_CONCRETE, "&5Duhový beton &7(Halloween)", "", HALLOWEEN);
     public static final SlimefunItemStack RAINBOW_GLAZED_TERRACOTTA_HALLOWEEN = new SlimefunItemStack(
@@ -1151,14 +1428,18 @@ public final class SlimefunItems {
             HALLOWEEN);
 
     /*		Ingots 		*/
-    public static final SlimefunItemStack COPPER_INGOT = new SlimefunItemStack("COPPER_INGOT", Material.BRICK, "&bMěděný ingot");
-    public static final SlimefunItemStack TIN_INGOT = new SlimefunItemStack("TIN_INGOT", Material.IRON_INGOT, "&bCínový ingot");
+    public static final SlimefunItemStack COPPER_INGOT =
+            new SlimefunItemStack("COPPER_INGOT", Material.BRICK, "&bMěděný ingot");
+    public static final SlimefunItemStack TIN_INGOT =
+            new SlimefunItemStack("TIN_INGOT", Material.IRON_INGOT, "&bCínový ingot");
     public static final SlimefunItemStack SILVER_INGOT =
             new SlimefunItemStack("SILVER_INGOT", Material.IRON_INGOT, "&bStříbrný ingot");
     public static final SlimefunItemStack ALUMINUM_INGOT =
             new SlimefunItemStack("ALUMINUM_INGOT", Material.IRON_INGOT, "&bHliníkový ingot");
-    public static final SlimefunItemStack LEAD_INGOT = new SlimefunItemStack("LEAD_INGOT", Material.IRON_INGOT, "&bOlovo ingot");
-    public static final SlimefunItemStack ZINC_INGOT = new SlimefunItemStack("ZINC_INGOT", Material.IRON_INGOT, "&bZinkový ingot");
+    public static final SlimefunItemStack LEAD_INGOT =
+            new SlimefunItemStack("LEAD_INGOT", Material.IRON_INGOT, "&bOlovo ingot");
+    public static final SlimefunItemStack ZINC_INGOT =
+            new SlimefunItemStack("ZINC_INGOT", Material.IRON_INGOT, "&bZinkový ingot");
     public static final SlimefunItemStack MAGNESIUM_INGOT =
             new SlimefunItemStack("MAGNESIUM_INGOT", Material.IRON_INGOT, "&bHořčíkový ingot");
 
@@ -1166,7 +1447,8 @@ public final class SlimefunItems {
     public static final SlimefunItemStack STEEL_INGOT =
             new SlimefunItemStack("STEEL_INGOT", Material.IRON_INGOT, "&bOcelový ingot");
     /*		Alloy (Copper + Tin)	*/
-    public static final SlimefunItemStack BRONZE_INGOT = new SlimefunItemStack("BRONZE_INGOT", Material.BRICK, "&bBronzový ingot");
+    public static final SlimefunItemStack BRONZE_INGOT =
+            new SlimefunItemStack("BRONZE_INGOT", Material.BRICK, "&bBronzový ingot");
     /*		Alloy (Copper + Aluminum)	*/
     public static final SlimefunItemStack DURALUMIN_INGOT =
             new SlimefunItemStack("DURALUMIN_INGOT", Material.IRON_INGOT, "&bDuraluminový ingot");
@@ -1238,31 +1520,38 @@ public final class SlimefunItems {
             new SlimefunItemStack("GOLD_24K", Material.GOLD_INGOT, "&rZlatý ingot &7(24 karátů)");
 
     /*		 Dusts 		*/
-    public static final SlimefunItemStack IRON_DUST = new SlimefunItemStack("IRON_DUST", Material.GUNPOWDER, "&6Železný prach");
+    public static final SlimefunItemStack IRON_DUST =
+            new SlimefunItemStack("IRON_DUST", Material.GUNPOWDER, "&6Železný prach");
     public static final SlimefunItemStack GOLD_DUST =
             new SlimefunItemStack("GOLD_DUST", Material.GLOWSTONE_DUST, "&6Zlatý prach");
-    public static final SlimefunItemStack TIN_DUST = new SlimefunItemStack("TIN_DUST", Material.SUGAR, "&6Cínový prach");
+    public static final SlimefunItemStack TIN_DUST =
+            new SlimefunItemStack("TIN_DUST", Material.SUGAR, "&6Cínový prach");
     public static final SlimefunItemStack COPPER_DUST =
             new SlimefunItemStack("COPPER_DUST", Material.GLOWSTONE_DUST, "&6Měděný prach");
-    public static final SlimefunItemStack SILVER_DUST = new SlimefunItemStack("SILVER_DUST", Material.SUGAR, "&6Stříbrný prach");
+    public static final SlimefunItemStack SILVER_DUST =
+            new SlimefunItemStack("SILVER_DUST", Material.SUGAR, "&6Stříbrný prach");
     public static final SlimefunItemStack ALUMINUM_DUST =
             new SlimefunItemStack("ALUMINUM_DUST", Material.SUGAR, "&6Hliníkový prach");
-    public static final SlimefunItemStack LEAD_DUST = new SlimefunItemStack("LEAD_DUST", Material.GUNPOWDER, "&6Olověný prach");
-    public static final SlimefunItemStack SULFATE = new SlimefunItemStack("SULFATE", Material.GLOWSTONE_DUST, "&6Síran");
-    public static final SlimefunItemStack ZINC_DUST = new SlimefunItemStack("ZINC_DUST", Material.SUGAR, "&6Zinkový prach");
+    public static final SlimefunItemStack LEAD_DUST =
+            new SlimefunItemStack("LEAD_DUST", Material.GUNPOWDER, "&6Olověný prach");
+    public static final SlimefunItemStack SULFATE =
+            new SlimefunItemStack("SULFATE", Material.GLOWSTONE_DUST, "&6Síran");
+    public static final SlimefunItemStack ZINC_DUST =
+            new SlimefunItemStack("ZINC_DUST", Material.SUGAR, "&6Zinkový prach");
     public static final SlimefunItemStack MAGNESIUM_DUST =
             new SlimefunItemStack("MAGNESIUM_DUST", Material.SUGAR, "&6Hořčíkový prach");
-    public static final SlimefunItemStack SILICON = new SlimefunItemStack("SILICON", Material.FIREWORK_STAR, "&6Křemík");
+    public static final SlimefunItemStack SILICON =
+            new SlimefunItemStack("SILICON", Material.FIREWORK_STAR, "&6Křemík");
     public static final SlimefunItemStack GOLD_24K_BLOCK =
             new SlimefunItemStack("GOLD_24K_BLOCK", Material.GOLD_BLOCK, "&r&rZlatý blok &7(24 karátů)");
 
     /*		 Gems 		*/
-    public static final SlimefunItemStack SYNTHETIC_DIAMOND =
-            new SlimefunItemStack("SYNTHETIC_DIAMOND", Material.DIAMOND, "&bUmělý diamant", "", "&rLze použít jako diamant v crafting table");
-    public static final SlimefunItemStack SYNTHETIC_EMERALD =
-            new SlimefunItemStack("SYNTHETIC_EMERALD", Material.EMERALD, "&bUmělý smaragd", "", "&rLze použít k obchodování s vesničany");
-    public static final SlimefunItemStack SYNTHETIC_SAPPHIRE =
-            new SlimefunItemStack("SYNTHETIC_SAPPHIRE", HeadTexture.SAPPHIRE, "&bUmělý safír", "", "&rLze použít jako lapis lazuli");
+    public static final SlimefunItemStack SYNTHETIC_DIAMOND = new SlimefunItemStack(
+            "SYNTHETIC_DIAMOND", Material.DIAMOND, "&bUmělý diamant", "", "&rLze použít jako diamant v crafting table");
+    public static final SlimefunItemStack SYNTHETIC_EMERALD = new SlimefunItemStack(
+            "SYNTHETIC_EMERALD", Material.EMERALD, "&bUmělý smaragd", "", "&rLze použít k obchodování s vesničany");
+    public static final SlimefunItemStack SYNTHETIC_SAPPHIRE = new SlimefunItemStack(
+            "SYNTHETIC_SAPPHIRE", HeadTexture.SAPPHIRE, "&bUmělý safír", "", "&rLze použít jako lapis lazuli");
     public static final SlimefunItemStack CARBONADO =
             new SlimefunItemStack("CARBONADO", HeadTexture.CARBONADO, "&b&lCarbonado", "", "&7&o\"Černý diamant\"");
     public static final SlimefunItemStack RAW_CARBONADO =
@@ -1316,11 +1605,29 @@ public final class SlimefunItems {
             "&4Kvůli složitosti velmi silných nástrojů",
             "&4tento talisman nemůže opravit příliš silné nástroje");
     public static final SlimefunItemStack TALISMAN_MINER = new SlimefunItemStack(
-            "MINER_TALISMAN", Material.EMERALD, "&aHorníkův talisman", "", "&fKdyž je v inventáři", "&f20% šance na dvojnásobný drop", "&frud");
+            "MINER_TALISMAN",
+            Material.EMERALD,
+            "&aHorníkův talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f20% šance na dvojnásobný drop",
+            "&frud");
     public static final SlimefunItemStack TALISMAN_FARMER = new SlimefunItemStack(
-            "FARMER_TALISMAN", Material.EMERALD, "&aFarmářův talisman", "", "&fKdyž je v inventáři", "&f20% šance na dvojnásobný drop", "&fplodin");
+            "FARMER_TALISMAN",
+            Material.EMERALD,
+            "&aFarmářův talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f20% šance na dvojnásobný drop",
+            "&fplodin");
     public static final SlimefunItemStack TALISMAN_HUNTER = new SlimefunItemStack(
-            "HUNTER_TALISMAN", Material.EMERALD, "&aLovcův talisman", "", "&fKdyž je v inventáři", "&f20% šance na dvojnásobný drop", "&fzvířat");
+            "HUNTER_TALISMAN",
+            Material.EMERALD,
+            "&aLovcův talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f20% šance na dvojnásobný drop",
+            "&fzvířat");
     public static final SlimefunItemStack TALISMAN_LAVA = new SlimefunItemStack(
             "LAVA_TALISMAN",
             Material.EMERALD,
@@ -1340,11 +1647,29 @@ public final class SlimefunItems {
             "&fposkytne dýchání pod vodou",
             "&fa pak se spotřebuje");
     public static final SlimefunItemStack TALISMAN_ANGEL = new SlimefunItemStack(
-            "ANGEL_TALISMAN", Material.EMERALD, "&aAndělský talisman", "", "&fKdyž je v inventáři", "&f75% šance snížit pádové poškození");
+            "ANGEL_TALISMAN",
+            Material.EMERALD,
+            "&aAndělský talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f75% šance snížit pádové poškození");
     public static final SlimefunItemStack TALISMAN_FIRE = new SlimefunItemStack(
-            "FIRE_TALISMAN", Material.EMERALD, "&aPožární talisman", "", "&fKdyž je v inventáři", "&fpři hoření", "&fposkytne ochranu proti ohni", "&fa pak se spotřebuje");
+            "FIRE_TALISMAN",
+            Material.EMERALD,
+            "&aPožární talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&fpři hoření",
+            "&fposkytne ochranu proti ohni",
+            "&fa pak se spotřebuje");
     public static final SlimefunItemStack TALISMAN_MAGICIAN = new SlimefunItemStack(
-            "MAGICIAN_TALISMAN", Material.EMERALD, "&aKouzelníkův talisman", "", "&fKdyž je v inventáři", "&f80% šance při enchantování", "&fna extra enchant");
+            "MAGICIAN_TALISMAN",
+            Material.EMERALD,
+            "&aKouzelníkův talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f80% šance při enchantování",
+            "&fna extra enchant");
     public static final SlimefunItemStack TALISMAN_TRAVELLER = new SlimefunItemStack(
             "TRAVELLER_TALISMAN",
             Material.EMERALD,
@@ -1354,7 +1679,13 @@ public final class SlimefunItems {
             "&f60% šance při sprintu",
             "&fposkytne efekt rychlosti");
     public static final SlimefunItemStack TALISMAN_WARRIOR = new SlimefunItemStack(
-            "WARRIOR_TALISMAN", Material.EMERALD, "&aVálečníkův talisman", "", "&fKdyž je v inventáři", "&fpo zásahu získáš sílu 3", "&fa pak se spotřebuje");
+            "WARRIOR_TALISMAN",
+            Material.EMERALD,
+            "&aVálečníkův talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&fpo zásahu získáš sílu 3",
+            "&fa pak se spotřebuje");
     public static final SlimefunItemStack TALISMAN_KNIGHT = new SlimefunItemStack(
             "KNIGHT_TALISMAN",
             Material.EMERALD,
@@ -1365,7 +1696,13 @@ public final class SlimefunItems {
             "&fpo zásahu",
             "&fa pak se spotřebuje");
     public static final SlimefunItemStack TALISMAN_WHIRLWIND = new SlimefunItemStack(
-            "WHIRLWIND_TALISMAN", Material.EMERALD, "&aVířivý talisman", "", "&fKdyž je v inventáři", "&f60% šance", "&fodrazit všechny střely");
+            "WHIRLWIND_TALISMAN",
+            Material.EMERALD,
+            "&aVířivý talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f60% šance",
+            "&fodrazit všechny střely");
     public static final SlimefunItemStack TALISMAN_WIZARD = new SlimefunItemStack(
             "WIZARD_TALISMAN",
             Material.EMERALD,
@@ -1376,19 +1713,48 @@ public final class SlimefunItems {
             "&fale může snížit úroveň",
             "&jiných enchantů");
     public static final SlimefunItemStack TALISMAN_CAVEMAN = new SlimefunItemStack(
-            "CAVEMAN_TALISMAN", Material.EMERALD, "&aJeskynní talisman", "", "&fKdyž je v inventáři", "&f50% šance při těžbě", "&fna efekt urychlení");
+            "CAVEMAN_TALISMAN",
+            Material.EMERALD,
+            "&aJeskynní talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f50% šance při těžbě",
+            "&fna efekt urychlení");
     public static final SlimefunItemStack TALISMAN_WISE = new SlimefunItemStack(
-            "WISE_TALISMAN", Material.EMERALD, "&aMoudrý talisman", "", "&fKdyž je v inventáři", "&f20% šance zdvojnásobit získané zkušenosti");
+            "WISE_TALISMAN",
+            Material.EMERALD,
+            "&aMoudrý talisman",
+            "",
+            "&fKdyž je v inventáři",
+            "&f20% šance zdvojnásobit získané zkušenosti");
 
     /*		Staves		*/
     public static final SlimefunItemStack STAFF_ELEMENTAL =
             new SlimefunItemStack("STAFF_ELEMENTAL", Material.STICK, "&6Elementální hůl");
     public static final SlimefunItemStack STAFF_WIND = new SlimefunItemStack(
-            "STAFF_ELEMENTAL_WIND", Material.STICK, "&6Elementální hůl &7- &b&oVítr", "", "&7Element: &b&oVítr", "", "&7&ePravý klik&7 pro odhození sebe");
+            "STAFF_ELEMENTAL_WIND",
+            Material.STICK,
+            "&6Elementální hůl &7- &b&oVítr",
+            "",
+            "&7Element: &b&oVítr",
+            "",
+            "&7&ePravý klik&7 pro odhození sebe");
     public static final SlimefunItemStack STAFF_FIRE = new SlimefunItemStack(
-            "STAFF_ELEMENTAL_FIRE", Material.STICK, "&6Elementální hůl &7- &c&oOheň", "", "&7Element: &c&oOheň", "", "&cNechť oheň očistí vše!");
+            "STAFF_ELEMENTAL_FIRE",
+            Material.STICK,
+            "&6Elementální hůl &7- &c&oOheň",
+            "",
+            "&7Element: &c&oOheň",
+            "",
+            "&cNechť oheň očistí vše!");
     public static final SlimefunItemStack STAFF_WATER = new SlimefunItemStack(
-            "STAFF_ELEMENTAL_WATER", Material.STICK, "&6Elementální hůl &7- &1&oVoda", "", "&7Element: &1&oVoda", "", "&7&ePravý klik&7 pro uhašení ohně");
+            "STAFF_ELEMENTAL_WATER",
+            Material.STICK,
+            "&6Elementální hůl &7- &1&oVoda",
+            "",
+            "&7Element: &1&oVoda",
+            "",
+            "&7&ePravý klik&7 pro uhašení ohně");
     public static final SlimefunItemStack STAFF_STORM = new SlimefunItemStack(
             "STAFF_ELEMENTAL_STORM",
             Material.STICK,
@@ -1409,32 +1775,56 @@ public final class SlimefunItems {
     /*		 Machines 		*/
     public static final SlimefunItemStack GRIND_STONE =
             new SlimefunItemStack("GRIND_STONE", Material.DISPENSER, "&bBrusný kámen", "", "&a&oEfektivnější broušení");
-    public static final SlimefunItemStack ARMOR_FORGE =
-            new SlimefunItemStack("ARMOR_FORGE", Material.ANVIL, "&6Kovárna zbroje", "", "&a&oDává sílu k vytváření silné zbroje");
+    public static final SlimefunItemStack ARMOR_FORGE = new SlimefunItemStack(
+            "ARMOR_FORGE", Material.ANVIL, "&6Kovárna zbroje", "", "&a&oDává sílu k vytváření silné zbroje");
     public static final SlimefunItemStack MAKESHIFT_SMELTERY = new SlimefunItemStack(
-            "MAKESHIFT_SMELTERY", Material.BLAST_FURNACE, "&eProvizorní tavicí pec", "", "&rZjednodušená tavicí pec", "&rPouze taví rudný prach na ingoty");
-    public static final SlimefunItemStack SMELTERY =
-            new SlimefunItemStack("SMELTERY", Material.FURNACE, "&6Tavicí pec", "", "&aVysokoteplotní pec pro tavení kovů");
+            "MAKESHIFT_SMELTERY",
+            Material.BLAST_FURNACE,
+            "&eProvizorní tavicí pec",
+            "",
+            "&rZjednodušená tavicí pec",
+            "&rPouze taví rudný prach na ingoty");
+    public static final SlimefunItemStack SMELTERY = new SlimefunItemStack(
+            "SMELTERY", Material.FURNACE, "&6Tavicí pec", "", "&aVysokoteplotní pec pro tavení kovů");
     public static final SlimefunItemStack IGNITION_CHAMBER = new SlimefunItemStack(
-            "IGNITION_CHAMBER", Material.DROPPER, "&4Automatický zapalovač", "&rPro případ zhasnutí tavicí pece", "&rVlož flint and steel", "&rdo dropperu vedle pece");
-    public static final SlimefunItemStack ORE_CRUSHER =
-            new SlimefunItemStack("ORE_CRUSHER", Material.DISPENSER, "&bDrtič rud", "", "&a&oDrti rudy a dává dvojnásobek prachu");
+            "IGNITION_CHAMBER",
+            Material.DROPPER,
+            "&4Automatický zapalovač",
+            "&rPro případ zhasnutí tavicí pece",
+            "&rVlož flint and steel",
+            "&rdo dropperu vedle pece");
+    public static final SlimefunItemStack ORE_CRUSHER = new SlimefunItemStack(
+            "ORE_CRUSHER", Material.DISPENSER, "&bDrtič rud", "", "&a&oDrti rudy a dává dvojnásobek prachu");
     public static final SlimefunItemStack COMPRESSOR =
             new SlimefunItemStack("COMPRESSOR", Material.PISTON, "&bKompresor", "", "&aKomprimuje předměty");
-    public static final SlimefunItemStack PRESSURE_CHAMBER =
-            new SlimefunItemStack("PRESSURE_CHAMBER", Material.GLASS, "&bTlakový kompresor", "", "&aKomprimuje více předmětů");
-    public static final SlimefunItemStack MAGIC_WORKBENCH =
-            new SlimefunItemStack("MAGIC_WORKBENCH", Material.CRAFTING_TABLE, "&6Magický pracovní stůl", "", "&dVkládá magickou energii do předmětů");
-    public static final SlimefunItemStack ORE_WASHER =
-            new SlimefunItemStack("ORE_WASHER", Material.CAULDRON, "&6Pračka rud", "", "&a&oČistí prosátou rudu", "&a&odává malé kamínky");
-    public static final SlimefunItemStack TABLE_SAW =
-            new SlimefunItemStack("TABLE_SAW", Material.STONECUTTER, "&6Stolní pila", "", "&a&oZ 1 dřeva získáš 8 prken", "&a&o(podporuje všechny kmeny)");
-    public static final SlimefunItemStack COMPOSTER =
-            new SlimefunItemStack("COMPOSTER", Material.CAULDRON, "&aKompostér", "", "&a&oPostupně přeměňuje materiály...");
+    public static final SlimefunItemStack PRESSURE_CHAMBER = new SlimefunItemStack(
+            "PRESSURE_CHAMBER", Material.GLASS, "&bTlakový kompresor", "", "&aKomprimuje více předmětů");
+    public static final SlimefunItemStack MAGIC_WORKBENCH = new SlimefunItemStack(
+            "MAGIC_WORKBENCH",
+            Material.CRAFTING_TABLE,
+            "&6Magický pracovní stůl",
+            "",
+            "&dVkládá magickou energii do předmětů");
+    public static final SlimefunItemStack ORE_WASHER = new SlimefunItemStack(
+            "ORE_WASHER", Material.CAULDRON, "&6Pračka rud", "", "&a&oČistí prosátou rudu", "&a&odává malé kamínky");
+    public static final SlimefunItemStack TABLE_SAW = new SlimefunItemStack(
+            "TABLE_SAW",
+            Material.STONECUTTER,
+            "&6Stolní pila",
+            "",
+            "&a&oZ 1 dřeva získáš 8 prken",
+            "&a&o(podporuje všechny kmeny)");
+    public static final SlimefunItemStack COMPOSTER = new SlimefunItemStack(
+            "COMPOSTER", Material.CAULDRON, "&aKompostér", "", "&a&oPostupně přeměňuje materiály...");
     public static final SlimefunItemStack ENHANCED_CRAFTING_TABLE = new SlimefunItemStack(
-            "ENHANCED_CRAFTING_TABLE", Material.CRAFTING_TABLE, "&eVylepšený pracovní stůl", "", "&a&oZákladní pracovní stůl", "&a&onevydrží silné síly...");
-    public static final SlimefunItemStack CRUCIBLE =
-            new SlimefunItemStack("CRUCIBLE", Material.CAULDRON, "&cTygel", "", "&a&oSlouží k přeměně předmětů na tekutinu");
+            "ENHANCED_CRAFTING_TABLE",
+            Material.CRAFTING_TABLE,
+            "&eVylepšený pracovní stůl",
+            "",
+            "&a&oZákladní pracovní stůl",
+            "&a&onevydrží silné síly...");
+    public static final SlimefunItemStack CRUCIBLE = new SlimefunItemStack(
+            "CRUCIBLE", Material.CAULDRON, "&cTygel", "", "&a&oSlouží k přeměně předmětů na tekutinu");
     public static final SlimefunItemStack JUICER =
             new SlimefunItemStack("JUICER", Material.GLASS_BOTTLE, "&aOdšťavňovač", "", "&aVytváří lahodné džusy");
 
@@ -1465,19 +1855,38 @@ public final class SlimefunItems {
         ADVANCED_INDUSTRIAL_MINER.setItemMeta(meta2);
     }
 
-    public static final SlimefunItemStack SOLAR_PANEL =
-            new SlimefunItemStack("SOLAR_PANEL", Material.DAYLIGHT_DETECTOR, "&bSolární panel", "", "&7Důležitá součást &bSolárního generátoru");
+    public static final SlimefunItemStack SOLAR_PANEL = new SlimefunItemStack(
+            "SOLAR_PANEL",
+            Material.DAYLIGHT_DETECTOR,
+            "&bSolární panel",
+            "",
+            "&7Důležitá součást &bSolárního generátoru");
 
-    public static final SlimefunItemStack AUTOMATED_PANNING_MACHINE =
-            new SlimefunItemStack("AUTOMATED_PANNING_MACHINE", Material.BOWL, "&aAutomatická zlatá pánev", "", "&a&oVylepšená zlatá pánev");
+    public static final SlimefunItemStack AUTOMATED_PANNING_MACHINE = new SlimefunItemStack(
+            "AUTOMATED_PANNING_MACHINE", Material.BOWL, "&aAutomatická zlatá pánev", "", "&a&oVylepšená zlatá pánev");
     public static final SlimefunItemStack OUTPUT_CHEST = new SlimefunItemStack(
-            "OUTPUT_CHEST", Material.CHEST, "&4Výstupní truhla", "", "&c&oUmísti vedle výstupu stroje", "&c&ovýstup půjde do truhly");
-    public static final SlimefunItemStack HOLOGRAM_PROJECTOR =
-            new SlimefunItemStack("HOLOGRAM_PROJECTOR", Material.QUARTZ_SLAB, "&bHolografický projektor", "", "&rProjektuje upravitelný holografický text");
+            "OUTPUT_CHEST",
+            Material.CHEST,
+            "&4Výstupní truhla",
+            "",
+            "&c&oUmísti vedle výstupu stroje",
+            "&c&ovýstup půjde do truhly");
+    public static final SlimefunItemStack HOLOGRAM_PROJECTOR = new SlimefunItemStack(
+            "HOLOGRAM_PROJECTOR",
+            Material.QUARTZ_SLAB,
+            "&bHolografický projektor",
+            "",
+            "&rProjektuje upravitelný holografický text");
 
     /*		 Enhanced Furnaces 		*/
     public static final SlimefunItemStack ENHANCED_FURNACE = new SlimefunItemStack(
-            "ENHANCED_FURNACE", Material.FURNACE, "&7Vylepšená pec - &eI", "", "&7Rychlost spalování: &e1x", "&7Účinnost paliva: &e1x", "&7Násobič výstupu: &e1x");
+            "ENHANCED_FURNACE",
+            Material.FURNACE,
+            "&7Vylepšená pec - &eI",
+            "",
+            "&7Rychlost spalování: &e1x",
+            "&7Účinnost paliva: &e1x",
+            "&7Násobič výstupu: &e1x");
     public static final SlimefunItemStack ENHANCED_FURNACE_2 = new SlimefunItemStack(
             "ENHANCED_FURNACE_2",
             Material.FURNACE,
@@ -1559,7 +1968,13 @@ public final class SlimefunItems {
             "&7Účinnost paliva: &e5x",
             "&7Násobič výstupu: &e3x");
     public static final SlimefunItemStack REINFORCED_FURNACE = new SlimefunItemStack(
-            "REINFORCED_FURNACE", Material.FURNACE, "&7Vyztužená slitinová pec", "", "&7Rychlost spalování: &e10x", "&7Účinnost paliva: &e10x", "&7Násobič výstupu: &e3x");
+            "REINFORCED_FURNACE",
+            Material.FURNACE,
+            "&7Vyztužená slitinová pec",
+            "",
+            "&7Rychlost spalování: &e10x",
+            "&7Účinnost paliva: &e10x",
+            "&7Násobič výstupu: &e3x");
     public static final SlimefunItemStack CARBONADO_EDGED_FURNACE = new SlimefunItemStack(
             "CARBONADO_EDGED_FURNACE",
             Material.FURNACE,
@@ -1569,8 +1984,13 @@ public final class SlimefunItems {
             "&7Účinnost paliva: &e10x",
             "&7Násobič výstupu: &e3x");
 
-    public static final SlimefunItemStack BLOCK_PLACER =
-            new SlimefunItemStack("BLOCK_PLACER", Material.DISPENSER, "&aUmísťovač bloků", "", "&rVšechny bloky v tomto dropperu", "&rbudou automaticky umisťovány");
+    public static final SlimefunItemStack BLOCK_PLACER = new SlimefunItemStack(
+            "BLOCK_PLACER",
+            Material.DISPENSER,
+            "&aUmísťovač bloků",
+            "",
+            "&rVšechny bloky v tomto dropperu",
+            "&rbudou automaticky umisťovány");
 
     /*		Soulbound Items		*/
     public static final SlimefunItemStack SOULBOUND_SWORD =
@@ -1601,21 +2021,23 @@ public final class SlimefunItems {
     public static final SlimefunItemStack BLANK_RUNE =
             new SlimefunItemStack("BLANK_RUNE", new ColoredFireworkStar(Color.BLACK, "&8Prázdná runa"));
 
-    public static final SlimefunItemStack AIR_RUNE =
-            new SlimefunItemStack("ANCIENT_RUNE_AIR", new ColoredFireworkStar(Color.AQUA, "&7Starověká runa &8&l[&b&lVzduch&8&l]"));
-    public static final SlimefunItemStack WATER_RUNE =
-            new SlimefunItemStack("ANCIENT_RUNE_WATER", new ColoredFireworkStar(Color.BLUE, "&7Starověká runa &8&l[&1&lVoda&8&l]"));
-    public static final SlimefunItemStack FIRE_RUNE =
-            new SlimefunItemStack("ANCIENT_RUNE_FIRE", new ColoredFireworkStar(Color.RED, "&7Starověká runa &8&l[&4&lOheň&8&l]"));
+    public static final SlimefunItemStack AIR_RUNE = new SlimefunItemStack(
+            "ANCIENT_RUNE_AIR", new ColoredFireworkStar(Color.AQUA, "&7Starověká runa &8&l[&b&lVzduch&8&l]"));
+    public static final SlimefunItemStack WATER_RUNE = new SlimefunItemStack(
+            "ANCIENT_RUNE_WATER", new ColoredFireworkStar(Color.BLUE, "&7Starověká runa &8&l[&1&lVoda&8&l]"));
+    public static final SlimefunItemStack FIRE_RUNE = new SlimefunItemStack(
+            "ANCIENT_RUNE_FIRE", new ColoredFireworkStar(Color.RED, "&7Starověká runa &8&l[&4&lOheň&8&l]"));
     public static final SlimefunItemStack EARTH_RUNE = new SlimefunItemStack(
-            "ANCIENT_RUNE_EARTH", new ColoredFireworkStar(Color.fromRGB(112, 47, 7), "&7Starověká runa &8&l[&c&lZemě&8&l]"));
+            "ANCIENT_RUNE_EARTH",
+            new ColoredFireworkStar(Color.fromRGB(112, 47, 7), "&7Starověká runa &8&l[&c&lZemě&8&l]"));
     public static final SlimefunItemStack ENDER_RUNE = new SlimefunItemStack(
             "ANCIENT_RUNE_ENDER", new ColoredFireworkStar(Color.PURPLE, "&7Starověká runa &8&l[&5&lEnder&8&l]"));
 
     public static final SlimefunItemStack RAINBOW_RUNE = new SlimefunItemStack(
             "ANCIENT_RUNE_RAINBOW", new ColoredFireworkStar(Color.FUCHSIA, "&7Starověká runa &8&l[&d&lDuhová&8&l]"));
     public static final SlimefunItemStack LIGHTNING_RUNE = new SlimefunItemStack(
-            "ANCIENT_RUNE_LIGHTNING", new ColoredFireworkStar(Color.fromRGB(255, 255, 95), "&7Starověká runa &8&l[&e&lBlesk&8&l]"));
+            "ANCIENT_RUNE_LIGHTNING",
+            new ColoredFireworkStar(Color.fromRGB(255, 255, 95), "&7Starověká runa &8&l[&e&lBlesk&8&l]"));
     public static final SlimefunItemStack SOULBOUND_RUNE = new SlimefunItemStack(
             "ANCIENT_RUNE_SOULBOUND",
             new ColoredFireworkStar(
@@ -2052,9 +2474,18 @@ public final class SlimefunItems {
             LoreBuilder.powerPerSecond(92));
 
     public static final SlimefunItemStack GPS_MARKER_TOOL = new SlimefunItemStack(
-            "GPS_MARKER_TOOL", Material.REDSTONE_TORCH, "&bGPS nástroj pro waypointy", "", "&rUmožňuje nastavit waypoint");
+            "GPS_MARKER_TOOL",
+            Material.REDSTONE_TORCH,
+            "&bGPS nástroj pro waypointy",
+            "",
+            "&rUmožňuje nastavit waypoint");
     public static final SlimefunItemStack GPS_CONTROL_PANEL = new SlimefunItemStack(
-            "GPS_CONTROL_PANEL", HeadTexture.GPS_CONTROL_PANEL, "&bGPS ovládací panel", "", "&rSleduje GPS satelity", "&ra spravuje waypointy");
+            "GPS_CONTROL_PANEL",
+            HeadTexture.GPS_CONTROL_PANEL,
+            "&bGPS ovládací panel",
+            "",
+            "&rSleduje GPS satelity",
+            "&ra spravuje waypointy");
     public static final SlimefunItemStack GPS_EMERGENCY_TRANSMITTER = new SlimefunItemStack(
             "GPS_EMERGENCY_TRANSMITTER",
             HeadTexture.GPS_TRANSMITTER,
@@ -2077,9 +2508,20 @@ public final class SlimefunItems {
             "&rVkládá/vybírá předměty z androida");
 
     public static final SlimefunItemStack GPS_GEO_SCANNER = new SlimefunItemStack(
-            "GPS_GEO_SCANNER", HeadTexture.GEO_SCANNER, "&bGPS geologický skener", "", "&rZjistí množství přírodních zdrojů", "&rv chunku (např. &8ropa)");
+            "GPS_GEO_SCANNER",
+            HeadTexture.GEO_SCANNER,
+            "&bGPS geologický skener",
+            "",
+            "&rZjistí množství přírodních zdrojů",
+            "&rv chunku (např. &8ropa)");
     public static final SlimefunItemStack PORTABLE_GEO_SCANNER = new SlimefunItemStack(
-            "PORTABLE_GEO_SCANNER", Material.CLOCK, "&bPřenosný geologický skener", "", "&rSkenuje zdroje v chunku", "", "&ePravý klik&7 pro sken");
+            "PORTABLE_GEO_SCANNER",
+            Material.CLOCK,
+            "&bPřenosný geologický skener",
+            "",
+            "&rSkenuje zdroje v chunku",
+            "",
+            "&ePravý klik&7 pro sken");
     public static final SlimefunItemStack GEO_MINER = new SlimefunItemStack(
             "GEO_MINER",
             HeadTexture.GEO_MINER,
@@ -2094,7 +2536,13 @@ public final class SlimefunItems {
             "",
             "&c&l! &cNejprve proveď GEO sken");
     public static final SlimefunItemStack OIL_PUMP = new SlimefunItemStack(
-            "OIL_PUMP", HeadTexture.OIL_PUMP, "&rRopná pumpa", "", "&7Pumpuje ropu do kbelíků", "", "&c&l! &cNejprve proveď GEO sken");
+            "OIL_PUMP",
+            HeadTexture.OIL_PUMP,
+            "&rRopná pumpa",
+            "",
+            "&7Pumpuje ropu do kbelíků",
+            "",
+            "&c&l! &cNejprve proveď GEO sken");
     public static final SlimefunItemStack OIL_BUCKET =
             new SlimefunItemStack("BUCKET_OF_OIL", HeadTexture.OIL_BUCKET, "&rKbelík ropy");
     public static final SlimefunItemStack FUEL_BUCKET =
@@ -2113,8 +2561,8 @@ public final class SlimefunItems {
     public static final SlimefunItemStack ANDROID_MEMORY_CORE =
             new SlimefunItemStack("ANDROID_MEMORY_CORE", HeadTexture.ENERGY_REGULATOR, "&bPaměťové jádro androida");
 
-    public static final SlimefunItemStack GPS_TELEPORTER_PYLON =
-            new SlimefunItemStack("GPS_TELEPORTER_PYLON", Material.PURPLE_STAINED_GLASS, "&5GPS pylon", "", "&7Součást teleporteru");
+    public static final SlimefunItemStack GPS_TELEPORTER_PYLON = new SlimefunItemStack(
+            "GPS_TELEPORTER_PYLON", Material.PURPLE_STAINED_GLASS, "&5GPS pylon", "", "&7Součást teleporteru");
     public static final SlimefunItemStack GPS_TELEPORTATION_MATRIX = new SlimefunItemStack(
             "GPS_TELEPORTATION_MATRIX",
             Material.IRON_BLOCK,
@@ -2157,8 +2605,13 @@ public final class SlimefunItems {
             "",
             "&ePravý klik&7 pro pojmenování patra");
 
-    public static final SlimefunItemStack INFUSED_HOPPER =
-            new SlimefunItemStack("INFUSED_HOPPER", Material.HOPPER, "&5Magický hopper", "", "&rAutomaticky sbírá předměty", "&rv 7x7x7 oblasti");
+    public static final SlimefunItemStack INFUSED_HOPPER = new SlimefunItemStack(
+            "INFUSED_HOPPER",
+            Material.HOPPER,
+            "&5Magický hopper",
+            "",
+            "&rAutomaticky sbírá předměty",
+            "&rv 7x7x7 oblasti");
 
     public static final SlimefunItemStack PLASTIC_SHEET =
             new SlimefunItemStack("PLASTIC_SHEET", Material.PAPER, "&rPlastová fólie");
@@ -2290,8 +2743,12 @@ public final class SlimefunItems {
             LoreBuilder.radioactive(Radioactivity.HIGH),
             LoreBuilder.HAZMAT_SUIT_REQUIRED);
 
-    public static final SlimefunItemStack ENERGY_REGULATOR =
-            new SlimefunItemStack("ENERGY_REGULATOR", HeadTexture.ENERGY_REGULATOR, "&6Energetický regulátor", "", "&rJádro energetické sítě");
+    public static final SlimefunItemStack ENERGY_REGULATOR = new SlimefunItemStack(
+            "ENERGY_REGULATOR",
+            HeadTexture.ENERGY_REGULATOR,
+            "&6Energetický regulátor",
+            "",
+            "&rJádro energetické sítě");
     public static final SlimefunItemStack ENERGY_CONNECTOR = new SlimefunItemStack(
             "ENERGY_CONNECTOR",
             HeadTexture.ENERGY_CONNECTOR,
@@ -2324,20 +2781,24 @@ public final class SlimefunItems {
             "",
             LoreBuilder.radioactive(Radioactivity.VERY_HIGH),
             LoreBuilder.HAZMAT_SUIT_REQUIRED);
-    public static final SlimefunItemStack NETHER_ICE_COOLANT_CELL =
-            new SlimefunItemStack("NETHER_ICE_COOLANT_CELL", HeadTexture.NETHER_ICE_COOLANT_CELL, "&6Chladicí článek z nether ledu");
+    public static final SlimefunItemStack NETHER_ICE_COOLANT_CELL = new SlimefunItemStack(
+            "NETHER_ICE_COOLANT_CELL", HeadTexture.NETHER_ICE_COOLANT_CELL, "&6Chladicí článek z nether ledu");
 
     // Cargo
-    public static final SlimefunItemStack CARGO_MANAGER =
-            new SlimefunItemStack("CARGO_MANAGER", HeadTexture.CARGO_MANAGER, "&6Cargo manažer", "", "&rJádro cargo sítě");
-    public static final SlimefunItemStack CARGO_CONNECTOR_NODE =
-            new SlimefunItemStack("CARGO_NODE", HeadTexture.CARGO_CONNECTOR_NODE, "&7Cargo node &c(Konektor)", "", "&rPřipojovací potrubí");
-    public static final SlimefunItemStack CARGO_INPUT_NODE =
-            new SlimefunItemStack("CARGO_NODE_INPUT", HeadTexture.CARGO_INPUT_NODE, "&7Cargo node &c(Vstup)", "", "&rVstupní potrubí");
-    public static final SlimefunItemStack CARGO_OUTPUT_NODE =
-            new SlimefunItemStack("CARGO_NODE_OUTPUT", HeadTexture.CARGO_OUTPUT_NODE, "&7Cargo node &c(Výstup)", "", "&rVýstupní potrubí");
+    public static final SlimefunItemStack CARGO_MANAGER = new SlimefunItemStack(
+            "CARGO_MANAGER", HeadTexture.CARGO_MANAGER, "&6Cargo manažer", "", "&rJádro cargo sítě");
+    public static final SlimefunItemStack CARGO_CONNECTOR_NODE = new SlimefunItemStack(
+            "CARGO_NODE", HeadTexture.CARGO_CONNECTOR_NODE, "&7Cargo node &c(Konektor)", "", "&rPřipojovací potrubí");
+    public static final SlimefunItemStack CARGO_INPUT_NODE = new SlimefunItemStack(
+            "CARGO_NODE_INPUT", HeadTexture.CARGO_INPUT_NODE, "&7Cargo node &c(Vstup)", "", "&rVstupní potrubí");
+    public static final SlimefunItemStack CARGO_OUTPUT_NODE = new SlimefunItemStack(
+            "CARGO_NODE_OUTPUT", HeadTexture.CARGO_OUTPUT_NODE, "&7Cargo node &c(Výstup)", "", "&rVýstupní potrubí");
     public static final SlimefunItemStack CARGO_OUTPUT_NODE_2 = new SlimefunItemStack(
-            "CARGO_NODE_OUTPUT_ADVANCED", HeadTexture.CARGO_OUTPUT_NODE, "&6Pokročilý cargo node &c(Výstup)", "", "&rVýstupní potrubí");
+            "CARGO_NODE_OUTPUT_ADVANCED",
+            HeadTexture.CARGO_OUTPUT_NODE,
+            "&6Pokročilý cargo node &c(Výstup)",
+            "",
+            "&rVýstupní potrubí");
 
     // Animal farm
     public static final SlimefunItemStack AUTO_BREEDER = new SlimefunItemStack(
@@ -2373,24 +2834,33 @@ public final class SlimefunItems {
     public static final SlimefunItemStack SEEDS_ORGANIC_FOOD = new SlimefunItemStack(
             "ORGANIC_FOOD_SEEDS", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9semínka");
     public static final SlimefunItemStack BEETROOT_ORGANIC_FOOD = new SlimefunItemStack(
-            "ORGANIC_FOOD_BEETROOT", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9červenou řepu");
+            "ORGANIC_FOOD_BEETROOT",
+            HeadTexture.FILLED_CAN,
+            ORGANIC_FOOD.getDisplayName(),
+            "&7Obsahuje &9červenou řepu");
     public static final SlimefunItemStack MELON_ORGANIC_FOOD = new SlimefunItemStack(
             "ORGANIC_FOOD_MELON", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9meloun");
     public static final SlimefunItemStack APPLE_ORGANIC_FOOD = new SlimefunItemStack(
             "ORGANIC_FOOD_APPLE", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9jablko");
     public static final SlimefunItemStack SWEET_BERRIES_ORGANIC_FOOD = new SlimefunItemStack(
-            "ORGANIC_FOOD_SWEET_BERRIES", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9lesní plody");
+            "ORGANIC_FOOD_SWEET_BERRIES",
+            HeadTexture.FILLED_CAN,
+            ORGANIC_FOOD.getDisplayName(),
+            "&7Obsahuje &9lesní plody");
     public static final SlimefunItemStack KELP_ORGANIC_FOOD = new SlimefunItemStack(
             "ORGANIC_FOOD_KELP", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9sušené chaluhy");
     public static final SlimefunItemStack COCOA_ORGANIC_FOOD = new SlimefunItemStack(
             "ORGANIC_FOOD_COCOA", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje &9kakaové boby");
     public static final SlimefunItemStack SEAGRASS_ORGANIC_FOOD = new SlimefunItemStack(
-            "ORGANIC_FOOD_SEAGRASS", HeadTexture.FILLED_CAN, ORGANIC_FOOD.getDisplayName(), "&7Obsahuje: &9mořskou trávu");
+            "ORGANIC_FOOD_SEAGRASS",
+            HeadTexture.FILLED_CAN,
+            ORGANIC_FOOD.getDisplayName(),
+            "&7Obsahuje: &9mořskou trávu");
 
     public static final SlimefunItemStack FERTILIZER =
             new SlimefunItemStack("FERTILIZER", HeadTexture.FILLED_CAN, "&aOrganické hnojivo", "&7Obsahuje &9???");
-    public static final SlimefunItemStack WHEAT_FERTILIZER =
-            new SlimefunItemStack("FERTILIZER_WHEAT", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9pšenici");
+    public static final SlimefunItemStack WHEAT_FERTILIZER = new SlimefunItemStack(
+            "FERTILIZER_WHEAT", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9pšenici");
     public static final SlimefunItemStack CARROT_FERTILIZER = new SlimefunItemStack(
             "FERTILIZER_CARROT", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9mrkev");
     public static final SlimefunItemStack POTATO_FERTILIZER = new SlimefunItemStack(
@@ -2399,14 +2869,17 @@ public final class SlimefunItems {
             "FERTILIZER_SEEDS", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9semínka");
     public static final SlimefunItemStack BEETROOT_FERTILIZER = new SlimefunItemStack(
             "FERTILIZER_BEETROOT", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9červenou řepu");
-    public static final SlimefunItemStack MELON_FERTILIZER =
-            new SlimefunItemStack("FERTILIZER_MELON", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9meloun");
-    public static final SlimefunItemStack APPLE_FERTILIZER =
-            new SlimefunItemStack("FERTILIZER_APPLE", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9jablko");
+    public static final SlimefunItemStack MELON_FERTILIZER = new SlimefunItemStack(
+            "FERTILIZER_MELON", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9meloun");
+    public static final SlimefunItemStack APPLE_FERTILIZER = new SlimefunItemStack(
+            "FERTILIZER_APPLE", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9jablko");
     public static final SlimefunItemStack SWEET_BERRIES_FERTILIZER = new SlimefunItemStack(
-            "FERTILIZER_SWEET_BERRIES", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9lesní plody");
-    public static final SlimefunItemStack KELP_FERTILIZER =
-            new SlimefunItemStack("FERTILIZER_KELP", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9sušené chaluhy");
+            "FERTILIZER_SWEET_BERRIES",
+            HeadTexture.FILLED_CAN,
+            FERTILIZER.getDisplayName(),
+            "&7Obsahuje &9lesní plody");
+    public static final SlimefunItemStack KELP_FERTILIZER = new SlimefunItemStack(
+            "FERTILIZER_KELP", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9sušené chaluhy");
     public static final SlimefunItemStack COCOA_FERTILIZER = new SlimefunItemStack(
             "FERTILIZER_COCOA", HeadTexture.FILLED_CAN, FERTILIZER.getDisplayName(), "&7Obsahuje &9kakaové boby");
     public static final SlimefunItemStack SEAGRASS_FERTILIZER = new SlimefunItemStack(
@@ -2725,8 +3198,8 @@ public final class SlimefunItems {
             "&8\u21E8 &e\u26A1 &74096 J úložiště",
             "&8\u21E8 &e\u26A1 &74096 J/wither");
 
-    public static final SlimefunItemStack TRASH_CAN =
-            new SlimefunItemStack("TRASH_CAN_BLOCK", HeadTexture.TRASH_CAN, "&3Odpadkový koš", "", "&rSem můžeš házet nepotřebné věci");
+    public static final SlimefunItemStack TRASH_CAN = new SlimefunItemStack(
+            "TRASH_CAN_BLOCK", HeadTexture.TRASH_CAN, "&3Odpadkový koš", "", "&rSem můžeš házet nepotřebné věci");
 
     public static final SlimefunItemStack ELYTRA_SCALE =
             new SlimefunItemStack("ELYTRA_SCALE", Material.FEATHER, "&bŠupina elytry");
@@ -2735,8 +3208,8 @@ public final class SlimefunItems {
     public static final SlimefunItemStack SOULBOUND_ELYTRA =
             new SlimefunItemStack("SOULBOUND_ELYTRA", Material.ELYTRA, "&cElytra (Duše)");
 
-    public static final SlimefunItemStack MAGNESIUM_SALT =
-            new SlimefunItemStack("MAGNESIUM_SALT", Material.SUGAR, "&cHořčíková sůl", "", "&7Speciální palivo pro hořčíkový generátor");
+    public static final SlimefunItemStack MAGNESIUM_SALT = new SlimefunItemStack(
+            "MAGNESIUM_SALT", Material.SUGAR, "&cHořčíková sůl", "", "&7Speciální palivo pro hořčíkový generátor");
     public static final SlimefunItemStack MAGNESIUM_GENERATOR = new SlimefunItemStack(
             "MAGNESIUM_GENERATOR",
             HeadTexture.GENERATOR,
@@ -2747,7 +3220,12 @@ public final class SlimefunItems {
             LoreBuilder.powerPerSecond(36));
 
     public static final SlimefunItemStack CRAFTER_SMART_PORT = new SlimefunItemStack(
-            "CRAFTER_SMART_PORT", Material.LIME_STAINED_GLASS, "&aChytré rozhraní craftěru", "", "&5Rozděluje vstupy podle receptu", "&5a má určený výstupní slot");
+            "CRAFTER_SMART_PORT",
+            Material.LIME_STAINED_GLASS,
+            "&aChytré rozhraní craftěru",
+            "",
+            "&5Rozděluje vstupy podle receptu",
+            "&5a má určený výstupní slot");
 
     static {
         INFUSED_ELYTRA.addUnsafeEnchantment(Enchantment.MENDING, 1);

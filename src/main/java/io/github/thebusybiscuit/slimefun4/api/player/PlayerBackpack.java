@@ -29,30 +29,26 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 
 /**
- * This class represents the instance of a {@link SlimefunBackpack} that is ready to
- * be opened.
+ * Tato třída reprezentuje instanci {@link SlimefunBackpack}, která je připravená k otevření.
  *
- * It holds an actual {@link Inventory} and represents the backpack on the
- * level of an individual {@link ItemStack} as opposed to the class {@link SlimefunBackpack}.
- *
- * @author TheBusyBiscuit
- *
- * @see SlimefunBackpack
- * @see BackpackListener
+ * Obsahuje skutečný {@link Inventory} a reprezentuje batoh na úrovni jednotlivého {@link ItemStack},
+ * na rozdíl od třídy {@link SlimefunBackpack}.
  */
 public class PlayerBackpack extends SlimefunInventoryHolder {
-    public static final String LORE_OWNER = "&7所有者: ";
+
+    public static final String LORE_OWNER = "&7Vlastník: ";
     private static final String COLORED_LORE_OWNER = ChatColors.color(LORE_OWNER);
+
     private static final NamespacedKey KEY_BACKPACK_UUID = new NamespacedKey(Slimefun.instance(), "B_UUID");
     private static final NamespacedKey KEY_OWNER_UUID = new NamespacedKey(Slimefun.instance(), "OWNER_UUID");
+
     private final OfflinePlayer owner;
     private final UUID uuid;
     private final int id;
     private String name;
     private int size;
     private boolean isInvalid = false;
-    // This snapshot holds the inventory's last save content , it should be recreated after each save by using
-    // PlayerBackpack#refreshSnapshot
+
     @Nonnull
     @Getter
     private InvSnapshot snapshot;
@@ -61,9 +57,11 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
         if (item == null || !item.hasItemMeta() || !item.getItemMeta().hasLore()) {
             return;
         }
+
         Executor executor = runCbOnMainThread
                 ? ThreadUtils.getMainDelayedExecutor()
                 : Slimefun.getDatabaseManager().getProfileDataController().getCallbackExecutor();
+
         var bUuid = getBackpackUUID(item.getItemMeta());
         if (bUuid.isPresent()) {
             Slimefun.getDatabaseManager()
@@ -79,13 +77,12 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
             return;
         }
 
-        // Old backpack item
+        // Starý formát batohu
         OptionalInt id = OptionalInt.empty();
         String uuid = "";
         for (String line : item.getItemMeta().getLore()) {
             if (line.startsWith(ChatColors.color("&7ID: ")) && line.indexOf('#') != -1) {
                 String[] splitLine = CommonPatterns.HASH.split(line);
-
                 if (CommonPatterns.NUMERIC.matcher(splitLine[1]).matches()) {
                     uuid = splitLine[0].replace(ChatColors.color("&7ID: "), "");
                     id = OptionalInt.of(Integer.parseInt(splitLine[1]));
@@ -105,7 +102,6 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
                                     meta.getPersistentDataContainer()
                                             .set(KEY_BACKPACK_UUID, PersistentDataType.STRING, result.uuid.toString());
                                     item.setItemMeta(meta);
-                                    // TODO: upgrade lore
                                     callback.accept(result);
                                 }
                             },
@@ -123,14 +119,12 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
             return Slimefun.getDatabaseManager().getProfileDataController().getBackpackAsync(bUuid.get());
         }
 
-        // Old backpack item
+        // Starý formát batohu
         OptionalInt id = OptionalInt.empty();
         String uuid = "";
-
         for (String line : item.getItemMeta().getLore()) {
-            if (line.startsWith(ChatColors.color("&7ID: ")) && line.indexOf('#') != -1) {
+            if (line.startsWith(ChatColors.color("&7ID: ")) && line.contains("#")) {
                 String[] splitLine = CommonPatterns.HASH.split(line);
-
                 if (CommonPatterns.NUMERIC.matcher(splitLine[1]).matches()) {
                     uuid = splitLine[0].replace(ChatColors.color("&7ID: "), "");
                     id = OptionalInt.of(Integer.parseInt(splitLine[1]));
@@ -144,6 +138,7 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
                     .getProfileDataController()
                     .getBackpackAsync(Bukkit.getOfflinePlayer(UUID.fromString(uuid)), number);
         }
+
         return CompletableFuture.completedFuture(null);
     }
 
@@ -165,7 +160,6 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
         if (meta == null) {
             return OptionalInt.empty();
         }
-
         for (String line : meta.getLore()) {
             if (line.startsWith(ChatColors.color("&7ID: ")) && line.contains("#")) {
                 try {
@@ -176,7 +170,6 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
                 }
             }
         }
-
         return OptionalInt.empty();
     }
 
@@ -234,7 +227,7 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
     public PlayerBackpack(
             OfflinePlayer owner, UUID uuid, String name, int id, int size, @Nullable ItemStack[] contents) {
         if (size < 9 || size > 54 || size % 9 != 0) {
-            throw new IllegalArgumentException("Invalid size! Size must be one of: [9, 18, 27, 36, 45, 54]");
+            throw new IllegalArgumentException("Neplatná velikost! Velikost musí být jedna z: [9, 18, 27, 36, 45, 54]");
         }
 
         this.owner = owner;
@@ -242,11 +235,12 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
         this.name = name;
         this.id = id;
         this.size = size;
+
         inventory = newInv();
 
         if (contents != null) {
             if (size != contents.length) {
-                throw new IllegalArgumentException("Invalid contents: size mismatched!");
+                throw new IllegalArgumentException("Neplatný obsah: nesouhlasí velikost!");
             }
             inventory.setContents(contents);
         }
@@ -254,80 +248,39 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
         this.snapshot = new InvSnapshot(inventory);
     }
 
-    /**
-     * This refreshes the internal snapshot,
-     * It should be called after every database writing task
-     * It should not be called elsewhere
-     */
     public void refreshSnapshot() {
         this.snapshot = new InvSnapshot(inventory);
     }
 
-    /**
-     * This returns the id of this {@link PlayerBackpack}
-     *
-     * @return The id of this {@link PlayerBackpack}
-     */
     public int getId() {
         return id;
     }
 
-    /**
-     * This method returns the {@link PlayerProfile} this {@link PlayerBackpack} belongs to
-     *
-     * @return The owning {@link PlayerProfile}
-     */
     @Nonnull
     public OfflinePlayer getOwner() {
         return owner;
     }
 
-    /**
-     * This returns the size of this {@link PlayerBackpack}.
-     *
-     * @return The size of this {@link PlayerBackpack}
-     */
     public int getSize() {
         return size;
     }
 
-    /**
-     * This method returns the {@link Inventory} of this {@link PlayerBackpack}
-     *
-     * @return The {@link Inventory} of this {@link PlayerBackpack}
-     */
     @Nonnull
     public Inventory getInventory() {
         return inventory;
     }
 
-    /**
-     * This will open the {@link Inventory} of this backpack to every {@link Player}
-     * that was passed onto this method.
-     * <p>
-     * 二进制兼容
-     *
-     * @param p The player who this Backpack will be shown to
-     */
     public void open(Player p) {
         if (isInvalid) {
             return;
         }
-
         InventoryUtil.openInventory(p, inventory);
     }
 
-    /**
-     * This will change the current size of this Backpack to the specified size.
-     *
-     * @param size
-     *            The new size for this Backpack
-     */
     public void setSize(int size) {
         if (size < 9 || size > 54 || size % 9 != 0) {
-            throw new IllegalArgumentException("Invalid size! Size must be one of: [9, 18, 27, 36, 45, 54]");
+            throw new IllegalArgumentException("Neplatná velikost! Velikost musí být jedna z: [9, 18, 27, 36, 45, 54]");
         }
-
         this.size = size;
         updateInv();
         Slimefun.getDatabaseManager().getProfileDataController().saveBackpackInfo(this);
@@ -357,16 +310,9 @@ public class PlayerBackpack extends SlimefunInventoryHolder {
         return isInvalid;
     }
 
-    /**
-     * Construct a new backpack inventory.
-     * <p>
-     * Warning: You should **manually** update inventory contents!
-     *
-     * @return new {@link Inventory}
-     */
     private Inventory newInv() {
         return Bukkit.createInventory(
-                this, size, (name.isEmpty() ? "背包" : ChatColors.color(name + "&r")) + " [大小 " + size + "]");
+                this, size, (name.isEmpty() ? "Batoh" : ChatColors.color(name + "&r")) + " [Velikost " + size + "]");
     }
 
     private void updateInv() {
