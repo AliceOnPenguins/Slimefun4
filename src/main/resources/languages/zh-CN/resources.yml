@@ -1,24 +1,24 @@
 ---
-tooltips:
-  results: '区块中的自然资源扫描结果'
-  chunk: '已扫描的区块'
-  world: '世界'
-  unit: '单位'
-  units: '单位'
 resources:
   slimefun:
-    oil: '原油'
-    nether_ice: '下界冰'
-    salt: '盐'
-    uranium: '铀'
+    oil: Olej
+    salt: Sůl
+    uranium: Uran
+    nether_ice: Nether led
   slimefunorechunks:
-    iron_ore_chunk: '铁矿区块'
-    gold_ore_chunk: '金矿区块'
-    copper_ore_chunk: '铜矿区块'
-    tin_ore_chunk: '锡矿区块'
-    silver_ore_chunk: '银矿区块'
-    aluminum_ore_chunk: '铝矿区块'
-    lead_ore_chunk: '铅矿区块'
-    zinc_ore_chunk: '锌矿区块'
-    nickel_ore_chunk: '镍矿区块'
-    cobalt_ore_chunk: '钴矿区块'
+    aluminum_ore_chunk: Kus hliníkové rudy
+    cobalt_ore_chunk: Kus kobaltové rudy
+    copper_ore_chunk: Kus měděné rudy
+    gold_ore_chunk: Kus zlaté rudy
+    iron_ore_chunk: Kus železné rudy
+    lead_ore_chunk: Kus olovové rudy
+    nickel_ore_chunk: Kus niklové rudy
+    silver_ore_chunk: Kus stříbrné rudy
+    tin_ore_chunk: Kus cínové rudy
+    zinc_ore_chunk: Kus zinkové rudy
+tooltips:
+  results: Výsledky GEO Skenu
+  unit: Jednotka
+  units: Jednotky
+  world: Svět
+  chunk: Naskenovaný chunk

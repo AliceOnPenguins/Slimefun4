@@ -228,18 +228,17 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      * This constructor is invoked in Unit Test environments only.
      *
      * @param loader
-     *            Our {@link JavaPluginLoader}
+     * Our {@link JavaPluginLoader}
      * @param description
-     *            A {@link PluginDescriptionFile}
+     * A {@link PluginDescriptionFile}
      * @param dataFolder
-     *            The data folder
+     * The data folder
      * @param file
-     *            A {@link File} for this {@link Plugin}
+     * A {@link File} for this {@link Plugin}
      */
     @ParametersAreNonnullByDefault
     public Slimefun(JavaPluginLoader loader, PluginDescriptionFile description, File dataFolder, File file) {
         super(loader, description, dataFolder, file);
-
         // This is only invoked during a Unit Test
         minecraftVersion = MinecraftVersion.UNIT_TEST;
     }
@@ -252,7 +251,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         setInstance(this);
 
         if (isUnitTest()) {
-            // We handle Unit Tests seperately.
+            // We handle Unit Tests separately.
             onUnitTestStart();
         } else if (isVersionUnsupported()) {
             // We wanna ensure that the Server uses a compatible version of Minecraft.
@@ -264,10 +263,10 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         } else if (!PaperLib.isPaper()) {
             getLogger().log(Level.WARNING, "#######################################################");
             getLogger().log(Level.WARNING, "");
-            getLogger().log(Level.WARNING, "自 24/12/22 起 Slimefun 汉化版");
-            getLogger().log(Level.WARNING, "转为 Paper 插件, 你必须要使用 Paper");
-            getLogger().log(Level.WARNING, "或其分支才可使用 Slimefun.");
-            getLogger().log(Level.WARNING, "立即下载 Paper: https://papermc.io/downloads/paper");
+            getLogger().log(Level.WARNING, "Od 24. 12. 2022 je Slimefun česká verze");
+            getLogger().log(Level.WARNING, "převedena na Paper plugin, musíš používat Paper");
+            getLogger().log(Level.WARNING, "nebo jeho fork, aby Slimefun fungoval.");
+            getLogger().log(Level.WARNING, "Stáhni si Paper zde: https://papermc.io/downloads/paper");
             getLogger().log(Level.WARNING, "");
             getLogger().log(Level.WARNING, "#######################################################");
             getServer().getPluginManager().disablePlugin(this);
@@ -314,42 +313,38 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         isNewlyInstalled = !new File("data-storage/Slimefun").exists();
 
         // Creating all necessary Folders
-        logger.log(Level.INFO, "正在创建文件夹...");
+        logger.log(Level.INFO, "Vytvářím složky...");
         createDirectories();
 
         // Load various config settings into our cache
         cfgManager.load();
         registry.load(this);
 
-        logger.log(Level.INFO, "正在加载数据库...");
+        logger.log(Level.INFO, "Načítám databázi...");
         if (PlayerProfileMigrator.getInstance().hasOldData()
                 || BlockStorageMigrator.getInstance().hasOldData()) {
             Slimefun.logger().warning("====================================================");
             Slimefun.logger().warning("\n");
-            Slimefun.logger().log(Level.WARNING, "!!! 检测到使用文件储存的旧玩家数据 !!!");
-            Slimefun.logger().warning("请在服务器加载完成后, 使用 /sf migrate confirm 进行迁移!");
-            Slimefun.logger().warning("如果不迁移, 旧版本的数据将会失效!!!");
-            Slimefun.logger().warning("\n");
-            Slimefun.logger().warning("需要使用数据库的用户, 请关服后在以下配置文件中配置数据库:");
-            Slimefun.logger().warning("block-storage.yml 和 profile-storage.yml");
+            Slimefun.logger().log(Level.WARNING, "!!! DETEKOVÁNA STARÁ DATA V SOUBORECH !!!");
+            Slimefun.logger().warning("Po načtení serveru použij /sf migrate confirm pro migraci!");
+            Slimefun.logger().warning("Pokud to neuděláš, stará data budou ztracena!!!");
             Slimefun.logger().warning("\n");
             Slimefun.logger().warning("====================================================");
         }
+
         databaseManager.init();
 
         // Set up localization
-        logger.log(Level.INFO, "正在加载语言文件...");
-
+        logger.log(Level.INFO, "Načítám jazykové soubory...");
         var config = cfgManager.getPluginConfig();
         String chatPrefix = config.getString("options.chat-prefix");
         String serverDefaultLanguage = config.getString("options.language");
         local = new LocalizationService(this, chatPrefix, serverDefaultLanguage);
 
         int networkSize = config.getInt("networks.max-size");
-
         // Make sure that the network size is a valid input
         if (networkSize < 1) {
-            logger.log(Level.WARNING, "'networks.max-size' 大小设置错误! 它必须大于1, 而你设置的是: {0}", networkSize);
+            logger.log(Level.WARNING, "'networks.max-size' je nastaveno špatně! Musí být větší než 1, zadal jsi: {0}", networkSize);
             networkSize = 1;
         }
 
@@ -363,23 +358,22 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         analyticsService.start();
 
         // Registering all GEO Resources
-        logger.log(Level.INFO, "加载矿物资源...");
+        logger.log(Level.INFO, "Načítám geologické zdroje...");
         GEOResourcesSetup.setup();
 
-        logger.log(Level.INFO, "加载自定义标签...");
+        logger.log(Level.INFO, "Načítám vlastní tagy...");
         loadTags();
 
-        logger.log(Level.INFO, "加载物品...");
+        logger.log(Level.INFO, "Načítám předměty...");
         loadItems();
 
-        logger.log(Level.INFO, "加载研究项目...");
+        logger.log(Level.INFO, "Načítám výzkumy...");
         loadResearches();
 
         PostSetup.setupWiki();
 
         // All Slimefun Listeners
-        logger.log(Level.INFO, "正在注册监听器...");
-
+        logger.log(Level.INFO, "Registruji posluchače...");
         // Inject downstream extra staff
         SlimefunExtended.init(this);
 
@@ -401,8 +395,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
                         logger.log(
                                 Level.SEVERE,
                                 x,
-                                () -> "An Exception occured while iterating through the Recipe list on Minecraft"
-                                        + " Version "
+                                () -> "Došlo k chybě při procházení receptů na verzi Minecraft "
                                         + minecraftVersion.getName()
                                         + " (Slimefun v"
                                         + getVersion()
@@ -415,7 +408,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         try {
             command.register();
         } catch (Exception | LinkageError x) {
-            logger.log(Level.SEVERE, "An Exception occurred while registering the /slimefun command", x);
+            logger.log(Level.SEVERE, "Došlo k chybě při registraci příkazu /slimefun", x);
         }
 
         // Armor Update Task
@@ -427,7 +420,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
             new RainbowArmorTask().schedule(this, config.getInt("options.rainbow-armor-update-interval") * 20L);
             new SolarHelmetTask().schedule(this, config.getInt("options.armor-update-interval"));
         } else if (config.getBoolean("options.enable-radiation")) {
-            logger.log(Level.WARNING, "Cannot enable radiation while armor effects are disabled.");
+            logger.log(Level.WARNING, "Nelze zapnout radiaci, pokud jsou vypnuté efekty zbroje.");
         }
 
         // Starting our tasks
@@ -435,18 +428,18 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         hologramsService.start();
         ticker.start(this);
 
-        logger.log(Level.INFO, "正在加载第三方插件支持...");
+        logger.log(Level.INFO, "Načítám podporu pro doplňky...");
         integrations.start();
 
         gitHubService.start(this);
 
         if (cfgManager.isAutoUpdate()) {
-            // 汉化版自动更新
+            // Automatická aktualizace české verze
             Bukkit.getScheduler().scheduleSyncDelayedTask(this, new AutoUpdateTask(this, getFile()));
         }
 
         // Hooray!
-        logger.log(Level.INFO, "Slimefun 完成加载, 耗时 {0}", getStartupTime(timestamp));
+        logger.log(Level.INFO, "Slimefun byl úspěšně načten, trvalo to {0}", getStartupTime(timestamp));
     }
 
     @Override
@@ -484,20 +477,6 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         // Finishes all started movements/removals of block data
         ticker.setPaused(true);
         ticker.halt();
-        /**try {
-         * ticker.halt();
-         * ticker.run();
-         * } catch (Exception x) {
-         * getLogger()
-         * .log(
-         * Level.SEVERE,
-         * x,
-         * () -> "Something went wrong while disabling the ticker task for Slimefun v"
-         * + getDescription().getVersion());
-         * }*/
-
-        // Kill our Profiler Threads
-        profiler.kill();
 
         // Save all Player Profiles that are still in memory
         PlayerProfile.iterator().forEachRemaining(profile -> {
@@ -554,13 +533,11 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      */
     static @Nonnull Collection<String> getSupportedVersions() {
         List<String> list = new ArrayList<>();
-
         for (MinecraftVersion version : MinecraftVersion.values()) {
             if (!version.isVirtual()) {
                 list.add(version.getName());
             }
         }
-
         return list;
     }
 
@@ -591,14 +568,12 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
             }
 
             // Now check the actual Version of Minecraft
-            // the Minecraft version id (e.g. "1.20.4", "1.20.2-pre2", "23w31a")
             ServerVersion serverVerDetail = SlimefunExtended.getServerVerDetail(getServer());
-
             if (serverVerDetail == null) {
                 getLogger()
                         .log(
                                 Level.WARNING,
-                                "我们无法识别你正在使用的 Minecraft 版本 ({0})",
+                                "Nepodařilo se rozpoznat verzi Minecraftu ({0})",
                                 getServer().getMinecraftVersion());
                 return false;
             }
@@ -626,9 +601,8 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
                     .log(
                             Level.SEVERE,
                             x,
-                            () -> "错误: 无法识别服务器 Minecraft 版本, Slimefun v"
+                            () -> "Chyba: Nepodařilo se rozpoznat verzi Minecraftu, Slimefun v"
                                     + getDescription().getVersion());
-
             // We assume "unsupported" if something went wrong.
             return true;
         }
@@ -655,7 +629,6 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
 
         for (String folder : storageFolders) {
             File file = new File("data-storage/Slimefun", folder);
-
             if (!file.exists()) {
                 file.mkdirs();
             }
@@ -663,7 +636,6 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
 
         for (String folder : pluginFolders) {
             File file = new File("plugins/Slimefun", folder);
-
             if (!file.exists()) {
                 file.mkdirs();
             }
@@ -675,6 +647,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      */
     private void registerListeners() {
         chatCatcher = new PlayerChatCatcher(this);
+
         // Old deprecated CS-CoreLib Listener
         new MenuListener(this);
 
@@ -714,11 +687,13 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         new SoulboundListener(this);
         new AutoCrafterListener(this);
         new SlimefunItemHitListener(this);
+
         if (SlimefunExtended.isAtLeast(1, 21, 5)) {
             new VersionedMiddleClickListener(this);
         } else {
             new MiddleClickListener(this);
         }
+
         new BeeListener(this);
         new BeeWingsListener(this, (BeeWings) SlimefunItems.BEE_WINGS.getItem());
         new PiglinListener(this);
@@ -732,6 +707,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
         new RadioactivityListener(this);
         new AncientAltarListener(this, (AncientAltar) SlimefunItems.ANCIENT_ALTAR.getItem(), (AncientPedestal)
                 SlimefunItems.ANCIENT_PEDESTAL.getItem());
+
         grapplingHookListener.register(this, (GrapplingHook) SlimefunItems.GRAPPLING_HOOK.getItem());
         bowListener.register(this);
         backpackListener.register(this);
@@ -754,7 +730,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
                     tag.reload();
                 }
             } catch (TagMisconfigurationException e) {
-                getLogger().log(Level.SEVERE, e, () -> "Failed to load Tag: " + tag.name());
+                getLogger().log(Level.SEVERE, e, () -> "Nepodařilo se načíst tag: " + tag.name());
             }
         }
     }
@@ -770,7 +746,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
                     .log(
                             Level.SEVERE,
                             x,
-                            () -> "An Error occurred while initializing SlimefunItems for Slimefun " + getVersion());
+                            () -> "Došlo k chybě při načítání předmětů Slimefun " + getVersion());
         }
     }
 
@@ -785,8 +761,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
                     .log(
                             Level.SEVERE,
                             x,
-                            () -> "An Error occurred while initializing Slimefun Researches for Slimefun "
-                                    + getVersion());
+                            () -> "Došlo k chybě při načítání výzkumů Slimefun " + getVersion());
         }
     }
 
@@ -809,12 +784,12 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      */
     private static void validateInstance() {
         if (instance == null) {
-            throw new IllegalStateException("Cannot invoke static method, Slimefun instance is null.");
+            throw new IllegalStateException("Nelze volat statickou metodu, instance Slimefun je null.");
         }
     }
 
     /**
-     * This method returns out {@link MinecraftRecipeService} for Slimefun.
+     * This returns our {@link MinecraftRecipeService} for Slimefun.
      * This service is responsible for finding/identifying {@link Recipe Recipes}
      * from vanilla Minecraft.
      *
@@ -936,7 +911,7 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
     }
 
     /**
-     * This returns our {@link  SoundService} which handles the configuration of all sounds used in Slimefun
+     * This returns our {@link SoundService} which handles the configuration of all sounds used in Slimefun
      *
      * @return Our instance of {@link SoundService}
      */
@@ -965,7 +940,6 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      */
     private @Nonnull String getStartupTime(long timestamp) {
         long ms = (System.nanoTime() - timestamp) / 1000000;
-
         if (ms > 1000) {
             return NumberUtils.roundDecimalNumber(ms / 1000.0) + 's';
         } else {
@@ -1115,7 +1089,6 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
     public static @Nonnull Set<Plugin> getInstalledAddons() {
         validateInstance();
         String pluginName = instance.getName();
-
         // @formatter:off - Collect any Plugin that (soft)-depends on Slimefun
         return Arrays.stream(instance.getServer().getPluginManager().getPlugins())
                 .filter(plugin -> {
@@ -1135,15 +1108,15 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      * Addons must schedule their own tasks using their own {@link Plugin} instance.
      *
      * @param runnable
-     *            The {@link Runnable} to run
+     * The {@link Runnable} to run
      * @param delay
-     *            The delay for this task
+     * The delay for this task
      *
      * @return The resulting {@link BukkitTask} or null if Slimefun was disabled
      */
     public static @Nullable BukkitTask runSync(@Nonnull Runnable runnable, long delay) {
-        Validate.notNull(runnable, "Cannot run null");
-        Validate.isTrue(delay >= 0, "The delay cannot be negative");
+        Validate.notNull(runnable, "Nelze spustit null");
+        Validate.isTrue(delay >= 0, "Zpoždění nemůže být záporné");
 
         // Run the task instantly within a Unit Test
         if (getMinecraftVersion() == MinecraftVersion.UNIT_TEST) {
@@ -1166,12 +1139,12 @@ public final class Slimefun extends JavaPlugin implements SlimefunAddon, ICompat
      * Addons must schedule their own tasks using their own {@link Plugin} instance.
      *
      * @param runnable
-     *            The {@link Runnable} to run
+     * The {@link Runnable} to run
      *
      * @return The resulting {@link BukkitTask} or null if Slimefun was disabled
      */
     public static @Nullable BukkitTask runSync(@Nonnull Runnable runnable) {
-        Validate.notNull(runnable, "Cannot run null");
+        Validate.notNull(runnable, "Nelze spustit null");
 
         // Run the task instantly within a Unit Test
         if (getMinecraftVersion() == MinecraftVersion.UNIT_TEST) {

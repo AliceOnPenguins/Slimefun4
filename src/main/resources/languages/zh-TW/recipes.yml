@@ -1,172 +1,168 @@
 ---
 slimefun:
   multiblock:
-    name: 多重方塊
+    name: 'Multiblock'
     lore:
-    - 在世界中蓋出該結構
-    - 這不是一個可合成的物品
+      - 'Postav ukázanou konstrukci,'
+      - 'jak je ukázáno. Nevyrábí se.'
   enhanced_crafting_table:
-    name: 進階合成檯(Enhanced Crafting Table)
+    name: 'Vylepšený pracovní stůl'
     lore:
-    - 在進階合成檯中
-    - 合成出該物品
-    - 原版工作檯沒用喔
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za pomocí Enhanced Crafting Table'
+      - 'Normální pracovní stůl nebude stačit!'
   armor_forge:
-    name: 盔甲鍛造檯(Armor Forge)
+    name: 'Výheň pro zbroj'
     lore:
-    - 在盔甲鍛造檯中
-    - 鍛造出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Armor Forge'
   grind_stone:
-    name: 研磨機(Grind Stone)
+    name: 'Brusný kámen'
     lore:
-    - 在研磨機中
-    - 研磨出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití brusného kamene'
   smeltery:
-    name: 冶(一ㄝˇ )煉爐(Smeltery)
+    name: 'Tavírna'
     lore:
-    - 在冶煉爐中
-    - 冶煉出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Smeltery'
   ore_crusher:
-    name: 礦石粉碎機(Ore Crusher)
+    name: 'Drtič rud'
     lore:
-    - 使用礦石粉碎機
-    - 粉碎出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Ore Crusher'
   mob_drop:
-    name: 怪物掉落物
+    name: 'Kořist z monstra'
     lore:
-    - 擊殺該怪物
-    - 以取得該物品
+      - 'Zabij tohle stvoření'
+      - 'k získání tohoto předmětu'
   gold_pan:
-    name: 掏金盤(Gold Pan)[工具區]
+    name: 'Rýžovací pánev'
     lore:
-    - '使用掏金盤
-
-'
-    - 篩出此物品
+      - 'Použij Gold Pan k'
+      - 'získání tohoto předmětu'
   compressor:
-    name: 壓縮機(Compressor)
+    name: 'Kompresor'
     lore:
-    - 使用壓縮機
-    - 壓縮出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Compressor'
   pressure_chamber:
-    name: 加壓室(Pressure Chamber)
+    name: 'Tlaková komora'
     lore:
-    - 使用加壓室
-    - 壓縮出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Pressure Chamber'
   ore_washer:
-    name: 礦物洗滌機(Ore Washer)
+    name: 'Čištič rud'
     lore:
-    - 使用礦物洗滌機
-    - 篩出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Ore Washer'
   juicer:
-    name: 果汁機(Juicer)
+    name: 'Odšťavňovač'
     lore:
-    - 使用果汁機
-    - 榨出蓋物品
+      - 'Vyrob tento džus, jak je je ukázáno,'
+      - 'za použití Juicer'
   magic_workbench:
-    name: 魔法合成檯(Magic Workbench)
+    name: 'Magický pracovní stůl'
     lore:
-    - 使用魔法合成檯
-    - 合成出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Magic Workbench'
   ancient_altar:
-    name: 古代祭壇(Ancient Altar)
+    name: 'Starověký oltář'
     lore:
-    - 使用古代祭壇
-    - 合成出該物品
-    - 到古代祭壇頁面獲取更多資訊
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Ancient Altar.'
+      - 'Podívej se na Ancient Altar pro více informací'
   heated_pressure_chamber:
-    name: |-
-      高溫加壓室
-      (Heated Pressure Chamber)
+    name: 'Zahřívaná tlaková komora'
     lore:
-    - 使用高溫加壓室
-    - 壓縮出該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Heated Pressure Chamber'
   food_fabricator:
-    name: 食品加工場(Food Fabricator)
+    name: 'Fabrikátor jídla'
     lore:
-    - 使用食品加工場
-    - 製造該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Food Fabricator'
   food_composter:
-    name: 堆肥機(Food Composter)
+    name: 'Komposter na jídlo'
     lore:
-    - 使用堆肥機
-    - 製造該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Food Composter'
   freezer:
-    name: 冷凍艙(Freezer)
+    name: 'Mrazák'
     lore:
-    - 使用冷凍艙
-    - 將此物品冰鎮
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Freezer'
   geo_miner:
-    name: 自然資源挖掘機(GEO Miner)
+    name: 'GEO horník'
     lore:
-    - 使用自然資源挖掘機
-    - 挖掘此資源
+      - 'Tento předmět lze shromažďovat'
+      - 'pomocí GEO Miner'
   nuclear_reactor:
-    name: 核能發電廠(Nuclear Reactor)
+    name: 'Jaderný reaktor'
     lore:
-    - 此物品為核能發電
-    - 的副產物
+      - 'Tento předmět je vedlejší produkt'
+      - 'při provozování v Nuclear Reactor'
   oil_pump:
-    name: 石油泵(Oil Pump)
+    name: 'Ropná pumpa'
     lore:
-    - 使用石油泵
-    - 獲得該物品
+      - 'Tento předmět lze shromažďovat'
+      - 'pomocí Oil Pump'
   pickaxe_of_containment:
-    name: 包容之鎬(Pickaxe of Containment)
+    name: 'Krumpáč zadržení'
     lore:
-    - 生怪磚
-    - 可以用包容之鎬
-    - 挖掘下來(會損毀)
+      - 'Tento blok lze získat'
+      - 'těžbou líhně pomocí'
+      - 'Pickaxe of Containment'
   refinery:
-    name: 煉油廠(Refinery)
+    name: 'Rafinérie'
     lore:
-    - 使用煉油廠
-    - 提煉該物品
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití Rafinery'
   barter_drop:
-    name: 豬布林交易
+    name: 'Odměna z obchodování s pigliny'
     lore:
-    - 用黃金和豬布林
-    - 交易以獲取此物品
+      - 'Vyměňuj s pigliny zlaté'
+      - 'ingoty k získání tohoto předmětu'
 minecraft:
   shaped:
-    name: 有序合成
+    name: 'Recept na výrobu ve tvaru'
     lore:
-    - 數量一樣
-    - 位置一致
-    - "(原版合成檯)"
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'v normálním pracovním stole'
+      - 'Tvar je důležitý.'
   shapeless:
-    name: 無序合成
+    name: 'U receptu nezáleží na tvaru'
     lore:
-    - 數量一樣
-    - 位置不重要
-    - "(原版合成檯)"
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'v normálním pracovním stole'
+      - 'Tento recept je beztvarý.'
   furnace:
-    name: 熔爐合成表
+    name: 'Recept na pec'
     lore:
-    - 加熱燒一燒
-    - 成品出來了!
+      - 'Roztav tento předmět v peci'
+      - 'k vyrobení vysněného předmětu'
   blasting:
-    name: 高爐合成表
+    name: 'Recept na tavicí pec'
     lore:
-    - 加熱燒一燒
-    - 成品出來了!
+      - 'Roztav tento předmět v tavící peci'
+      - 'k vyrobení vysněného předmětu'
   smoking:
-    name: 煙燻爐合成表
+    name: 'Recept na troubu'
     lore:
-    - 加熱燒一燒
-    - 成品出來了!
+      - 'Upeč tenhle předmět v troubě'
+      - 'k vyrobení vysněného předmětu'
   campfire:
-    name: 營火合成表
+    name: 'Recept na táborák'
     lore:
-    - 加熱燒一燒
-    - "\t\n成品出來了!"
+      - 'Upeč tenhle předmět v táboráku'
+      - 'k vyrobení vysněného předmětu'
   stonecutting:
-    name: 切石機合成表
+    name: 'Recept na řezačku kamene'
     lore:
-    - 上去磨一磨
-    - "\t\n成品出來了!"
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití řezačky kamene'
   smithing:
-    name: 鍛造台合成表
+    name: 'Recept na kovářský stůl '
     lore:
-    - 鍛造一下下
-    - 成品出來了
+      - 'Vyrob tento předmět, jak je ukázáno,'
+      - 'za použití kovářského stolu'
