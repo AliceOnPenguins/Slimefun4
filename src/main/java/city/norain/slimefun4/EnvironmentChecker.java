@@ -77,7 +77,7 @@ class EnvironmentChecker {
                         sf,
                         () -> {
                             if (Bukkit.getPluginManager().getPlugin("SlimeGlue") == null) {
-                                sf.getLogger().log(Level.WARNING, "Nebyl nalezen plugin SlimeGlue (粘液胶).");
+                                sf.getLogger().log(Level.WARNING, "Nebyl nalezen plugin SlimeGlue (slizové lepidlo).");
                                 sf.getLogger().log(Level.WARNING, "Budeš mít chybějící ochranu u některých pluginů!");
                                 sf.getLogger()
                                         .log(

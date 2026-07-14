@@ -202,7 +202,7 @@ public class GEOMiner extends SlimefunItem
 
             @Override
             public void onPlayerPlace(BlockPlaceEvent e) {
-                updateHologram(e.getBlock(), "&7待机中...");
+                updateHologram(e.getBlock(), "&7Nečinný...");
             }
         };
     }
@@ -334,7 +334,7 @@ public class GEOMiner extends SlimefunItem
         if (chunkData != null && chunkData.isDataLoaded()) {
             // the data is fully loaded
             if (chunkData.getAllData().isEmpty()) {
-                updateHologram(b, "&4需要先进行地形扫描!");
+                updateHologram(b, "&4Nejprve je nutné provést sken terénu!");
             } else {
                 start(b, inv);
             }
@@ -345,7 +345,7 @@ public class GEOMiner extends SlimefunItem
                     .getChunkDataAsync(b.getChunk(), new IAsyncReadCallback<>() {
                         @Override
                         public void onResult(SlimefunChunkData result) {
-                            updateHologram(b, "&4区块数据加载中...");
+                            updateHologram(b, "&4Načítání dat chunku...");
                         }
                     });
         }
@@ -373,17 +373,17 @@ public class GEOMiner extends SlimefunItem
                     Slimefun.getGPSNetwork()
                             .getResourceManager()
                             .setSupplies(resource, b.getWorld(), b.getX() >> 4, b.getZ() >> 4, supplies - 1);
-                    updateHologram(b, "&7开采中: &r" + resource.getName());
+                    updateHologram(b, "&7Těžba: &r" + resource.getName());
                     return;
                 }
             }
         }
 
         if (!success) {
-            updateHologram(b, "&4需要先进行地形扫描!");
+            updateHologram(b, "&4Nejprve je nutné provést sken terénu!");
             return;
         }
 
-        updateHologram(b, "&7开采完成");
+        updateHologram(b, "&7Těžba dokončena");
     }
 }

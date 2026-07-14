@@ -52,7 +52,7 @@ class BackpackCommand extends SubCommand {
                                     sender,
                                     "messages.usage",
                                     true,
-                                    msg -> msg.replace("%usage%", "/sf backpack (玩家名)"));
+                                    msg -> msg.replace("%usage%", "/sf backpack (jméno hráče)"));
                     return;
                 }
 

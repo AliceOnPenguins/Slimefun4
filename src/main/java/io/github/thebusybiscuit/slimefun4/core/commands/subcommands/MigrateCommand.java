@@ -1,4 +1,5 @@
 package io.github.thebusybiscuit.slimefun4.core.commands.subcommands;
+
 import com.xzavier0722.mc.plugin.slimefun4.storage.migrator.BlockStorageMigrator;
 import com.xzavier0722.mc.plugin.slimefun4.storage.migrator.MigrateStatus;
 import com.xzavier0722.mc.plugin.slimefun4.storage.migrator.PlayerProfileMigrator;
@@ -10,15 +11,18 @@ import javax.annotation.Nonnull;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
+
 public class MigrateCommand extends SubCommand {
     MigrateCommand(Slimefun plugin, SlimefunCommand cmd) {
         super(plugin, cmd, "migrate", true);
     }
+
     @Nonnull
     @Override
     protected String getDescription() {
         return "commands.migrate.description";
     }
+
     @Override
     public void onExecute(@Nonnull CommandSender sender, @Nonnull String[] args) {
         if (sender.hasPermission("slimefun.command.migrate") || sender instanceof ConsoleCommandSender) {
@@ -49,6 +53,7 @@ public class MigrateCommand extends SubCommand {
             Slimefun.getLocalization().sendMessage(sender, "messages.no-permission", true);
         }
     }
+
     private void sendMigrateStatus(@Nonnull String migrateType, @Nonnull CommandSender sender, MigrateStatus status) {
         switch (status) {
             case SUCCESS ->

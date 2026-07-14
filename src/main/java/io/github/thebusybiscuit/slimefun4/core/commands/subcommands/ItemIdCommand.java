@@ -1,4 +1,5 @@
 package io.github.thebusybiscuit.slimefun4.core.commands.subcommands;
+
 import io.github.bakedlibs.dough.common.ChatColors;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.core.commands.SlimefunCommand;
@@ -13,10 +14,12 @@ import net.md_5.bungee.api.chat.hover.content.Text;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
 class ItemIdCommand extends SubCommand {
     protected ItemIdCommand(Slimefun plugin, SlimefunCommand cmd) {
         super(plugin, cmd, "id", false);
     }
+
     @Override
     public void onExecute(@Nonnull CommandSender sender, @Nonnull String[] args) {
         if (sender instanceof Player p) {
@@ -31,7 +34,8 @@ class ItemIdCommand extends SubCommand {
                         idMsg.setUnderlined(true);
                         idMsg.setItalic(true);
                         idMsg.setColor(ChatColor.GRAY);
-                        idMsg.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new Text("Klikni pro zkopírování do schránky")));
+                        idMsg.setHoverEvent(new HoverEvent(
+                                HoverEvent.Action.SHOW_TEXT, new Text("Klikni pro zkopírování do schránky")));
                         idMsg.setClickEvent(new ClickEvent(ClickEvent.Action.COPY_TO_CLIPBOARD, sfId));
                         sender.spigot().sendMessage(msg, idMsg);
                     } else {

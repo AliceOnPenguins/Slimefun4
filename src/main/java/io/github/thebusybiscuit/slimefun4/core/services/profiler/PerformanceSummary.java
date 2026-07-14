@@ -51,8 +51,10 @@ class PerformanceSummary {
     public void send(@Nonnull PerformanceInspector sender) {
         sender.sendMessage("");
         sender.sendMessage(ChatColor.GREEN + "===== Slimefun Profiler =====");
-        sender.sendMessage(ChatColor.GOLD + "Celkový čas ticku: " + ChatColor.YELLOW + NumberUtils.getAsMillis(totalElapsedTime));
-        sender.sendMessage(ChatColor.GOLD + "Perioda tickeru: " + ChatColor.YELLOW + NumberUtils.roundDecimalNumber(tickRate / 20.0) + "s (" + tickRate + " ticks)");
+        sender.sendMessage(
+                ChatColor.GOLD + "Celkový čas ticku: " + ChatColor.YELLOW + NumberUtils.getAsMillis(totalElapsedTime));
+        sender.sendMessage(ChatColor.GOLD + "Perioda tickeru: " + ChatColor.YELLOW
+                + NumberUtils.roundDecimalNumber(tickRate / 20.0) + "s (" + tickRate + " ticks)");
         sender.sendMessage(ChatColor.GOLD + "Hodnocení výkonu: " + getPerformanceRating());
         sender.sendMessage("");
 

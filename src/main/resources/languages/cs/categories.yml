@@ -1,26 +1,25 @@
----
 slimefun:
-  weapons: Zbraně
-  tools: Nástroje
-  items: Užitečné předměty
-  food: Jídlo
-  basic_machines: Základní stroje
-  electricity: Energie a elektrika
-  gps: GPS stroje
-  armor: Brnění
-  magical_items: Magické předměty
-  magical_gadgets: Magické pomůcky
-  misc: Smíšené předměty
-  technical_gadgets: Technické pomůcky
-  resources: Materiály
-  cargo: Cargo systém
-  tech_misc: Technické komponenty
-  magical_armor: Magická zbroj
-  talismans: Talismany (Tier I)
-  ender_talismans: Enderitové talismany (Tier II)
-  christmas: Vánoce (prosinec)
-  valentines_day: Svatého Valentýna (14. února)
-  easter: Velikonoce (duben)
-  birthday: TheBusyBiscuitovy narozeniny (26. říjen)
-  halloween: Halloween (31. října)
-  androids: Programovatelné androidy
+  weapons: 'Zbraně'
+  tools: 'Nástroje'
+  items: 'Užitečné předměty'
+  food: 'Jídlo'
+  basic_machines: 'Základní stroje'
+  electricity: 'Energie a elektřina'
+  androids: 'Programovatelní androidi'
+  gps: 'Zařízení založená na GPS'
+  armor: 'Zbroj'
+  magical_items: 'Magické předměty'
+  magical_gadgets: 'Magické pomůcky'
+  misc: 'Různé předměty'
+  technical_gadgets: 'Technické nástroje'
+  resources: 'Nerostné suroviny'
+  cargo: 'Správa nákladu'
+  tech_misc: 'Technické součástky'
+  magical_armor: 'Magická zbroj'
+  talismans: 'Talismany (úroveň I)'
+  ender_talismans: 'Endermanské talismany (úroveň II)'
+  christmas: 'Vánoce (prosinec)'
+  valentines_day: 'Valentýn (14. února)'
+  easter: 'Velikonoce (duben)'
+  birthday: 'Narozeniny TheBusyBiscuit (26. října)'
+  halloween: 'Halloween (31. října)'

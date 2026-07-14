@@ -70,14 +70,17 @@ class VersionsCommand extends SubCommand {
 
             builder.append(Component.text("\nPřeložil StarWishsama", Style.style(NamedTextColor.WHITE)))
                     .append(Component.text(
-                            "\nNenahlašuj chyby této verze na Discord/Github\nNejdříve nahlásit na stránce překladu\n", Style.style(NamedTextColor.RED)));
+                            "\nNenahlašuj chyby této verze na Discord/Github\nNejdříve nahlásit na stránce překladu\n",
+                            Style.style(NamedTextColor.RED)));
 
             if (Slimefun.getConfigManager().isBypassEnvironmentCheck()) {
-                builder.append(Component.text("\n\nKontrola kompatibility prostředí je vypnuta", Style.style(NamedTextColor.RED)));
+                builder.append(Component.text(
+                        "\n\nKontrola kompatibility prostředí je vypnuta", Style.style(NamedTextColor.RED)));
             }
 
             if (Slimefun.getConfigManager().isBypassItemLengthCheck()) {
-                builder.append(Component.text("\n\nKontrola délky předmětu je vypnuta", Style.style(NamedTextColor.RED)));
+                builder.append(
+                        Component.text("\n\nKontrola délky předmětu je vypnuta", Style.style(NamedTextColor.RED)));
             }
 
             builder.append(Component.text("\n"));
@@ -112,7 +115,8 @@ class VersionsCommand extends SubCommand {
         Collection<Plugin> addons = Slimefun.getInstalledAddons();
 
         if (addons.isEmpty()) {
-            builder.append(Component.text("Žádné doplňky nejsou nainstalovány", NamedTextColor.GRAY).decorate(TextDecoration.ITALIC));
+            builder.append(Component.text("Žádné doplňky nejsou nainstalovány", NamedTextColor.GRAY)
+                    .decorate(TextDecoration.ITALIC));
             return;
         }
 
@@ -142,7 +146,8 @@ class VersionsCommand extends SubCommand {
                         Component hoverComp = Component.text()
                                 .append(Component.text("Autoři: ", NamedTextColor.YELLOW))
                                 .append(Component.text(authors, NamedTextColor.YELLOW))
-                                .append(Component.text("\n> Klikni pro otevření stránky pro hlášení chyb", NamedTextColor.GOLD))
+                                .append(Component.text(
+                                        "\n> Klikni pro otevření stránky pro hlášení chyb", NamedTextColor.GOLD))
                                 .build();
 
                         hoverEvent = HoverEvent.showText(hoverComp);
@@ -150,7 +155,8 @@ class VersionsCommand extends SubCommand {
                         Component hoverComp = Component.text()
                                 .append(Component.text("Autoři: ", NamedTextColor.YELLOW))
                                 .append(Component.text(authors, NamedTextColor.YELLOW))
-                                .append(Component.text("\n> Odkaz pro hlášení chyb tohoto doplňku je neplatný!", NamedTextColor.RED))
+                                .append(Component.text(
+                                        "\n> Odkaz pro hlášení chyb tohoto doplňku je neplatný!", NamedTextColor.RED))
                                 .build();
 
                         hoverEvent = HoverEvent.showText(hoverComp);
@@ -175,15 +181,22 @@ class VersionsCommand extends SubCommand {
                             clickEvent = ClickEvent.openUrl(uri.toString());
                         }
                         Component hoverComp = Component.text()
-                                .append(Component.text("Tento plugin je vypnut.\nZkontroluj prosím konzoli pro chyby.", NamedTextColor.RED))
-                                .append(Component.text("\n> Klikni pro otevření stránky pro hlášení chyb", NamedTextColor.DARK_RED))
+                                .append(Component.text(
+                                        "Tento plugin je vypnut.\nZkontroluj prosím konzoli pro chyby.",
+                                        NamedTextColor.RED))
+                                .append(Component.text(
+                                        "\n> Klikni pro otevření stránky pro hlášení chyb", NamedTextColor.DARK_RED))
                                 .build();
 
                         hoverEvent = HoverEvent.showText(hoverComp);
                     } catch (IllegalArgumentException e) {
                         Component hoverComp = Component.text()
-                                .append(Component.text("Tento plugin je vypnut.\nZkontroluj prosím konzoli pro chyby.", NamedTextColor.RED))
-                                .append(Component.text("\n> Odkaz pro hlášení chyb tohoto pluginu je neplatný", NamedTextColor.DARK_RED))
+                                .append(Component.text(
+                                        "Tento plugin je vypnut.\nZkontroluj prosím konzoli pro chyby.",
+                                        NamedTextColor.RED))
+                                .append(Component.text(
+                                        "\n> Odkaz pro hlášení chyb tohoto pluginu je neplatný",
+                                        NamedTextColor.DARK_RED))
                                 .build();
 
                         hoverEvent = HoverEvent.showText(hoverComp);

@@ -1,109 +1,144 @@
 ---
+sf-cn:
+  timings:
+    started: '&aProfiler výkonu byl spuštěn.'
+    running: '&aProfiler výkonu právě běží, pro získání dat ho nejprve zastav.'
+    stopped: '&aProfiler výkonu byl zastaven, zprávu najdeš zde: &f{0}'
+    warning: '&cPři generování zprávy o výkonu došlo k chybě! Podrobnosti najdeš v logu serveru.'
 commands:
-  help: Zobrazí tuto  nápovědu
-  cheat: Umožní našvindlovat si věci
-  give: Dá hráči vybrané Slimefun předměty
+  help: Zobrazí tuto nápovědu
+  cheat: Umožní vzít si Slimefun předměty přes cheat mód
+  give: Dá hráči Slimefun předměty
   guide: Dá Slimefun příručku
-  teleporter: Zobrazí záchytné body ostatních hráčů
-  versions: Zobrazí všechny nainstalované doplňky
-  search: Vyhledá v příručce daný předmět
-  open_guide: Otevře Slimefun příručku bez použití knihy
+  teleporter: Zobrazí veřejné teleportační body ostatních hráčů
+  versions: Zobrazí prostředí, ve kterém Slimefun běží
+  search: Vyhledá Slimefun předmět
+  open_guide: Otevře Slimefun příručku pomocí příkazu
   stats: Ukáže statistiky hráče
+  id: Zobrazí Slimefun ID předmětu, který držíš
+  cleardata:
+    description: Vyčistí data světa
+    success: '&aBylo vyčištěno &c{0} &adat typu &c{1}'
+    block: blok
+    oil: ropa
+    worldNotFound: '&cSvět nebyl nalezen'
+    confirm: '&e Zadej příkaz /sf cleardata <World> <Type> confirm pro potvrzení &cTuto akci nelze vrátit zpět!'
+  banitem:
+    description: Zakáže Slimefun předmět
+    success: '&aÚspěšně zakázáno'
+  unbanitem:
+    description: Povolí Slimefun předmět
+    success: '&aÚspěšně povoleno'
   research:
     description: Odemkne či resetuje výzkum daného hráče
     reset: '&cResetoval jsi výzkum hráče %player%'
-    reset-target: '&cTvoje znalost byla resetována '
+    reset-target: '&cTvůj výzkum byl resetován'
   backpack:
-    description: Načíst kopii existujícího batohu
-    invalid-id: '&4Id nesmí být záporné!'
-    player-never-joined: '&4Hráče s tímto jménem nelze nalézt!'
-    backpack-does-not-exist: '&4Zadaný batoh neexistuje!'
-    restored-backpack-given: '&aTvůj batoh byl obnoven a navrácen do tvého inventáře!'
+    description: Získej zpět svůj ztracený batoh
+    invalid-id: '&4ID batohu nesmí být záporné!'
+    player-never-joined: '&4Hráč s tímto jménem nebyl nalezen!'
+    backpack-does-not-exist: '&4Tento hráč nemá žádný batoh!'
+    searching: '&eVyhledávání...'
+    restored-backpack-given: '&aTvůj batoh byl obnoven a vložen do tvého inventáře!'
   charge:
     description: Nabije předmět, který držíš
-    charge-success: Předmět byl nabit!
+    charge-success: Nabíjení dokončeno!
     not-rechargeable: Tento předmět nelze nabít!
   timings:
-    description: Timings pro Slimefun a jeho doplňky
-    please-wait: '&ePočkej, prosím, vteřinu… Výsledky přicházejí!'
-    verbose-player: '&4Tato vlajka nemůže být použita hráčem!'
-    unknown-flag: '&4Neplatná vlajka: &c%flag%'
+    description: Zpráva o výkonu Slimefunu a jeho doplňků
+    please-wait: '&ePočkej chvíli... výsledky už se blíží!'
+    verbose-player: '&4Tento příznak nelze použít jako hráč!'
+    unknown-flag: '&4Neznámý příznak: &c%flag%'
   debug:
-    description: 'Spustit ladění pro vývojáře'
+    description: 'Výstup ladicího logu pro vývojáře'
     current: '&7Aktuální testovací případ: &6%test_case%'
-    none-running: '&7Aktuálně neběží žádný testovací případ!'
-    running: '&7Spouštím ladící mód s testem: &6%test%'
-    disabled: '&7Ladící mód vypnut.'
+    none-running: '&7Momentálně neběží žádný testovací případ!'
+    running: '&7Ladicí mód právě běží s testem: &6%test%'
+    disabled: '&7Ladicí mód byl vypnut'
+  reload:
+    description: "Znovu načte konfigurační soubory Slimefunu"
+    success: "&aKonfigurační soubory byly úspěšně znovu načteny."
+    failed: "&cNačtení konfigurace se nezdařilo! Možná bude potřeba restartovat server, podívej se do logu pro víc informací."
+  migrate:
+    description: "Migrace starých dat"
+    confirm: "&cOpravdu chceš spustit migraci dat? Pro potvrzení zadej /sf migrate confirm\nBěhem migrace nenech hráče používat Slimefun stroje a předměty na serveru!"
+    started: "&aProbíhá migrace starých dat..."
+    success: "&aMigrace starých dat (%migrate_type%) do databáze byla úspěšná."
+    failed: "&cPři migraci dat došlo k chybě, podívej se do logu."
+    already-migrated: "&aŽádná data k migraci nejsou."
+    in-progress: "&aMigrace právě probíhá..."
+  blockdata:
+    description: 'Práce s daty slime bloků'
 placeholderapi:
   profile-loading: 'Načítání...'
 guide:
   locked: 'ZAMČENO'
-  work-in-progress: 'Tato funkce ještě není zcela dokončena!'
+  work-in-progress: 'Tato funkce ještě není hotová!'
   locked-itemgroup:
-    - 'Chcete-li odemknout tuto kategorii, budete'
-    - 'muset odemknout všechny předměty z'
-    - 'následující kategorie'
+    - 'Pro odemknutí této kategorie'
+    - 'musíš nejdřív odemknout všechny předměty'
+    - 'z následujících kategorií'
   search:
-    message: '&bCo bys chtěl vyhledat?'
+    message: '&bCo dnes chceš vyhledat?'
     name: '&7Hledat...'
     tooltip: '&bKlikni pro vyhledání předmětu'
-    inventory: 'Hledání: %item%'
+    inventory: 'Vyhledávání: %item%'
   tooltips:
     open-itemgroup: 'Klikni pro otevření'
-    versions-notice: 'To jsou velmi důležité při hlášení chyb!'
-    wiki: 'Zobrazit tento předmět na oficiální Slimefun Wiki'
+    versions-notice: 'To je při hlášení chyb velmi důležité!'
+    wiki: 'Zobrazit tento předmět na neoficiální české Slimefun Wiki'
     recipes:
-      machine: 'Recepty vytvářené tímto strojem'
-      miner: 'Materiály, které můžeš získat tímto těžebním robotem'
+      machine: 'Recepty dostupné pro tento stroj'
+      miner: 'Suroviny, které lze získat touto těžební vrtačkou'
       generator: 'Dostupné typy paliv'
-      gold-pan: 'Materiály, které můžeš získat'
-      climbing-pick: 'Povrchy, na které můžeš lézt'
+      gold-pan: 'Suroviny, které lze získat'
+      climbing-pick: 'Povrchy, na které lze vylézt'
   cheat:
-    no-multiblocks: '&4Nemůžeš podvádět v multiblocích, musíš je postavit!'
+    no-multiblocks: '&4V cheat módu nelze získat stroj z multibloku, musíš ho postavit podle návodu!'
   pages:
     previous: 'Předchozí strana'
-    next: 'Následující strana'
+    next: 'Další strana'
   back:
     title: 'Zpět'
     guide: 'Zpět do Slimefun příručky'
-    settings: 'Zpět do panelu nastavení'
+    settings: 'Zpět do nastavení'
   languages:
-    updated: '&aTvůj jazyk byl úspěšně nastaven na: &b%lang%'
-    selected-language: 'Aktuálně vybráno:'
-    select: 'Klikni pro vybrání jazyka'
-    select-default: 'Klikni pro vybrání výchozího jazyka'
+    updated: '&aJazyk byl úspěšně změněn na: &b%lang%'
+    selected-language: 'Aktuálně vybraný jazyk:'
+    select: 'Klikni pro výběr tohoto jazyka'
+    select-default: 'Klikni pro výběr výchozího jazyka'
     change: 'Klikni pro výběr nového jazyka'
     description:
-      - '&7Nyní máš možnost změnit'
-      - '&7jazyk, ve kterém ti bude'
-      - '&7Slimefun prezentován. Předměty'
-      - '&7nelze prozatím přeložit.'
+      - '&7Teď si můžeš změnit jazyk,'
+      - '&7ve kterém se ti Slimefun'
+      - '&7zobrazuje. Text u předmětů'
+      - '&7zatím přeložit nelze.'
     translations:
-      name: '&aChybí zde něco?'
+      name: '&aChybí ti tu něco?'
       lore: 'Klikni pro přidání vlastního překladu'
   options:
     learning-animation:
       enabled:
         text:
-          - '&bAnimace Výzkumu: &aAno'
+          - '&bAnimace odemykání: &aZapnuto'
           - ''
-          - '&7Nyní můžete přepnout, zda-li'
-          - '&7uvidíte informace o průběhu vašeho hloubání'
-          - '&7když budete zkoumat předmět.'
-        click: '&eKliknutím vypnete animace výzkumu'
+          - '&7Teď si můžeš vybrat, jestli'
+          - '&7chceš přeskočit animaci'
+          - '&7při zkoumání předmětu.'
+        click: '&eKlikni pro vypnutí animace odemykání'
       disabled:
         text:
-          - '&bAnimace Výzkumu: &4Ne'
+          - '&bAnimace odemykání: &4Vypnuto'
           - ''
-          - '&7Nyní můžete přepnout, zda-li'
-          - '&7uvidíte informace o průběhu vašeho hloubání'
-          - '&7když budete zkoumat předmět.'
-        click: '&eKliknutím zapnete animace výzkumu'
+          - '&7Teď si můžeš vybrat, jestli'
+          - '&7chceš přeskočit animaci'
+          - '&7při zkoumání předmětu.'
+        click: '&eKlikni pro zapnutí animace odemykání'
   title:
     main: 'Slimefun příručka'
     settings: 'Nastavení a informace'
-    languages: 'Zvol svůj preferovaný jazyk'
-    credits: 'Slimefun4 pomocníci'
+    languages: 'Vyber si jazyk, který chceš změnit'
+    credits: 'Přispěvatelé Slimefun4'
     wiki: 'Slimefun4 Wiki'
     addons: 'Doplňky pro Slimefun4'
     bugs: 'Nahlášení chyb'
@@ -111,254 +146,295 @@ guide:
     versions: 'Nainstalovaná verze'
   credits:
     commit: 'Commit'
-    commits: 'Commity'
-    profile-link: 'Klikni pro navštívení jeho profilu na GitHubu'
-    open: 'Klikni pro zobrazení našich pomocníků'
+    commits: 'Počet commitů'
+    profile-link: 'Klikni pro návštěvu jeho GitHub profilu'
+    open: 'Klikni pro zobrazení seznamu přispěvatelů'
     description:
-      - '&7Slimefun je open-source projekt'
-      - '&7udržován velkou komunitou lidí.'
-      - '&7Na Slimefunu za všechny ty roky pracovalo'
-      - '&7přes &e%contributors% &7lidí.'
+      - '&7Slimefun je open-source projekt,'
+      - '&7který udržuje komunita hráčů.'
+      - '&7Za ty roky na něm pracovalo'
+      - '&7už &e%contributors% &7lidí.'
     roles:
       developer: '&6Vývojář'
-      wiki: '&3Wiki správce'
-      resourcepack: '&cTvůrce modifikačního balíčku'
+      wiki: '&3Wiki editor'
+      resourcepack: '&cTvůrce texturpacku'
       translator: '&9Překladatel'
+
+actionbar:
+  radiation: '&6Míra ozáření radiací: &c%level%&7/&e100'
+
 messages:
-  not-researched: '&4Nemáš dostatek znalostí, abys tohle pochopil. &cMusíš odemknout &f"%item%&f"'
-  not-enough-xp: '&4Nemáš dostatek XP úrovní na to, abys vyzkoumal tuhle věc'
-  unlocked: '&bMáš vyzkoumáno &7„%research%”'
-  only-players: '&4Tenhle příkaz je jenom pro hráče'
+  android-no-permission: "&cTvůj android nemůže pracovat na pozemku/území, kde nemáš oprávnění, byl proto automaticky zastaven."
+  not-researched: '&4Nemáš dostatek znalostí, abys tomuhle rozuměl. &cNejdřív musíš odemknout &f"%item%"&f'
+  not-enough-xp: '&4Nemáš dostatek zkušeností na odemknutí tohoto výzkumu'
+  unlocked: '&bÚspěšně odemknut výzkum &7"%research%"'
+  only-players: '&4Tento příkaz lze použít jen ve hře'
   unknown-player: '&4Neznámý hráč: &c%player%'
   no-permission: '&4Na tohle nemáš dostatečné oprávnění'
   usage: '&4Použití: &c%usage%'
-  not-online: '&4%player% &czrovna není připojen!'
-  invalid-item: '&4%item% &cnení platný předmět!'
-  invalid-amount: '&4%amount% &cnení platné číslo. Musí být větší než 0!'
-  given-item: '&bDostal jsi &a%amount% &7„%item%&7”'
-  give-item: '&bDal jsi %player% &a%amount% &7„%item%&7”'
-  invalid-research: '&4%research% &cnení platný výzkum!'
-  give-research: '&bUdělil jsi %player% výzkum  &7"%research%&7"'
-  hungry: '&cJsi moc hladový na to, abys to zvládl!'
-  disabled-in-world: '&4&lTahle věc není v tomhle světě povolená'
-  disabled-item: "&4&lTahle věc není povolená!\nJak jsi ji vůbec dostal?"
-  no-tome-yourself: '&cNemůžeš použít svůj &4Tome of Knowledge&c...'
-  multimeter: '&bEnergie: &3%stored% &b/ &3%capacity%'
-  piglin-barter: '&4S pigliny nemůžeš vyměňovat Slimefun předměty'
-  bee-suit-slow-fall: '&eTvé Bee Wings ti pomohou bezpečně a pomalu se vrátit na zem'
+  not-online: '&4%player% &cnení online'
+  invalid-item: '&4%item% &cnení platný název předmětu!'
+  invalid-amount: '&4%amount% &cnení platné číslo: musí být větší než 0!'
+  invalid-item-in-hand: '&eTo, co držíš, není Slimefun předmět!'
+  given-item: '&bDostal jsi &a%amount% &7"%item%"'
+  give-item: '&bÚspěšně jsi dal hráči %player% &a%amount% &7"%item%"'
+  invalid-research: '&4%research% &cnení platný název výzkumu!'
+  give-research: '&bÚspěšně jsi odemknul hráči %player% výzkum &7"%research%"'
+  hungry: '&cJsi příliš hladový, nejdřív se najez!'
+  disabled-in-world: '&4&l%item_name% je v tomto světě zakázán'
+  disabled-item: '&4&l%item_name% je zakázán! Jak jsi ho vůbec získal?'
+  no-tome-yourself: '&cNemůžeš použít vlastní &4Knihu vědění &c...'
+  multimeter: '&bUložená energie: &3%stored% &b/ &3%capacity%'
+  piglin-barter: '&4Slimefun předměty nemůžeš vyměňovat s piglinama'
+  bee-suit-slow-fall: '&eTvá včelí křídla ti pomohou bezpečně a pomalu klesnout'
+  deprecated-item: '&4Tento předmět je zastaralý a brzy bude ze Slimefunu odstraněn.'
+  researching-is-disabled: '&cVýzkum je na tomto serveru vypnutý, všechny předměty jsou odemčené!'
   multi-tool:
-    mode-change: '&b%device% mód změněn na: &9%mode%'
-    not-shears: '&cMulti Tool nemůže být použit jako nůžky!'
+    mode-change: '&bRežim %device% byl přepnut na: &9%mode%'
+    not-shears: '&cMulti Tool nelze použít jako nůžky!'
   auto-crafting:
-    select-a-recipe: '&eSkrč se a klikni pravým tlačítkem &7na tento blok s předmětem, který chceš vyrobit.'
+    select-a-recipe: '&7Drž předmět, který chceš vyrobit, &edřepni a klikni pravým tlačítkem &7na tento blok.'
     recipe-set: '&aÚspěšně jsi nastavil recept pro tento stroj.'
-    recipe-removed: '&eÚspěšně jsi odstranil recept z tohoto stroje. Kdykoliv můžeš nastavit nový recept!'
-    no-recipes: '&cNemohu najít žádné platné recepty pro předmět, který držíš.'
-    missing-chest: '&cChybějící truhla! Automatický pracovní stůl musí být položen nad truhlou.'
+    recipe-removed: '&eÚspěšně jsi odstranil recept z tohoto stroje. Kdykoliv můžeš nastavit nový!'
+    no-recipes: '&cOmlouvám se, nenašel jsem recept pro předmět, který držíš.'
+    missing-chest: '&cChybí truhla! Auto-Crafter musí být umístěn nad truhlou.'
     select: 'Vybrat tento recept'
-    temporarily-disabled: '&eTento Automatický pracovní stůl byl dočasně vypnut. Můžete ho kdykoliv znovu zapnout!'
-    re-enabled: '&eTento Automatický pracovní stůl byl znovu aktivován!'
+    temporarily-disabled: '&eÚspěšně jsi vypnul tento Auto-Crafter. Kdykoliv ho můžeš znovu zapnout!'
+    re-enabled: '&eÚspěšně jsi znovu zapnul tento Auto-Crafter!'
     recipe-unavailable: |
-      &cTento předmět je buďto zakázán na vašem serveru, nebo jste ho ještě neodemkli.
-      &7Zkuste tento předmět vyrobit, pokud jste to ještě neudělali, abyste odemkli příslušný recept.
+      &cTento předmět nelze použít. Buď jsi ho ještě neodemkl, nebo je na serveru zakázaný.
+      &7Pokud jsi ho ještě neodemkl, nejdřív si ho vyrob a pak zkus recept znovu.
     tooltips:
       enabled:
-        - '&aTento recept je aktuálně povolen'
+        - '&aTento recept je aktivní'
         - ''
-        - '&eKlikni levým tlačítkem &7pro dočasné vypnutí receptu'
-        - '&eKlikni pravým tlačítkem &7pro odstranění tohoto receptu'
+        - '&eLevé tlačítko &7dočasně vypne tento recept'
+        - '&ePravé tlačítko &7odstraní tento recept'
       disabled:
-        - '&cTento recept je momentálně zakázán'
+        - '&cTento recept je momentálně vypnutý'
         - ''
-        - '&eKlikni levým tlačítkem &7pro opětovné povolení tohoto receptu'
-        - '&eKlikni pravým tlačítkem &7pro odstranění tohoto receptu'
+        - '&eLevé tlačítko &7znovu zapne tento recept'
+        - '&ePravé tlačítko &7odstraní tento recept'
   talisman:
-    anvil: '&a&oTvůj talisman zachránil tvůj nástroj od rozbití'
-    miner: '&a&oTvůj talisman zdvojnásobil tvou kořist'
-    farmer: '&a&oVáš talisman právě zdvojnásobil vaš zisk'
-    hunter: '&a&oTvůj talisman zdvojnásobil tvou kořist'
-    lava: '&a&oTvůj talisman tě zachránil před uhořením'
+    anvil: '&a&oTvůj talisman zachránil tvůj nástroj před zničením'
+    miner: '&a&oTvůj talisman zdvojnásobil výtěžek rudy'
+    farmer: '&a&oTvůj talisman zdvojnásobil výnos'
+    hunter: '&a&oTvůj talisman zdvojnásobil kořist'
+    lava: '&a&oTvůj talisman tě zachránil z lávy'
     water: '&a&oTvůj talisman tě zachránil před utopením'
-    angel: '&a&oTvůj talisman tě zachránil před poškození pádem'
-    fire: '&a&oTvůj talisman tě zachránil před uhořením'
-    magician: '&a&oTvůj talisman ti dal dodatečná očarování'
-    traveller: '&a&oTvůj talisman ti dal rychlost'
-    warrior: '&a&oTvůj talisman ti dal na určitou chvilku efekt síly'
+    angel: '&a&oTvůj talisman tě ochránil před pádem z výšky'
+    fire: '&a&oTvůj talisman tě zachránil před ohněm'
+    magician: '&a&oTvůj talisman ti dal extra očarování'
+    traveller: '&a&oTvůj talisman ti dal efekt rychlosti'
+    warrior: '&a&oTvůj talisman ti dal efekt síly'
     knight: '&a&oTvůj talisman ti dal 5 sekund regenerace'
-    whirlwind: '&a&oTvůj talisman odrazil projektil'
-    wizard: '&a&oTvůj talisman ti dal větší úroveň štěstí, ale možná snížil úroveň jiných očarování'
-    caveman: '&a&oTvůj talisman ti dal spěch'
-    wise: '& a&aTvůj talisman zdvojnásobil zisk tvých zkušeností'
+    whirlwind: '&a&oTvůj talisman odrazil útočící projektil'
+    wizard: '&a&oTvůj talisman ti náhodně zvýšil úroveň jednoho očarování, ale ostatní očarování mohou klesnout'
+    caveman: '&a&oTvůj talisman ti dal efekt spěchu'
+    wise: '&a&oTvůj talisman zdvojnásobil zisk zkušeností'
   soulbound-rune:
-    fail: '&cSvou duši můžeš spoutat jen s jedním předmětem.'
-    success: '&aÚspěšně jsi spoutal tento předmět se svou duši. Pokud zemřeš, předmět ti zůstane.'
+    fail: '&cDuši lze najednou spojit jen s jedním předmětem.'
+    success: '&aÚspěšně jsi spojil svou duši s tímto předmětem. Po smrti ti zůstane.'
   enchantment-rune:
-    fail: '&cNemůžeš očarovat tento předmět.'
+    fail: '&cTento předmět nelze očarovat.'
     no-enchantment: '&cPro tento předmět nelze najít žádné vhodné očarování.'
-    success: '&aÚspěšně jsi na tento předmět dal náhodné vhodné očarování.'
+    success: '&aÚspěšně jsi tomuto předmětu přidal náhodné vhodné očarování.'
   research:
-    start: '&7Antičtí duchové šeptají magická slova do tvého ucha...'
-    progress: '&7Začal jsi přemýšlet nad &b%research% &e(%progress%)'
+    start: '&7Prastaré duše ti šeptají svá tajemství!'
+    progress: '&7Začal jsi zkoumat &b%research% &e(%progress%)'
   tape-measure:
-    no-anchor: '&cPřed začátkem měření musíš nastavit kotvu! '
-    wrong-world: '&cTvoje kotva je pravděpodobně v jiném světa!'
-    distance: '&7Měření zahájeno. &eVzdálenost: %distance%'
-    anchor-set: '&aÚspěšně nastavena kotva:&e %anchor%'
+    no-anchor: '&cPřed měřením musíš nejdřív nastavit počáteční bod!'
+    wrong-world: '&cTvá kotva je nejspíš v jiném světě!'
+    distance: '&7Vzdálenost změřena, &ečiní: %distance%'
+    anchor-set: '&aÚspěšně nastavena kotva na &e%anchor%'
   climbing-pick:
-    dual-wielding: '&4Musíš držet Climbing Picks v obou rukou pro jeho použití!'
-    wrong-material: '&cNa tento povrch nemůžeš vylézt. Zkontroluj Slimefun Guide, kde najdeš další informace!'
-  fire-extinguish: '&7Uhasil ses'
-  cannot-place: '&cZde nemůžeš položit blok!'
-  no-pvp: '&cZde nemůžeš bojovat s hráči!'
-  radiation: '&4Byl jsi vystaven smrtelné radiaci! &cVyhoď radioaktivní předmět nebo si obleč hazmat oblek.'
-  opening-guide: '&bOtevírá se příručka, může to pár sekund trvat...'
-  opening-backpack: '&bOtevírá se batoh, může to pár sekund trvat...'
-  no-iron-golem-heal: '&cTohle není železný ingot, a proto s ním nemůžeš léčit železné golemy!'
-  link-prompt: '&eKlikni zde:'
-  diet-cookie: '&eZačínáš se cítit velice lehce...'
+    dual-wielding: '&4Pro použití musíš držet Climbing Pick v obou rukou!'
+    wrong-material: '&cNa tento povrch nemůžeš vylézt. Podrobnosti najdeš v příručce!'
+  fire-extinguish: '&7Uhasil jsi oheň na sobě'
+  cannot-place: '&cSem nemůžeš umístit blok!'
+  no-pvp: '&cTady nemůžeš útočit na jiné hráče!'
+  radiation: '&4Byl jsi vystaven smrtelné radiaci! &cZahoď radioaktivní předmět nebo si obleč ochranný oblek!'
+  opening-guide: '&bOtevírá se příručka, chvíli počkej...'
+  opening-backpack: '&bOtevírá se batoh, chvíli počkej...'
+  no-iron-golem-heal: '&cToto není železný ingot, nemůžeš tím léčit železné golemy!'
+  link-prompt: '&eKlikni sem:'
+  diet-cookie: '&eCítíš se lehčí...'
   fortune-cookie:
-    - '&7POMOOC!! Jsem uvězněn v továrně na sušenky štěstí!'
-    - '&7Zítra zemřeš...     s láskou od pana creepera'
-    - '&7V nějaké části tvého života se stane něco špatného!!!'
-    - '&7Příští týden si uvědomíš, že toto není reálný život, ale že jsi v počítačové hře'
-    - '&7Sušenka ti bude za pár sekund velice chutnat'
-    - '&7Poslední slovo, které uslyšíš bude „VYHUBIT!!!”'
-    - '&7Ať se stane cokoliv, nepokoušej se mazlit creepera... Zkusil jsem to. Je to dobrý pocit, ale nestojí to za to.'
-    - '&742. Odpověď je 42.'
-    - '&7Walshy udrží den problémy pryč.'
-    - '&7Nikdy nekopej pod sebe!'
-    - '&7To je jen rána masa!'
-    - '&7Vždy se podívej na světlou stránku života!'
-    - '&7Tohle byl vlastně Biscuit, a ne Cookie'
-    - '&7Neonové cedule jsou LIT!'
-  above-limit-level: '&cNelze o(d)enchantovat enchant level vyšší než %level%!'
+    - '&7Pomoc! Jsem uvězněn v továrně na sušenky štěstí!'
+    - '&7Zítra zemřeš...     z rukou creepera'
+    - '&7V nějaké chvíli tvého života se stane něco zlého!!!'
+    - '&7Příští týden zjistíš, že tohle není realita, ale hra!'
+    - '&7Tahle sušenka ti za pár sekund bude chutnat skvěle'
+    - '&7Poslední slovo, které uslyšíš, bude "ZKÁZA!!!"'
+    - '&7Ať děláš cokoliv, nezkoušej obejmout creepera... Zkusil jsem to. Bylo to hezké, ale nestálo to za to.'
+    - '&742. Odpověď zní 42.'
+    - '&7Jeden Walshy denně ti udrží problémy pryč.'
+    - '&7Nikdy nekopej přímo pod sebe!'
+    - '&7To je jen škrábanec!'
+    - '&7Vždycky se dívej na světlou stránku života!'
+    - '&7Tohle byl vlastně biskvit, ne sušenka'
+    - '&7Neonky svítí na plné obrátky!'
+  above-limit-level: '&cÚroveň očarování přesahuje limit %level%!'
   pickaxe-of-the-seeker:
-    no-ores: '&cNemohu najít žádné rudy v okolí!'
+    no-ores: '&cV okolí nejsou žádné rudy!'
 machines:
-  pattern-not-found: '&eBohužel se nepodařilo rozpoznat tento recept. Dej do dávkovače předměty tak, aby odpovídaly receptu.'
-  unknown-material: '&eBohužel se nepodařilo rozpoznat tento předmět v dávkovači. Dej tam něco správného.'
-  wrong-item: '&eBohužel se nepodařilo rozpoznat předmět, se kterým jsi na mě kliknul. Zkontroluj recept a koukni se, jaké předměty můžeš použít.'
-  full-inventory: '&eBohužel, můj inventář je plný.'
-  in-use: '&cInventář tohoto bloku je právě otevřen jiným hráčem.'
+  pattern-not-found: '&eOmlouvám se, tohle není správný recept. Zkontroluj, jestli jsou předměty v dávkovači ve správném pořadí.'
+  unknown-material: '&eOmlouvám se, nerozpoznávám předmět v dávkovači. Umísti tam prosím správné předměty podle receptu.'
+  wrong-item: '&eOmlouvám se, nerozpoznávám předmět, na který jsi klikl. Zkontroluj recept v příručce.'
+  full-inventory: '&eOmlouvám se, můj inventář je plný!'
+  in-use: '&cTento stroj právě používá jiný hráč.'
   ignition-chamber-no-flint: '&cIgnition Chamberu chybí křesadlo.'
-  inventory-empty: '&6Úspěšně jsi vytvořili tento Multiblock. Pokračuj umístěním předmětů do dávkovače a kliknutím na něj znovu vyrobíš předmět, který chceš!'
+  inventory-empty: '&6Úspěšně jsi postavil tento multiblok. Vlož předměty podle receptu do dávkovače a klikni na mě znovu pro výrobu!'
   ANCIENT_ALTAR:
-    not-enough-pedestals: '&4Altar nemá dostatek Pedestal &c(%pedestals% / 8)'
-    unknown-catalyst: '&4Neznámý katalyst. &cPoužij správný recept!'
-    unknown-recipe: '&4Neznámý recept! &cPoužij správný recept!'
+    not-enough-pedestals: '&4Nedostatek podstavců u oltáře. Aktuálně umístěno: &c(%pedestals% / 8)'
+    unknown-catalyst: '&4Neplatný katalyzátor! &cPoužij prosím správný recept!'
+    unknown-recipe: '&4Neznámý recept! &cPoužij prosím správný recept!'
   ANCIENT_PEDESTAL:
-    obstructed: '&4Pedestal je zablokován! &cOdstraň cokoliv nad ním!'
+    obstructed: '&4Podstavec je zablokován! &cOdstraň, co je na něm položené!'
+    in-use: "&4Na podstavci je stále něco položeno!"
   HOLOGRAM_PROJECTOR:
-    enter-text: '&7Napiš do chatu zprávu, kterou chceš, aby hologram ukazoval. &r(Barvy jsou podporovány!)'
+    enter-text: '&7Napiš do chatu text, který chceš zobrazit na hologramu. &r(Barevné kódy podporovány!)'
     inventory-title: 'Editor hologramu'
   ELEVATOR:
-    no-destinations: '&4Žádné destinace nebyly nalezeny'
+    no-destinations: '&4Nebyla nalezena žádná další patra'
     pick-a-floor: '&3- Vyber si patro -'
     current-floor: '&eAktuální patro:'
-    click-to-teleport: '&eKliknutím &7se teleportuješ na toto patro:'
+    click-to-teleport: '&eKlikni &7pro teleportaci na toto patro:'
+    enter-name: '&7Zadej název pro toto patro! &f(barevné kódy podporovány)'
+    named: '&2Toto patro bylo úspěšně pojmenováno: &f%floor%'
+    editor-title: 'Nastavení výtahu'
   TELEPORTER:
     teleporting: '&3Teleportuji...'
-    teleported: '&3Teleportace dokončena!'
+    teleported: '&3Teleportace úspěšná!'
     cancelled: '&4Teleportace zrušena!'
     invulnerability: '&b&lZískal jsi 30 sekund nezranitelnosti!'
     gui:
-      title: 'Tvé záchytné body'
+      title: 'Tvé teleportační body'
       tooltip: 'Klikni pro teleportaci'
-      time: 'Předpokládaný čas'
+      time: 'Odhadovaný čas'
   GPS_CONTROL_PANEL:
     title: 'GPS - Kontrolní panel'
     transmitters: 'Přehled vysílačů'
-    waypoints: 'Přehled záchytných bodů'
+    waypoints: 'Seznam teleportačních bodů'
   CARGO_NODES:
     must-be-placed: '&4Musí být umístěn na truhlu nebo stroj!'
+    connected: '&2Připojeno!'
+    not-connected: '&4Nepřipojeno!'
   INDUSTRIAL_MINER:
-    no-fuel: '&cTvému průmyslovému horníku došlo palivo! Vlož palivo do bedny nad.'
-    piston-facing: '&cTvůj průmyslový horník potřebuje píst směřující nahoru!'
-    piston-space: '&cDva písty potřebují prázdný blok nad nimi!'
-    destroyed: '&cZdá se, že tvůj průmyslový horník byl zničen.'
-    already-running: '&cTento průmyslový horník již běží!'
-    full-chest: '&cBedna vašeho průmyslového horníka je plná!'
-    no-permission: '&4Zdá se, že zde nemáš oprávnění používat průmyslového horníka!'
-    finished: '&eTvůj průmysloví horník dokončil práci! Získal %ores% rud!'
+    no-fuel: '&cTvému průmyslovému těžaři došlo palivo! Vlož palivo do truhly nad ním.'
+    piston-facing: '&cTvůj průmyslový těžař potřebuje píst směřující nahoru!'
+    piston-space: '&cNad oběma písty musí být volný prostor!'
+    destroyed: '&cTvůj průmyslový těžař byl zničen.'
+    already-running: '&cTento průmyslový těžař už běží!'
+    full-chest: '&cTruhla tvého průmyslového těžaře je plná!'
+    no-permission: '&4Nemáš oprávnění ovládat tento průmyslový těžař!'
+    finished: '&eTvůj průmyslový těžař dokončil práci! Celkem vytěženo %ores% rud!'
+  TABLE_SAW:
+    no-slimefun-item: '&cNa Table Saw nelze používat Slimefun předměty!'
 anvil:
-  not-working: '&4Předměty ze Slimefunu nelze použít v kovadlině!'
-  mcmmo-salvaging: '&4Nemůžeš zachránit Slimefun předměty!'
+  not-working: '&4Slimefun předměty nelze použít v kovadlině'
+  mcmmo-salvaging: '&4Slimefun předměty nelze rozebrat!'
 brewing_stand:
-  not-working: '&4Nemůžeš používat Slimefun předměty ve varném stojanu!'
+  not-working: '&4Slimefun předměty nelze použít ve varném stojanu!'
 cartography_table:
-  not-working: '&4Nemůžeš použít Slimefun předměty v kartografickém stole!'
+  not-working: '&4Slimefun předměty nelze použít v kartografickém stole!'
 smithing_table:
-  not-working: '&4Nemůžeš použít Slimefun předmět jako kovářský materiál!'
+  not-working: '&4Slimefun předmět nelze použít jako kovářský materiál!'
 villagers:
-  no-trading: '&4Nemůžeš vyměňovat Slimefun předměty s vesničany!'
+  no-trading: '&4Slimefun předměty nelze vyměňovat s vesničany!'
 backpack:
-  already-open: '&cBohužel, tento batoh je již otevřený někde jinde!'
-  no-stack: '&cNemůžeš shromažďovat batohy'
+  already-open: '&cOmlouvám se, tento batoh je už otevřený jinde!'
+  no-stack: '&cNemůžeš držet dva batohy najednou'
+  set-name: '&eZadej název batohu'
+  not-backpack-owner: '&cVlastník tohoto batohu není online, nemáš k němu přístup!'
+  not-original-item: '&cPři zadávání názvu neměň předmět, který držíš v ruce!'
 workbench:
-  not-enhanced: '&4Nemůžeš použít předměty ze Slimefunu v normální pracovním stole'
+  not-enhanced: '&4Slimefun předměty nelze použít na běžném pracovním stole'
 cauldron:
-  no-discoloring: '&4Nemůžeš odebrat barvu ze Slimefun brnění'
+  no-discoloring: '&4Kotlíkem nelze odbarvit Slimefun brnění'
+crafter:
+  not-working: '&4Slimefun předměty nelze craftit v Crafteru'
 gps:
-  deathpoint: '&4Bod úmrtí &7%date%'
+  deathpoint: '&4Místo úmrtí &7%date%'
+  status-online: 'Online'
+  status-offline: 'Offline'
   waypoint:
-    new: '&eZadej název záchytného bodu do chatu. &7(Barvy jsou podporovány!)'
-    added: '&aÚspěšně přidán nový záchytný bod'
-    max: '&4Dosáhl jsi maxima záchytných bodů'
-    duplicate: '&4Již jsi vytvořil záchytný bod pojmenovaný: &f%waypoint%'
+    new: '&eZadej název svého teleportačního bodu &7(barevné kódy podporovány!)'
+    added: '&aÚspěšně přidán nový teleportační bod'
+    max: '&4Dosáhl jsi maximálního počtu teleportačních bodů'
+    duplicate: '&4Teleportační bod s tímto názvem už existuje: &f%waypoint%'
   insufficient-complexity:
-    - '&4Nedostatečná komplexita GPS Networku: &c%complexity%'
-    - '&4a) Nemáš nastavený GPS Network'
-    - '&4b) Tvůj GPS Network není dostatečně komplexní'
+    - '&4Nedostatečná složitost GPS sítě: &c%complexity%'
+    - '&4a) zatím nemáš nastavenou GPS síť'
+    - '&4b) tvá GPS síť není dost složitá, umísti víc GPS vysílačů'
   geo:
-    scan-required: '&4GEO-Scan je požadován! &cProzkoumej tento chunk pomocí GEO-Scanneru!'
+    scan-required: '&4Je potřeba nejdřív provést GEO sken! &cPoužij prosím GEO-Scanner!'
 inventory:
-  no-access: '&4Nemáš přístup k tomuto bloku'
+  no-access: '&4Nemáš oprávnění používat tento blok'
 android:
-  started: '&7Tvůj Android právě začal používat jemu přidělený skript'
-  stopped: '&7Tvůj Android pozastavil jemu přidělený skript'
+  started: '&7Tvůj android teď běží podle přiděleného skriptu'
+  stopped: '&7Tvůj android zastavil svůj skript'
   scripts:
-    already-uploaded: '&4Tento skript již byl nahrán.'
+    already-uploaded: '&4Tento skript už jsi nahrál.'
     editor: 'Editor skriptu'
-    too-long: '&cSkript je příliš dlouhý na úpravu!'
+    too-long: '&cSkript dosáhl maximální délky, nelze ho dál upravovat!'
     instructions:
-      START: '&2Začít skript'
+      START: '&2Spustit skript'
       REPEAT: '&9Opakovat skript'
-      WAIT: '&ePočkej 0.5s'
-      GO_FORWARD: '&7Posuň se vpřed'
-      GO_UP: '&7Posuň se nahoru'
-      GO_DOWN: '&7Posuň se dolů'
-      TURN_LEFT: '&7Otoč se doleva'
-      TURN_RIGHT: '&7Otoč se doprava'
-      DIG_UP: '&bKopej nahoru'
-      DIG_FORWARD: '&bKopej dopředu'
-      DIG_DOWN: '&bKopej dolů'
-      MOVE_AND_DIG_UP: '&bPosuň se a zároveň kopej nahoru'
-      MOVE_AND_DIG_FORWARD: '&bPosuň se a zároveň kopej dopředu'
-      MOVE_AND_DIG_DOWN: '&bPosuň se a zároveň kopej dolů'
-      ATTACK_MOBS_ANIMALS: '&4Útoč na &cnepřátelská stvoření a zvířata'
-      ATTACK_MOBS: '&4Útoč na &cnepřátelská stvoření'
-      ATTACK_ANIMALS: '&4Útoč na &czvířata'
-      ATTACK_ANIMALS_ADULT: '&4Útoč na &czvířata &7[Dospělá]'
-      CHOP_TREE: '&cPokácej a zasaď'
-      CATCH_FISH: '&bRybař'
-      FARM_FORWARD: '&bSkliď a zasaď'
-      FARM_DOWN: '&bSkliď a zasaď &7(Blok pod)'
-      FARM_EXOTIC_FORWARD: '&bSkliď a zasaď &7(Pokročilé)'
-      FARM_EXOTIC_DOWN: '&bSkliď a zasaď &7(Blok pod + Pokročilé)'
-      INTERFACE_ITEMS: '&9Přesuň obsah inventáře do rozhraní na přední straně'
-      INTERFACE_FUEL: '&cVyndej palivo z rozhraní přední strany'
+      WAIT: '&ePočkat 0.5s'
+      GO_FORWARD: '&7Jít vpřed'
+      GO_UP: '&7Jít nahoru'
+      GO_DOWN: '&7Jít dolů'
+      TURN_LEFT: '&7Otočit se doleva'
+      TURN_RIGHT: '&7Otočit se doprava'
+      DIG_UP: '&bKopat nahoru'
+      DIG_FORWARD: '&bKopat vpřed'
+      DIG_DOWN: '&bKopat dolů'
+      MOVE_AND_DIG_UP: '&bJít a kopat nahoru'
+      MOVE_AND_DIG_FORWARD: '&bJít a kopat vpřed'
+      MOVE_AND_DIG_DOWN: '&bJít a kopat dolů'
+      ATTACK_MOBS_ANIMALS: '&4Útočit na &cnepřátele a zvířata'
+      ATTACK_MOBS: '&4Útočit na &cnepřátele'
+      ATTACK_ANIMALS: '&4Útočit na &czvířata'
+      ATTACK_ANIMALS_ADULT: '&4Útočit na &czvířata &7[dospělá]'
+      CHOP_TREE: '&cKácet stromy a sázet semínka'
+      CATCH_FISH: '&bRybařit'
+      FARM_FORWARD: '&bSklízet a znovu sázet'
+      FARM_DOWN: '&bSklízet a znovu sázet &7(blok pod)'
+      FARM_EXOTIC_FORWARD: '&bSklízet a znovu sázet &7(pokročilé)'
+      FARM_EXOTIC_DOWN: '&bSklízet a znovu sázet &7(blok pod + pokročilé)'
+      INTERFACE_ITEMS: '&9Přesunout obsah inventáře do rozhraní vpředu'
+      INTERFACE_FUEL: '&cVyndat palivo z rozhraní vpředu'
     enter-name:
       - ''
-      - '&eZadej název tvého skriptu'
+      - '&eZadej název svého skriptu'
       - ''
     uploaded:
       - '&bNahrávání...'
       - '&aTvůj skript byl úspěšně nahrán!'
     rating:
-      own: '&4Nemůžeš hodnotit vlastní skript!'
-      already: '&4K tomuto skriptu jsi již zanechal hlasování!'
+      own: '&4Nemůžeš hodnotit svůj vlastní skript!'
+      already: '&4Tento skript už jsi ohodnotil!'
+  access-manager:
+    title: '&bSpráva oprávnění androida'
+    subtitle: '&8⇨ &7Klikni pro otevření správy'
+
+    menu:
+      add-player-title: '&aPřidat důvěryhodného hráče'
+      add-player: '&aLevé tlačítko > přidat důvěryhodného hráče'
+      delete-player: '&cLevé tlačítko > odebrat důvěryhodného hráče'
+
+    messages:
+      input: 'Zadej jméno hráče, kterého chceš přidat jako důvěryhodného.'
+      cannot-find-player: '&cHráč, kterého chceš přidat, nebyl nalezen: %player%'
+      is-trusted-player: '&a%player% už je tvůj důvěryhodný hráč!'
+      is-not-trusted-player: "&c%player% není tvůj důvěryhodný hráč!"
+      cannot-add-yourself: '&cNemůžeš přidat sám sebe!'
+      add-success: '&aÚspěšně přidán důvěryhodný hráč %player%.'
+      delete-success: '&aÚspěšně odebrán důvěryhodný hráč %player%.'
+      reach-limit: '&cDosažen maximální počet důvěryhodných hráčů (10), nejdřív někoho odeber!'
 languages:
-  default: 'Výchozí-serverový'
+  default: 'Výchozí jazyk serveru'
   en: 'Angličtina'
   de: 'Němčina'
   fr: 'Francouzština'
@@ -373,7 +449,7 @@ languages:
   ru: 'Ruština'
   sk: 'Slovenština'
   zh-CN: 'Čínština (Čína)'
-  zh-TW: 'Čínština (Taiwan)'
+  zh-TW: 'Čínština (Tchaj-wan)'
   vi: 'Vietnamština'
   id: 'Indonéština'
   el: 'Řečtina'
@@ -390,7 +466,7 @@ languages:
   ja: 'Japonština'
   fa: 'Perština'
   th: 'Thajština'
-  tl: 'Tagalština '
+  tl: 'Tagalština'
   ro: 'Rumunština'
   bg: 'Bulharština'
   ko: 'Korejština'
@@ -399,3 +475,5 @@ languages:
   mk: 'Makedonština'
   sr: 'Srbština'
   be: 'Běloruština'
+  si-LK: 'Sinhálština'
+  lt: 'Litevština'

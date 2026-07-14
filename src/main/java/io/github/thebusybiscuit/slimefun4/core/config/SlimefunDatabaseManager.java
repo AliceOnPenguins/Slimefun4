@@ -58,7 +58,10 @@ public class SlimefunDatabaseManager {
             var connectionPoolSize = getConnectionPoolSize(blockDataStorageType, blockStorageConfig);
 
             if (readExecutorThread + writeExecutorThread > connectionPoolSize) {
-                plugin.getLogger().log(Level.WARNING, "Velikost connection poolu block-storage je menší než součet čtecích a zapisovacích vláken, může docházet k výkonnostním problémům");
+                plugin.getLogger()
+                        .log(
+                                Level.WARNING,
+                                "Velikost connection poolu block-storage je menší než součet čtecích a zapisovacích vláken, může docházet k výkonnostním problémům");
             }
 
             initAdapter(blockDataStorageType, DataType.BLOCK_STORAGE, blockStorageConfig);
@@ -87,7 +90,10 @@ public class SlimefunDatabaseManager {
             var connectionPoolSize = getConnectionPoolSize(profileStorageType, profileConfig);
 
             if (readExecutorThread + writeExecutorThread > connectionPoolSize) {
-                plugin.getLogger().log(Level.WARNING, "Velikost connection poolu profile-storage je menší než součet čtecích a zapisovacích vláken, může docházet k výkonnostním problémům");
+                plugin.getLogger()
+                        .log(
+                                Level.WARNING,
+                                "Velikost connection poolu profile-storage je menší než součet čtecích a zapisovacích vláken, může docházet k výkonnostním problémům");
             }
 
             initAdapter(profileStorageType, DataType.PLAYER_PROFILE, profileConfig);

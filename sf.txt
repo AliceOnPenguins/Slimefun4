@@ -1,0 +1,1310 @@
+./.github/ISSUE_TEMPLATE/bug-report.yml:1:name: Bug 反馈
+./.github/ISSUE_TEMPLATE/bug-report.yml:2:description: 反馈 Slimefun 4 使用中遇到的问题和 Bug
+./.github/ISSUE_TEMPLATE/bug-report.yml:10:        感谢你使用 Slimefun 问题反馈系统！
+./.github/ISSUE_TEMPLATE/bug-report.yml:12:        在反馈前, 请确认
+./.github/ISSUE_TEMPLATE/bug-report.yml:13:        - 你已经查看 [最新版本](https://github.com/SlimefunGuguProject/Slimefun4/releases) 是否已修复你所遇到的问题
+./.github/ISSUE_TEMPLATE/bug-report.yml:14:        - 你已经搜索了已有的 [问题](https://github.com/SlimefunGuguProject/Slimefun4/issues) 是否发现了相似的问题
+./.github/ISSUE_TEMPLATE/bug-report.yml:16:        如果你的反馈含糊不清或不符合模板，将会被我们直接关闭。
+./.github/ISSUE_TEMPLATE/bug-report.yml:21:      label: 问题描述
+./.github/ISSUE_TEMPLATE/bug-report.yml:22:      description: 在此详细描述你遇到的问题
+./.github/ISSUE_TEMPLATE/bug-report.yml:29:       label: 问题复现率
+./.github/ISSUE_TEMPLATE/bug-report.yml:30:       description: 选择问题发生的概率
+./.github/ISSUE_TEMPLATE/bug-report.yml:32:         - 无法复现
+./.github/ISSUE_TEMPLATE/bug-report.yml:33:         - 低偶发
+./.github/ISSUE_TEMPLATE/bug-report.yml:34:         - 高偶发
+./.github/ISSUE_TEMPLATE/bug-report.yml:35:         - 必现
+./.github/ISSUE_TEMPLATE/bug-report.yml:42:      label: 复现步骤
+./.github/ISSUE_TEMPLATE/bug-report.yml:43:      description: 简略说明如何让我们复现这个问题
+./.github/ISSUE_TEMPLATE/bug-report.yml:45:        简略说明如何让我们复现这个问题
+./.github/ISSUE_TEMPLATE/bug-report.yml:46:        可使用 1.  2.  3.  的列表格式，或其他任意恰当的格式
+./.github/ISSUE_TEMPLATE/bug-report.yml:47:        如果这个问题不容易复现, 请尽量描述发生当时的情景
+./.github/ISSUE_TEMPLATE/bug-report.yml:54:      label: 服务端类型
+./.github/ISSUE_TEMPLATE/bug-report.yml:56:        选择你正在使用的服务端，如 `Paper`
+./.github/ISSUE_TEMPLATE/bug-report.yml:57:        注意：汉化版仓库不对**混合端** (例如 Arclight、CatServer 这类支持插件与 Mod 并存的服务端) 做任何支持，请自己设法解决
+./.github/ISSUE_TEMPLATE/bug-report.yml:66:        - 其他服务端 (请在 `问题描述` 处详细说明)
+./.github/ISSUE_TEMPLATE/bug-report.yml:73:      label: Minecraft 版本
+./.github/ISSUE_TEMPLATE/bug-report.yml:99:      label: Slimefun 版本
+./.github/ISSUE_TEMPLATE/bug-report.yml:101:        **不要填写 "最新版本"，否则你的反馈会被立即关闭**
+./.github/ISSUE_TEMPLATE/bug-report.yml:102:        请你截图或复制执行命令 "/sf versions" 后的输出内容。
+./.github/ISSUE_TEMPLATE/bug-report.yml:108:      label: 服务端插件列表
+./.github/ISSUE_TEMPLATE/bug-report.yml:109:      description: 提供你的服务器插件列表，你可以通过执行命令 /plugins 获取。
+./.github/ISSUE_TEMPLATE/bug-report.yml:111:        插件: 版本
+./.github/ISSUE_TEMPLATE/bug-report.yml:116:      label: 补充信息
+./.github/ISSUE_TEMPLATE/bug-report.yml:117:      description: 如有必要，你可以在下文继续添加其他信息
+./.github/ISSUE_TEMPLATE/config.yml:3:  - name: 没有 Github 账号? 不会使用 Github?
+./.github/ISSUE_TEMPLATE/config.yml:5:    about: 单击此处使用腾讯文档填写 Bug 反馈
+./.github/ISSUE_TEMPLATE/translation-report.yml:1:name: 汉化反馈
+./.github/ISSUE_TEMPLATE/translation-report.yml:2:description: 反馈 Slimefun 4 汉化版的汉化问题
+./.github/ISSUE_TEMPLATE/translation-report.yml:4:- "📜 Translation | 汉化问题"
+./.github/ISSUE_TEMPLATE/translation-report.yml:10:      感谢你使用 Slimefun 问题反馈系统！
+./.github/ISSUE_TEMPLATE/translation-report.yml:12:      在反馈前, 请确认
+./.github/ISSUE_TEMPLATE/translation-report.yml:13:      - 你已经查看 [最新版本](https://github.com/SlimefunGuguProject/Slimefun4/releases) 是否已修复你所遇到的问题
+./.github/ISSUE_TEMPLATE/translation-report.yml:14:      - 你已经搜索了已有的 [问题](https://github.com/SlimefunGuguProject/Slimefun4/issues) 是否发现了相似的问题
+./.github/ISSUE_TEMPLATE/translation-report.yml:16:      如果你的反馈含糊不清或不符合模板，将会被我们直接关闭。
+./.github/ISSUE_TEMPLATE/translation-report.yml:21:    label: 汉化问题描述
+./.github/ISSUE_TEMPLATE/translation-report.yml:22:    description: 在此详细描述你遇到的问题
+./.github/ISSUE_TEMPLATE/translation-report.yml:29:    label: 汉化错误/缺失的位置
+./.github/ISSUE_TEMPLATE/translation-report.yml:30:    description: 在这里简略说明汉化错误/缺失的位置
+./.github/ISSUE_TEMPLATE/translation-report.yml:39:    label: Slimefun 版本
+./.github/ISSUE_TEMPLATE/translation-report.yml:41:      **不要填写 "最新版本"，否则你的反馈会被立即关闭**
+./.github/ISSUE_TEMPLATE/translation-report.yml:42:      请你截图或复制执行命令 "/sf versions" 后的输出内容。
+./.github/ISSUE_TEMPLATE/translation-report.yml:48:    label: 补充信息
+./.github/ISSUE_TEMPLATE/translation-report.yml:49:    description: 如有必要，你可以在下文继续添加其他信息
+./.github/PULL_REQUEST_TEMPLATE.md:1:<!-- 在做出贡献前, 请你先阅读我们的 [代码与 commit 规范](https://github.com/SlimefunGuguProject/Slimefun4/blob/master/CONTRIBUTING.md) -->
+./.github/PULL_REQUEST_TEMPLATE.md:3:## 简介
+./.github/PULL_REQUEST_TEMPLATE.md:4:<!-- 大致解释一下这个提交更改修复/优化/新增了什么 -->
+./.github/PULL_REQUEST_TEMPLATE.md:6:## 相关的 Issues (没有可不填)
+./.github/PULL_REQUEST_TEMPLATE.md:7:<!-- 如果这个提交更改解决了 Issue 中的问题, 请手动标记对应的 Issues -->
+./.github/PULL_REQUEST_TEMPLATE.md:8:<!-- 例如: "Fixes #000" -->
+./.github/workflows/build-ci.yml:51:          title: "Slimefun 自动构建版本"
+./CONTRIBUTING.md:1:# 贡献指南
+./CONTRIBUTING.md:3:在对 Slimefun 汉化版进行代码前，必须先阅读此贡献指南。
+./CONTRIBUTING.md:5:# 设置环境
+./CONTRIBUTING.md:7:我们提供了一个自动化格式检查系统，请使用 `./gradlew spotlessApply` 进行初始化。
+./CONTRIBUTING.md:9:本项目已经提供 `.editorconfig` 用于控制代码样式。如果你有自己的代码样式风格，请在对本仓库进行贡献前切换为当前仓库的风格配置。
+./CONTRIBUTING.md:11:# 设置分支
+./CONTRIBUTING.md:13:在开始你的贡献之前，请确认你的代码是基于 `dev` 分支进行的。
+./CONTRIBUTING.md:15:# 提交信息规范
+./CONTRIBUTING.md:17:本项目**强制使用** [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 的提交信息规范。
+./CONTRIBUTING.md:19:> 简单来说, 你的提交信息需要包含以下内容:
+./CONTRIBUTING.md:21:> <类型>[可选 范围]: <描述>
+./CONTRIBUTING.md:23:> 例如一个添加了新功能的提交应为 feat(item): add new item to Slimefun
+./CONTRIBUTING.md:25:如果你提交的代码中解决或处理了 Issue 中的问题，请你在主提交消息外显式声明。
+./CONTRIBUTING.md:27:> 如 resolves #114514, fix #114514 等
+./CONTRIBUTING.md:29:如果是修复请在主提交消息上声明，不必重复声明。
+./CONTRIBUTING.md:31:我们支持的类型前缀正则如下：`(feat(ure)?|fix|docs|style|refactor|ci|chore|perf|build|test|revert|trans)`
+./CONTRIBUTING.md:33:另外的, 如果是与翻译相关的提交，类型应为 trans。
+./CONTRIBUTING.md:35:# 代码规范
+./CONTRIBUTING.md:37:**!! 本项目使用 4 空格缩进 !!**
+./CONTRIBUTING.md:39:请不要过度缩减代码长度, 空格少了 Slimefun 也不会因此跑得更快.
+./CONTRIBUTING.md:41:我们使用了 Spotless 作为代码格式化工具，在提交前你**必须**使用 `./gradlew spotlessCheck spotlessApply` 来自动格式化你的代码，否则将会被格式检查器拦截 PR。
+./CONTRIBUTING.md:43:# 提交代码类型
+./CONTRIBUTING.md:45:你提交的代码可以是修复、新增内容和 API。
+./CONTRIBUTING.md:47:下游代码现在支持提交 API 相关代码，开发者们可以通过 jitpack 依赖汉化版的 Slimefun。
+./README.md:1:# Slimefun 中文版
+./README.md:5:想要直接下载吗? [**单击此处**](https://github.com/SlimefunGuguProject/Slimefun4/blob/master/README.md#floppy_disk-下载-slimefun4)
+./README.md:7:欢迎加入 QQ 交流群：807302496
+./README.md:9:下载 [SlimeGlue(粘液胶)](https://github.com/Xzavier0722/SlimeGlue/) 以保证 Slimefun 与其他保护插件的兼容性
+./README.md:11:### 订阅计划
+./README.md:13:⚡ 汉化不易, 欢迎支持[爱发电](https://afdian.net/a/nora1ncity)
+./README.md:15:加入爱发电订阅计划可抢先获得最新版本的 Slimefun 构建，以及是优先技术支持。
+./README.md:16:注意：**非年度计划用户**可在距上次公开仓库更新后 15 天获取自动同步的源代码，并非闭源。我们十分遵循 GPLv3 协议 :)
+./README.md:18:了解订阅计划：[订阅计划](https://builds.guizhanss.com/sf-subscription)
+./README.md:20:![目前版本](https://img.shields.io/github/v/release/SlimefunGuguProject/Slimefun4?include_prereleases)
+./README.md:21:![构建状态](https://builds.guizhanss.com/SlimefunGuguProject/Slimefun4/master/badge.svg)
+./README.md:23:![下载数](https://img.shields.io/github/downloads/SlimefunGuguProject/Slimefun4/total)
+./README.md:25:使用汉化版之后，**禁止**在官方问题追踪器创建新问题!  
+./README.md:26:如果你执意要这么做, 请在反馈时使用**官方**开发版并且使用**英语**提交问题。  
+./README.md:27:否则，请在此处创建问题或加群讨论。
+./README.md:29:Slimefun 是一个致力于提供模组般体验的插件。它提供了你能想到的一切，不管是喷气背包还是魔法祭坛！
+./README.md:31:Slimefun 让每个玩家可以自行决定在魔法或科技方面发展。  
+./README.md:32:从魔杖到核反应堆，我们应有尽有。  
+./README.md:33:除此之外，我们还有魔法祭坛、能源网络甚至物品运输系统。
+./README.md:35:该项目始于 2013 年，至今仍在发展。
+./README.md:36:现在已从独立小型插件到发展成一个拥有数千名参与者和百名贡献者的社区。  
+./README.md:37:目前 Slimefun 添加了超过 **500 种新物品/合成配方**
+./README.md:38:([查看关于 Slimefun 的历史](https://slimefun-wiki.guizhanss.cn/Slimefun-in-a-nutshell))。
+./README.md:40:与此同时，Slimefun 还有种类繁多的附属插件可供选择！<br>
+./README.md:41:打开[附属插件列表](https://slimefun-wiki.guizhanss.cn/Addons)，寻找你想要的附属插件！
+./README.md:43:### 导航
+./README.md:45:* **[下载 Slimefun 4](#floppy_disk-下载-slimefun4)**
+./README.md:46:* **[Discord 服务器](#discord)**
+./README.md:47:* **[Bug 反馈](https://github.com/SlimefunGuguProject/Slimefun4/issues)**
+./README.md:48:* **[官方Wiki](https://github.com/Slimefun/Slimefun4/wiki)**
+./README.md:49:* **[非官方中文 Wiki](https://slimefun-wiki.guizhanss.cn/)**
+./README.md:52:## :floppy_disk: 下载 Slimefun4
+./README.md:54:(可以查看: [如何安装 Slimefun](https://slimefun-wiki.guizhanss.cn/Installing-Slimefun))
+./README.md:56:Slimefun 4 可以在[鬼斩构建站](https://builds.guizhanss.com)页面中**免费下载**。
+./README.md:58:以下是两种版本的区别:
+./README.md:60:|                      | 测试版 (最新更新)                                                                                | "稳定版"                                                                                 |
+./README.md:62:| **支持的 Minecraft 版本** | :video_game: 1.18.X - 1.20.X                                                              | :video_game: 1.16.X - 1.20.X                                                          |
+./README.md:63:| **Java 版本**          | :computer: **Java 21+**                                                                   | :computer: **Java 17+**                                                               |
+./README.md:64:| **自动更新系统**           | :heavy_check_mark:                                                                        | :x:                                                                                   |
+./README.md:65:| **频繁更新**             | :heavy_check_mark:                                                                        | :x:                                                                                   |
+./README.md:66:| **享有最新内容**           | :heavy_check_mark:                                                                        | :x:                                                                                   |
+./README.md:67:| **Discord 支持**       | :heavy_check_mark:                                                                        | :x:                                                                                   |
+./README.md:68:| **Bug 反馈**           | :heavy_check_mark:                                                                        | :x:                                                                                   |
+./README.md:69:| **在发布前进行测试**         | :x:                                                                                       | :heavy_check_mark:                                                                    |
+./README.md:70:| **有无更新日志**           | :x:                                                                                       | :memo: **[更新日志(英文)](https://github.com/Slimefun/Slimefun4/blob/master/CHANGELOG.md)** |
+./README.md:71:| **下载链接**             | :package: **[下载 最新版](https://builds.guizhanss.com/SlimefunGuguProject/Slimefun4/master)** | :package: **[下载 "稳定版"](https://builds.guizhanss.com/SlimefunGuguProject/Slimefun4/release)** |
+./README.md:73:**! 建议你使用最新的测试版，可以获得最新的内容更新和 Bug 修复！**
+./README.md:75:## :computer: (开发) 添加依赖
+./README.md:77:首先添加我们的私有仓库：
+./README.md:89:开发版:
+./README.md:100:Gradle: 在 `build.gradle.kts` 中添加以下内容:
+./README.md:110:对于开发版：
+./README.md:119:接下来添加 Slimefun 4 作为依赖:
+./README.md:140:## :computer: 如何编译
+./README.md:141:要编译 Slimefun4，你必须先安装 [Git](https://git-scm.com/)
+./README.md:143:然后运行 `git clone https://github.com/SlimefunGuguProject/Slimefun4.git` 克隆仓库到本地。
+./README.md:145:最后进行编译：
+./README.md:146:- 如果你是 Windows 系统: `./gradlew.bat build`
+./README.md:147:- 如果你是类 Unix 系统: `./gradlew build`
+./README.md:149:## :framed_picture: 截图
+./README.md:151:那么，Slimefun 看起来是怎样的呢？<br>
+./README.md:152:我们让 [Discord 服务器](#discord) 中的一些人发给了我们一些截图：
+./README.md:153:| 反应堆和电力 | 了不起的自动化工厂 | 魔法实验室 |
+./README.md:156:| *截图由 HamtaBot#0001 提供* | *截图由 Piͭxͪeͤl (mnb)#5049 提供* | *截图由 Kilaruna#4981 提供* |
+./README.md:158:| *截图由 GalaxyKat11#3816 提供* | *截图由 TamThan#7987 提供* | *截图由 Kilaruna#4981 提供* |
+./README.md:160:## :headphones: 社区
+./README.md:162:### 汉化版 QQ 群
+./README.md:164:汉化版交流 QQ 群：807302496 (Slimefun 汉化版交流)
+./README.md:165:附属交流 QQ 群：205679802 (Slimefun 附属交流，以及汉化组插件更新通知)
+./README.md:167:### KOOK 交流频道
+./README.md:169:欢迎加入 KOOK [粘液科技简中社区](https://kook.top/oqZwh8) 服务器
+./README.md:171:### 官方 Discord
+./README.md:173:你可以在 Discord 上找到 Slimefun 的社区服务器，并与 **超过 7000** 个来自全世界的用户进行交流。  
+./README.md:174:单击下面的徽标加入 Discord 服务器反馈问题和提出意见，或者讨论关于此插件的内容。  
+./README.md:175:Slimefun 官方经常会举办一些社区活动，加入我们了解更多。  
+./README.md:176:**注意**：Slimefun 官方在 Discord 服务器 **不**
+./README.md:177:接受任何形式的问题反馈，请使用 [问题追踪器](https://github.com/SlimefunGuguProject/Slimefun4/issues) 反馈问题！
+./README.md:179:在加入前请先了解官方 Discord 服务器[重要的规则](https://github.com/Slimefun/Slimefun4/wiki/Discord-Rules)。  
+./README.md:180:不遵守以上规则的人可能会被从服务器中踢出甚至封禁。
+./README.md:190:Slimefun 有一个为新玩家准备的 (详细且经常维护的 - *咳咳*) Wiki，
+./README.md:191:你也可以考虑为 Wiki 的编写献出一份力量。
+./README.md:192:官方 Wiki：https://github.com/Slimefun/Slimefun4/wiki  
+./README.md:193:非官方中文 Wiki：https://slimefun-wiki.guizhanss.cn/
+./README.md:195:#### :star: 有用的文章 (中文)
+./README.md:197:* [什么是 Slimefun?](https://slimefun-wiki.guizhanss.cn/Slimefun-in-a-nutshell)
+./README.md:198:* [如何安装 Slimefun](https://slimefun-wiki.guizhanss.cn/Installing-Slimefun)
+./README.md:199:* [Slimefun 4 扩展列表](https://slimefun-wiki.guizhanss.cn/Addons)
+./README.md:200:* [Slimefun 4 扩展编写教程](https://slimefun-wiki.guizhanss.cn/Developer-Guide)
+./README.md:201:* [开始使用](https://slimefun-wiki.guizhanss.cn/Getting-Started)
+./README.md:202:* [常见问题](https://slimefun-wiki.guizhanss.cn/FAQ)
+./README.md:203:* [使用中的常见问题](https://slimefun-wiki.guizhanss.cn/Common-Issues)
+./README.md:204:* [帮助我们扩展 Wiki!](https://slimefun-wiki.guizhanss.cn/Expanding-the-Wiki)
+./README.md:205:* [帮助我们翻译 Slimefun!](https://slimefun-wiki.guizhanss.cn/Translating-Slimefun)
+./README.md:207:这个 Wiki 由 @ybw0014 进行维护，如果你发现有文章缺失，请在 Wiki 的 Issues 页面汇报。
+./README.md:209:## :handshake: 对项目作出贡献
+./README.md:211:Slimefun 4 是一个以 [GNU GPLv3 协议](https://github.com/Slimefun/Slimefun4/blob/master/LICENSE) 开源的项目。
+./README.md:212:已经有超过 100 人对这个项目做出了贡献，这些人真是太棒了。  
+./README.md:213:我们鼓励通过提交 PR 的方式为 Slimefun 4 做出贡献，你的贡献将会使插件保持活力 <3。
+./README.md:215:## :exclamation: 免责声明
+./README.md:217:Slimefun4 使用多种系统收集使用数据，以及使用自动更新让你知晓关于这个项目的最新信息。
+./README.md:218:我们不会收集从你那里获取的任何个人信息，但是有些服务可能仍会收集或下载某种形式的数据。
+./README.md:220:你可以在任何时候选择退出数据收集和关闭自动更新
+./README.md:223:  <summary>自动更新</summary>
+./README.md:225:Slimefun 汉化版 使用 Github API + GuizhanBuild API 以检测和下载更新。  
+./README.md:226:这一功能被默认启用，但你可以在 `/plugins/Slimefun/config.yml` 里选择关闭。  
+./README.md:227:我们强烈推荐你使用自动更新，以确保你能获得最新功能/修复的更新。
+./README.md:232:  <summary>指标与统计</summary>
+./README.md:234:Slimefun4 使用 [bStats](https://bstats.org/plugin/bukkit/Slimefun/4574) 收集关于插件的匿名信息。  
+./README.md:235:这些仅是为了统计目的，因为我们对服务器和玩家如何使用插件很感兴趣。  
+./README.md:236:所有公开的数据均为匿名，我们绝对无法根据上报的数据追溯到某个服务器或是某个玩家。  
+./README.md:237:所有收集的数据均可公开访问: https://bstats.org/plugin/bukkit/Slimefun/4574
+./README.md:239:你也可以在 `/plugins/bStats/config.yml` 下关闭数据收集。  
+./README.md:240:了解更多请查看 [bStats 隐私政策](https://bstats.org/privacy-policy)。
+./README.md:245:  <summary>GitHub 整合</summary>
+./README.md:247:Slimefun4 使用 [GitHub API](https://api.github.com/) 收集关于此开源项目的使用数据。  
+./README.md:248:请放心，你的 Minecraft 服务器信息不会被发送到 Github。
+./README.md:250:这些信息包括但不限于
+./README.md:252:* 协作者列表，TA 们的用户名和个人主页链接 (来自仓库`Slimefun/Slimefun4`、`Slimefun/Slimefun-Wiki`和`Slimefun/Resourcepack`)
+./README.md:253:* 仓库中开启的问题的数量
+./README.md:254:* 仓库中待定合并请求的数量
+./README.md:255:* 仓库的 Star 数量
+./README.md:256:* 仓库的分支数量
+./README.md:257:* 仓库的代码大小
+./README.md:258:* 仓库中代码上次提交的日期
+./README.md:262:另外，插件还使用了 [textures.minecraft.net](https://www.minecraft.net/en-us) 以获取协作者的 Minecraft 皮肤。  
+./README.md:263:请注意：Slimefun 与 `Mojang Studios` 或 Minecraft 无关。
+./src/main/java/city/norain/slimefun4/EnvironmentChecker.java:80:                                sf.getLogger().log(Level.WARNING, "Nebyl nalezen plugin SlimeGlue (粘液胶).");
+./src/main/java/city/norain/slimefun4/api/menu/UniversalMenuPreset.java:24:     * 创建一个新的菜单实例
+./src/main/java/city/norain/slimefun4/api/menu/UniversalMenuPreset.java:26:     * @param menu {@link UniversalMenu} 通用菜单
+./src/main/java/city/norain/slimefun4/api/menu/UniversalMenuPreset.java:27:     * @param b 当前实例对应的方块，方块可能为空
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:15:     * 获取玩家放置此方块所使用的物品材质。
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:16:     * 对于大多数方块，这与 getMaterial() 相同，但有些方块有不同的材质用于放置它们。
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:17:     * 注意：此处没有涵盖所有可能不同的方块数据类型。
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:20:     * @return 放置此方块所使用的材质
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:58:     * 检查玩家是否处于连接状态。
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:59:     * 在 1.20- 中不能保证玩家是否连接，仅返回在线状态。
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:61:     * @param player 离线玩家
+./src/main/java/city/norain/slimefun4/compatibillty/CompatibilityUtil.java:62:     * @return 玩家连接或在线
+./src/main/java/city/norain/slimefun4/timings/SQLProfiler.java:73:            Slimefun.logger().log(Level.INFO, "执行 SQL: " + timingEntry.normalize());
+./src/main/java/city/norain/slimefun4/timings/SQLProfiler.java:141:            writer.append("Slimefun SQL Timing 报告");
+./src/main/java/city/norain/slimefun4/timings/SQLProfiler.java:179:            writer.append("已运行: ")
+./src/main/java/city/norain/slimefun4/timings/SQLProfiler.java:183:            writer.append("总耗时: ")
+./src/main/java/city/norain/slimefun4/timings/SQLProfiler.java:189:            writer.append("平均耗时: ")
+./src/main/java/city/norain/slimefun4/timings/SlowSqlCheckTask.java:25:                Slimefun.logger().log(Level.WARNING, "检测到慢 SQL: {0}", entry.normalize());
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:55:     * 格式化详细线程信息
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:60:        // 线程名和基本信息
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:65:        // 锁信息
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:76:        // 线程状态详情
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:86:        // 堆栈跟踪
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:92:            // 第一个堆栈元素的锁信息
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:98:        // 持有的锁
+./src/main/java/city/norain/slimefun4/utils/StringUtil.java:106:        // 持有的同步器
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/adapter/IDataSourceAdapter.java:10:     * 当前数据库架构版本号
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/adapter/IDataSourceAdapter.java:11:     * 在数据库结构有变动时更新
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/adapter/sqlcommon/SqlConstants.java:17:     * 由于设计不当，该表已被弃用
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/adapter/sqlcommon/SqlConstants.java:49:     * 由于设计不当，该字段已被弃用
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/common/DataScope.java:6: * {@link DataScope} 是 Slimefun 数据库表中数据的作用域定义
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/common/DataScope.java:24:     * 标记当前 {@link DataScope} 的主键字段
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/common/DataType.java:4: * {@link DataType} 是 Slimefun 数据库控制器的类型，
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/common/DataType.java:5: * 用于区分不同的数据存储类型。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/common/DataType.java:9:     * 玩家档案，通常包含研究进度、背包等其他玩家相关数据。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/common/DataType.java:14:     * Slimefun 方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:27: * {@link ADataController} 是 Slimefun 数据库控制器的抽象类，
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:28: * 提供了对数据源适配器的访问和数据操作的基本方法。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:30: * 该类提供了对数据库的增删查改操作以及异步读写的支持。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:40:     * 数据库读取调度器
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:44:     * 数据库写入调度器
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:51:     * 数据库回调调度器
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:56:     * 标记当前控制器是否已被关闭
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:78:     * 初始化 {@link ADataController}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ADataController.java:129:     * 正常关闭 {@link ADataController}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ASlimefunDataContainer.java:11: * Slimefun 数据容器的抽象类.
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/ASlimefunDataContainer.java:13: * 该类用于存储 Slimefun 特有的数据容器, 包括 Slimefun ID 和是否待删除的标志.
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:51: * 方块数据控制器
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:53: * 用于管理区块中的 Slimefun 方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:63:     * 延迟写数据任务队列
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:67:     * 区块数据缓存
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:71:     * 通用数据缓存
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:75:     * 方块物品栏快照
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:79:     * 全局控制器加载数据锁
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:85:     * 延时加载模式标志
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:92:     * 区块数据加载模式
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:98:     * 初始化加载中标志
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:110:     * 初始化数据控制器
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:112:     * @param dataAdapter    使用的 {@link IDataSourceAdapter}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:113:     * @param maxReadThread  最大数据库读线程数
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:114:     * @param maxWriteThread 最大数据库写线程数
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:124:     * 初始化加载数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:136:     * 加载所有服务器已加载的世界中的数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:151:     * 加载所有服务器已加载的世界区块中的数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:168:     * 初始化延时加载任务
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:170:     * @param p               插件实例
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:171:     * @param delayedSecond   首次执行延时
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:172:     * @param forceSavePeriod 强制保存周期
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:199:     * 在指定位置创建一个新的 Slimefun 方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:201:     * @param l    Slimefun 方块位置 {@link Location}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:202:     * @param sfId Slimefun 物品 ID {@link SlimefunItem#getId()}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:203:     * @return 方块数据, {@link SlimefunBlockData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:222:     * 创建一个新的 Slimefun 通用数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:224:     * 提供一个可供读写的 KV 存储 Map
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:226:     * @param sfId Slimefun 物品 ID {@link SlimefunItem#getId()}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:227:     * @return 通用数据, {@link SlimefunUniversalData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:235:     * 创建一个新的 Slimefun 通用数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:236:     * 提供一个可供读写的 KV 存储 Map
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:238:     * @param uuid 通用数据的识别 UUID
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:239:     * @param sfId Slimefun 物品 ID {@link SlimefunItem#getId()}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:240:     * @return 通用数据, {@link SlimefunUniversalData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:262:     * 在指定位置创建一个新的 Slimefun 通用方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:264:     * @param l    Slimefun 方块位置 {@link Location}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:265:     * @param sfId Slimefun 物品 ID {@link SlimefunItem#getId()}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:266:     * @return 通用方块数据, {@link SlimefunUniversalBlockData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:319:     * 立即计划保存一个通用数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:321:     * @param universalData 欲写入数据库保存的通用数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:341:     * 移除指定位置上的 Slimefun 数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:343:     * @param l 位置 {@link Location}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:373:     * 移除指定位置上的 Slimefun 方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:375:     * @param l 位置 {@link Location}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:397:     * 移除指定位置对应的可能存在的 Slimefun 通用方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:399:     * @param l {@link Location} 位置
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:414:     * 移除指定 UUID 对应的 Slimefun 通用方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:416:     * @param uuid 通用方块数据识别符
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:553:     * 从数据库中获取 {@link SlimefunUniversalData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:606:     * 从缓存中获取 {@link SlimefunUniversalData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:608:     * @param uuid 通用数据 UUID
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:833:        // 按区块加载方块数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:1058:        // 构建 通用数据 kv 存储 查询条件
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:1083:                    // 初始化 上次出现位置
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:1100:                // 加载菜单
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/BlockDataController.java:1668:     * 迁移旧 Slimefun 机器数据至通用数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/SlimefunBlockData.java:15: * {@link SlimefunBlockData} 是 Slimefun 中机器等方块类物品的数据存储容器。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/SlimefunBlockData.java:17: * 它包含了方块对应的键值容器、位置信息和菜单，
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/SlimefunBlockData.java:18: * 是 Slimefun 中常用的方块数据存储类。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/SlimefunChunkData.java:19: * {@link SlimefunChunkData} 是 Slimefun 中用于存储区块内所有方块数据的容器类。
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/SlimefunUniversalBlockData.java:51:        // 自动修复丢失的位置数据
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/SlimefunUniversalBlockData.java:71:            // 修复因使用不一致的文本转换导致的位置无法解析
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalBlock.java:8: * 这个属性用于声明 {@link SlimefunItem} 使用了 {@link SlimefunUniversalData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalBlock.java:10: * 当这个 {@link SlimefunItem} 作为机器时, 对应材质需要支持
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalBlock.java:11: * 使用 PDC 存储容器 (用于识别 UUID).
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalBlock.java:12: * 否则无法将这个物品/机器绑定到一个通用数据上.
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalBlock.java:14: * 查看此处了解支持 PDC 的物品材质:
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalDataTrait.java:9: * 这个枚举类用于声明 {@link SlimefunUniversalData} 的特征.
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalDataTrait.java:10: * 一个通用数据可以有单个或多个特征.
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalDataTrait.java:12: * 对于一个通用数据, 它默认拥有作为 k-v 容器的特征.
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalDataTrait.java:20:     * BLOCK 特征标明该通用数据属于 {@link SlimefunUniversalBlockData}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/controller/attributes/UniversalDataTrait.java:25:     * INVENTORY 特征标明该通用数据拥有一个 {@link UniversalMenu}
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/package-info.java:2: * Slimefun 的数据库存储系统实现与 API
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:11:     * 将 {@link Location} 转换为数据库中使用的
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:12:     * 标准格式位置信息
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:15:     * @return 标准化后的位置信息字符串
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:22:     * 将 {@link Chunk} 转换为数据库中使用的
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:23:     * 标准格式区块信息
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:26:     * @return 标准化后的区块信息字符串
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:81:     * 将位置转换为易读的文本
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:83:     * 注意: 请不要将其用于数据库转换过程中!
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:85:     * @param location 位置
+./src/main/java/com/xzavier0722/mc/plugin/slimefun4/storage/util/LocationUtils.java:86:     * @return 易读的位置文本
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/SlimefunAddon.java:99:     * 获取 Wiki URL格式
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/SlimefunAddon.java:101:     * @return Wiki 的 URL格式，使用{0}作为替换
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:174:                        "&7网络信息",
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:176:                        "&8\u21E8 &7状态: " + getStatusText(p, complexity),
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:177:                        "&8\u21E8 &7复杂度: &f" + complexity));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:209:                                "&bGPS 发射器",
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:210:                                "&8\u21E8 &7世界: &f" + l.getWorld().getName(),
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:215:                                "&8\u21E8 &7信号强度: &f" + transmitter.getMultiplier(l.getBlockY()),
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:216:                                "&8\u21E8 &7延迟: &f" + NumberUtils.roundDecimalNumber(1000D / l.getY()) + "ms"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:298:                            "&7网络信息",
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:300:                            "&8\u21E8 &7状态: " + (complexity > 0 ? "&2&l在线" : "&4&l离线"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:301:                            "&8\u21E8 &7复杂度: &f" + complexity));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/GPSNetwork.java:328:                                "&8\u21E8 &7世界: &f" + l.getWorld().getName(),
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/PageHelper.java:61:                        prevSlot, new CustomItemStack(Material.ARROW, "&a上一页 &7(" + page + "/" + totalPages + ")"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/PageHelper.java:64:                menu.addItem(prevSlot, new CustomItemStack(Material.GRAY_STAINED_GLASS_PANE, "&7上一页（无）"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/PageHelper.java:70:                        nextSlot, new CustomItemStack(Material.ARROW, "&a下一页 &7(" + page + "/" + totalPages + ")"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/PageHelper.java:73:                menu.addItem(nextSlot, new CustomItemStack(Material.GRAY_STAINED_GLASS_PANE, "&7下一页（无）"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/TeleportationManager.java:82:                ChestMenu menu = new ChestMenu("&3传送机");
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/gps/TeleportationManager.java:209:        // Fixes #1138 - 确保传送时间不会溢出
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/items/SlimefunItem.java:858:        // 转换链接
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/items/SlimefunItem.java:864:     * 指定该物品的 Wiki 页面
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/items/SlimefunItem.java:866:     * @param page 物品的 Wiki 页面
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/items/SlimefunItem.java:871:            Slimefun.logger().warning("该物品\"" + getId() + "\"暂未注册, 请在物品注册后再添加Wiki页面");
+./src/main/java/io/github/thebusybiscuit/slimefun4/api/researches/Research.java:319:     * 已魔改支持 Vault
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/EnergyNetComponent.java:104:        Slimefun.logger().log(Level.FINE, "正在调用旧 BlockStorage 的方法, 建议使用对应附属的新方块存储适配版.");
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineTier.java:6:    BASIC("&e基础"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineTier.java:7:    AVERAGE("&6普通"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineTier.java:8:    MEDIUM("&a中型"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineTier.java:9:    GOOD("&2优秀"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineTier.java:10:    ADVANCED("&6高级"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineTier.java:11:    END_GAME("&4终极");
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineType.java:6:    CAPACITOR("电容"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineType.java:7:    GENERATOR("发电机"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/MachineType.java:8:    MACHINE("机器");
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.java:24:    LOW(ChatColor.YELLOW, "低", 1),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.java:30:    MODERATE(ChatColor.YELLOW, "中", 2),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.java:36:    HIGH(ChatColor.GOLD, "高", 3),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.java:42:    VERY_HIGH(ChatColor.RED, "极高", 5),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.java:49:    VERY_DEADLY(ChatColor.DARK_RED, "致死", 10);
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/attributes/Radioactivity.java:74:        return ChatColor.GREEN + "\u2622" + ChatColor.GRAY + " 辐射等级: " + color + displayName;
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/commands/subcommands/BackpackCommand.java:55:                                    msg -> msg.replace("%usage%", "/sf backpack (玩家名)"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/SlimefunGuideMode.java:21:    SURVIVAL_MODE("普通模式"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/SlimefunGuideMode.java:27:    CHEAT_MODE("作弊模式");
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/SlimefunGuideMode.java:36:     * 获取指南书样式的显示名称
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/SlimefunGuideMode.java:38:     * @return 指南书样式的显示名称
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:129:                        "&f汉化 By StarWishsama",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:130:                        "&c请不要将此版本信息截图到 Discord/Github 反馈 Bug",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:131:                        "&c而是优先到汉化页面反馈",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:147:                        "&7最近活动于: &a" + NumberUtils.getElapsedTime(github.getLastUpdate()) + " 前",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:151:                        "&7&oSlimefun 4 是一个由社区参与的项目,",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:152:                        "&7&o源代码可以在 GitHub 上找到",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:153:                        "&7&o如果你想让这个项目持续下去",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:154:                        "&7&o你可以考虑对项目做出贡献",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:156:                        "&7\u21E8 &e点击前往汉化版 GitHub 仓库"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:172:                        "&7你需要对物品或机器方面的帮助吗?",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:173:                        "&7你不知道要干什么?",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:174:                        "&7查看我们的由社区维护的维基",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:175:                        "&7并考虑成为一名编辑者!",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:177:                        "&7\u21E8 &e点击前往非官方中文 Wiki"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:193:                        "&7Slimefun 是一个大型项目，但附属插件的存在",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:194:                        "&7能让 Slimefun 真正的发光发亮",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:195:                        "&7看一看它们，也许你要寻找的附属插件就在那里!",
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:197:                        "&7该服务器已安装附属插件: &b" + Slimefun.getInstalledAddons().size(),
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/guide/options/SlimefunGuideSettings.java:199:                        "&7\u21E8 &e点击查看 Slimefun4 可用的附属插件"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/networks/cargo/CargoNet.java:126:            updateHologram(b, "&4发现附近有多个货运网络调节机", blockData::isPendingRemove);
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/networks/cargo/CargoNet.java:133:            updateHologram(b, "&c找不到附近的货运网络节点", blockData::isPendingRemove);
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/networks/cargo/CargoNet.java:135:            updateHologram(b, "&7状态: &a&l已连接", blockData::isPendingRemove);
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/networks/energy/EnergyNet.java:145:                updateHologram(b, "&4检测到附近有其他调节器", blockData::isPendingRemove);
+./src/main/java/io/github/thebusybiscuit/slimefun4/core/networks/energy/EnergyNet.java:153:                updateHologram(b, "&4找不到能源网络", blockData::isPendingRemove);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/AndroidFuelSource.java:19:    SOLID("", "&f这类机器人需要固态燃料", "&f例如煤, 原木等..."),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/AndroidFuelSource.java:24:    LIQUID("", "&f这类机器人需要液态燃料", "&f例如岩浆, 原油, 燃油等..."),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/AndroidFuelSource.java:29:    NUCLEAR("", "&f这类机器人需要放射性燃料", "&f例如铀, 镎或钚铀混合氧化物核燃料");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/AndroidFuelSource.java:44:        return new CustomItemStack(HeadTexture.GENERATOR.getAsItemStack(), "&8\u21E9 &c燃料输入槽 &8\u21E9", lore);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:97:        new UniversalMenuPreset(getId(), "可编程式机器人") {
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:130:                        15, new CustomItemStack(HeadTexture.SCRIPT_START.getAsItemStack(), "&a启动/继续运行"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:138:                menu.replaceExistingItem(17, new CustomItemStack(HeadTexture.SCRIPT_PAUSE.getAsItemStack(), "&4暂停运行"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:148:                                HeadTexture.ENERGY_REGULATOR.getAsItemStack(), "&b内存核心", "", "&8\u21E8 &7单击打开脚本编辑器"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:294:                        "&7\u21E8 &e左键 &7返回机器人的控制面板"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:315:                    menu.addItem(i, new CustomItemStack(HeadTexture.SCRIPT_NEW.getAsItemStack(), "&7> 添加新命令"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:329:                                "&7\u21E8 &e左键 &7返回机器人的控制面板"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:365:                                "&7\u21E8 &e左键 &7编辑",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:366:                                "&7\u21E8 &e右键 &7删除",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:367:                                "&7\u21E8 &eShift + 右键 &7复制"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:449:        ChestMenu menu = new ChestMenu("机器人脚本");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:477:                        HeadTexture.SCRIPT_UP.getAsItemStack(), "&e上传脚本", "", "&6单击 &7将你正在用的脚本", "&7上传到服务器"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:495:        menu.addItem(53, new CustomItemStack(HeadTexture.SCRIPT_LEFT.getAsItemStack(), "&6> 返回", "", "&7返回机器人控制面板"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:577:        menu.addItem(1, new CustomItemStack(HeadTexture.SCRIPT_FORWARD.getAsItemStack(), "&2> 编辑脚本", "", "&a修改你现有的脚本"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:592:                        HeadTexture.SCRIPT_NEW.getAsItemStack(), "&4> 创建新脚本", "", "&c删除你正在使用的脚本", "&c并创建一个全新的空白脚本"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:602:                        "&6> 下载脚本",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:604:                        "&e从服务器中下载其他玩家上传的脚本",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:605:                        "&e可以即下即用, 或者修改之后再使用"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:611:        menu.addItem(8, new CustomItemStack(HeadTexture.SCRIPT_LEFT.getAsItemStack(), "&6> 返回", "", "&7返回机器人控制面板"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:651:                new CustomItemStack(HeadTexture.SCRIPT_PAUSE.getAsItemStack(), "&f什么也不做"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/ProgrammableAndroid.java:754:            lore.add(ChatColors.color("&8\u21E8 &7剩余 " + NumberUtils.getTimeLeft(fuel.getTicks() / 2)));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:131:        lore.add("&7作者 &f" + getAuthor());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:133:        lore.add("&7下载量: &f" + getDownloads());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:134:        lore.add("&7评分: " + getScriptRatingPercentage());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:137:        lore.add("&e左键 &f下载脚本");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:138:        lore.add("&4(将会覆盖你现有的脚本!)");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:142:            lore.add("&eShift + 左键 &f好评");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/androids/Script.java:143:            lore.add("&eShift + 右键 &f差评");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/autocrafters/AbstractAutoCrafter.java:675:                                "在处理合成配方 " + recipe + " 的结果 " + recipe.getResult() + " 时出现了问题, 合成结果非 Slimefun 物品");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/AbstractMonsterSpawner.java:60:            if ((stripColor.startsWith("类型: ") || stripColor.startsWith("Type:"))
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/AbstractMonsterSpawner.java:61:                    && (!line.contains("<类型>") || line.contains("<Type>"))) {
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/AbstractMonsterSpawner.java:63:                        .replace("类型: ", "")
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/AbstractMonsterSpawner.java:115:            if (currentLine.contains("<Type>") || currentLine.contains("<类型>")) {
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/AbstractMonsterSpawner.java:116:                String typeName = type == null ? "空" : ChatUtils.humanize(type.name());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/AbstractMonsterSpawner.java:117:                lore.set(i, currentLine.replace("<Type>", typeName).replace("<类型>", typeName));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/HologramProjector.java:67:                blockData.setData("text", "使用投影仪编辑文本");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/HologramProjector.java:113:                        "&7展示文本 &e(点击编辑)",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/HologramProjector.java:141:                        "&7高度: &e"
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/HologramProjector.java:146:                        "&f左键单击: &7+0.1",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/blocks/HologramProjector.java:147:                        "&f右键单击: &7-0.1"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractCargoNode.java:99:                new CustomItemStack(HeadTexture.CARGO_ARROW_LEFT.getAsItemStack(), "&b上一信道", "", "&e> 单击将信道ID减一"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractCargoNode.java:115:                    new CustomItemStack(HeadTexture.CHEST_TERMINAL.getAsItemStack(), "&b信道 ID: &3" + (channel + 1)));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractCargoNode.java:119:                    slotCurrent, new CustomItemStack(ColoredMaterial.WOOL.get(channel), "&b信道 ID: &3" + (channel + 1)));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractCargoNode.java:125:                new CustomItemStack(HeadTexture.CARGO_ARROW_RIGHT.getAsItemStack(), "&b下一信道", "", "&e> 单击将信道ID加一"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractFilterNode.java:93:                new CustomItemStack(Material.PAPER, "&3物品", "", "&b将你想要添加到黑白名单", "&b的物品放入此处"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractFilterNode.java:104:            menu.replaceExistingItem(15, new CustomItemStack(Material.WHITE_WOOL, "&7模式: &r白名单", "", "&e> 单击切换至黑名单"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractFilterNode.java:111:            menu.replaceExistingItem(15, new CustomItemStack(Material.BLACK_WOOL, "&7模式: &8黑名单", "", "&e> 单击切换至白名单"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractFilterNode.java:123:                    25, new CustomItemStack(Material.MAP, "&7匹配在物品名称底下的文字: &2\u2714", "", "&e> 单击启用匹配文字"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/AbstractFilterNode.java:131:                    25, new CustomItemStack(Material.MAP, "&7匹配在物品名称底下的文字: &4\u2718", "", "&e> 单击关闭匹配文字"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:62:                            "&7轮循模式: &4\u2718",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:64:                            "&e> 单击启用轮循模式",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:65:                            "&e(物品将会在信道中平均分配)"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:76:                            "&7轮循模式: &2\u2714",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:78:                            "&e> 单击关闭轮循模式",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:79:                            "&e(物品将会在信道中平均分配)"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:89:        // FIXME 需要改进翻译
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:96:                            "&7\"智能填充\" 模式: &4\u2718",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:98:                            "&e> 单击启用",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:100:                            "&f打开后, 货运节点会尝试",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:101:                            "&f让货运网络中的物品保持在一定数量",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:102:                            "&f但这个功能并不完美",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:103:                            "&f仍会尝试填满在一堆物品前的空位"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:114:                            "&7\"智能填充\" 模式: &2\u2714",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:116:                            "&e> 单击禁用",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:118:                            "&f打开后, 货运节点会尝试",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:119:                            "&f让货运网络中的物品保持在一定数量",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:120:                            "&f但这个功能并不完美",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoInputNode.java:121:                            "&f仍会尝试填满在一堆物品前的空位"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoManager.java:73:                                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c货运网络可视化: " + "&4\u2718"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/CargoManager.java:76:                                p.sendMessage(ChatColor.translateAlternateColorCodes('&', "&c货运网络可视化: " + "&2\u2714"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:54:        new BlockMenuPreset(getId(), "&2反应堆交互接口") {
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:75:                            new CustomItemStack(Material.GREEN_WOOL, "&7反应堆", "", "&6已检测到反应堆", "", "&7> 点击打开反应堆界面"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:90:                                    "&7反应堆",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:92:                                    "&c未检测到反应堆",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:94:                                    "&7反应堆必须放置在",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:95:                                    "&7本交互接口的",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:96:                                    "&73个方块以下的位置"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:154:                new CustomItemStack(SlimefunItems.URANIUM, "&7燃料槽", "", "&r这里可以放入放射性燃料, 例如:", "&2铀 &r或 &a镎"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:158:                new CustomItemStack(SlimefunItems.PLUTONIUM, "&7副产品槽", "", "&r这里可以获取反应堆在运行中产生的副产物", "&r例如 &a镎 &r或 &7钚"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/cargo/ReactorAccessPort.java:163:                        SlimefunItems.REACTOR_COOLANT_CELL, "&b冷却剂", "", "&r这里可以放入冷却剂", "&4如果没有冷却剂, 你的反应堆", "&4将会爆炸"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/AbstractEnergyProvider.java:131:            lore.add(ChatColors.color("&8\u21E8 &7持续时间 " + NumberUtils.getTimeLeft(fuel.getTicks() / 2)));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/AbstractEnergyProvider.java:133:            lore.add(ChatColors.color("&8\u21E8 &e\u26A1 &7最大储存量: "
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/EnergyConnector.java:52:                p.sendMessage(ChatColors.color("&7连接状态: " + "&2\u2714"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/EnergyConnector.java:54:                p.sendMessage(ChatColors.color("&7连接状态: " + "&4\u2718"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/EnergyRegulator.java:58:                updateHologram(e.getBlock(), "&7连接中...");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/gadgets/MultiTool.java:103:                                msg -> msg.replace("%device%", "多功能工具")
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/enchanting/AbstractEnchantmentMachine.java:38:            this, "ignored-lores", Collections.singletonList("&7- &c无法被使用在 " + this.getItemName() + "上"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/enchanting/AbstractEnchantmentMachine.java:66:            throw new IllegalStateException("自动附/祛魔机等级限制未被启用, 无法展示警告信息.");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/enchanting/AbstractEnchantmentMachine.java:77:            throw new IllegalStateException("自动附/祛魔机附魔数量限制未被启用, 无法展示警告信息.");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/AbstractEntityAssembler.java:172:            menu.replaceExistingItem(22, new CustomItemStack(Material.GUNPOWDER, "&7是否可用: &4\u2718", "", "&e> 单击开启机器"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/AbstractEntityAssembler.java:179:            menu.replaceExistingItem(22, new CustomItemStack(Material.REDSTONE, "&7是否可用: &2\u2714", "", "&e> 单击关闭机器"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/AbstractEntityAssembler.java:194:                        Material.PISTON, "&7生成高度: &3" + offset + " 格方块高", "", "&f左键: &7+0.1", "&f右键: &7-0.1"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/AbstractEntityAssembler.java:311:                new CustomItemStack(getHead(), "&7在此处放入头颅", "", "&f此处可以放入作为生成实体头颅的物品"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/AbstractEntityAssembler.java:315:                new CustomItemStack(getBody(), "&7在此处放入组装原料", "", "&f此处可以放入作为生成实体躯干的物品"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/AbstractEntityAssembler.java:319:                new CustomItemStack(Material.CLOCK, "&7冷却时间: &b30 秒", "", "&f这个机器需要半分钟的时间装配", "&f所以耐心等等吧!"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/IronGolemAssembler.java:67:                new CustomItemStack(getHead(), "&7在此处放入南瓜", "", "&f这里可以放入南瓜"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/IronGolemAssembler.java:71:                new CustomItemStack(getBody(), "&7在此处放入铁块", "", "&f这里可以放入铁块"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/IronGolemAssembler.java:75:                new CustomItemStack(Material.CLOCK, "&7冷却时间: &b30 秒", "", "&f这个机器需要半分钟的时间装配", "&f所以耐心等等吧!"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/ProduceCollector.java:115:        displayRecipes.add(new CustomItemStack(Material.BUCKET, null, "&f需要附近有 &b牛 &f才会生产"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/ProduceCollector.java:119:            displayRecipes.add(new CustomItemStack(Material.BUCKET, null, "&f需要附近有 &b山羊 &f才会生产"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/ProduceCollector.java:123:        displayRecipes.add(new CustomItemStack(Material.BOWL, null, "&f需要附近有 &b哞菇 &f才会生产"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/WitherAssembler.java:65:                new CustomItemStack(getHead(), "&7凋零骷髅头", "", "&f在这里放入凋零骷髅头"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/WitherAssembler.java:68:                7, new CustomItemStack(getBody(), "&7灵魂沙", "", "&f在这里放入灵魂沙"), ChestMenuUtils.getEmptyClickHandler());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/machines/entities/WitherAssembler.java:71:                new CustomItemStack(Material.CLOCK, "&7冷却时间: &b30 秒", "", "&f这个机器需要半分钟的时间装配", "&f所以耐心等等吧!"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:162:                                "&7模式: &e发电",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:164:                                "&6反应堆将会专注于发电",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:165:                                "&6如果能源网络中没有机器需要电力",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:166:                                "&6它会停止工作",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:168:                                "&7\u21E8 单击修改模式为 &e生产"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:180:                                "&7模式: &e生产",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:182:                                "&6反应堆将会专注于生产副产物",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:183:                                "&6如果能源网络中没有机器需要电力",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:184:                                "&6它会继续工作并且不发电",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:186:                                "&7\u21E8 单击修改模式为 &e发电"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:201:                    INFO_SLOT, new CustomItemStack(Material.GREEN_WOOL, "&7访问接口", "", "&6已连接", "", "&7> 单击查看访问接口"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:211:                    new CustomItemStack(Material.RED_WOOL, "&7访问接口", "", "&c未连接", "", "&7接口必须要放置在", "&7反应堆上面的第三格!"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:245:                    new CustomItemStack(getFuelIcon(), "&7燃料", "", "&f这里可以放入放射性燃料:", "&2铀 &f或 &a镎"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:250:                    new CustomItemStack(getFuelIcon(), "&7燃料", "", "&f这里可以放入燃料:", "&b下界之星"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:255:                    new CustomItemStack(getFuelIcon(), "&7燃料", "", "&f这里可以放入放射性燃料:", "&2铀 &f或 &a镎"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:268:                    7, new CustomItemStack(getCoolant(), "&b冷却剂", "", "&f在此处放入冷却剂", "&4没有了冷却剂, 你的反应堆", "&4将会瞬间爆炸"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:270:            preset.addItem(7, new CustomItemStack(Material.BARRIER, "&b冷却剂", "", "&f在此处放入冷却剂"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/electric/reactors/Reactor.java:274:                        i, new CustomItemStack(Material.BARRIER, "&c无需冷却剂"), ChestMenuUtils.getEmptyClickHandler());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/elevator/ElevatorPlate.java:80:                blockData.setData(DATA_KEY, ChatColor.WHITE + "一楼");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/elevator/ElevatorPlate.java:272:                        "&7楼层名 &e(单击编辑)",
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/geo/GEOMiner.java:205:                updateHologram(e.getBlock(), "&7待机中...");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/geo/GEOMiner.java:337:                updateHologram(b, "&4需要先进行地形扫描!");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/geo/GEOMiner.java:348:                            updateHologram(b, "&4区块数据加载中...");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/geo/GEOMiner.java:376:                    updateHologram(b, "&7开采中: &r" + resource.getName());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/geo/GEOMiner.java:383:            updateHologram(b, "&4需要先进行地形扫描!");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/geo/GEOMiner.java:387:        updateHologram(b, "&7开采完成");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/magical/KnowledgeTome.java:51:                lore.set(0, ChatColors.color("&7主人: &b" + p.getName()));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/magical/MagicEyeOfEnder.java:46:                        .sendMessage(p, "messages.usage", true, msg -> msg.replace("%usage%", "穿戴全套末影护甲以发射珍珠"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/magical/talismans/Talisman.java:106:            String name = "&5末影" + ChatColor.stripColor(getItem().getItemMeta().getDisplayName());
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/magical/talismans/Talisman.java:108:            lore.add("&7&o注入末影精华");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/magical/talismans/Talisman.java:112:                if (line.contains("背包")) {
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/magical/talismans/Talisman.java:113:                    line = line.replace("背包", "末影箱");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/misc/StrangeNetherGoo.java:83:                sheep.setCustomName(ChatColor.DARK_PURPLE + "受污染的羊");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/ArmorForge.java:40:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/Compressor.java:42:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/GrindStone.java:43:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/Juicer.java:53:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/MakeshiftSmeltery.java:38:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/OreCrusher.java:55:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/PressureChamber.java:36:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝下)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/Smeltery.java:59:                    new CustomItemStack(Material.DISPENSER, "发射器 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/miner/IndustrialMiner.java:66:                    new CustomItemStack(Material.PISTON, "活塞 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/miner/IndustrialMiner.java:68:                    new CustomItemStack(Material.PISTON, "活塞 (朝上)"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/miner/IndustrialMiner.java:154:        Validate.isTrue(ores > 1 && ores % 2 == 0, "矿石的数量必须 >= 2 且为 2 的倍数.");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/multiblocks/miner/IndustrialMiner.java:173:            lore.add(ChatColors.color("&8\u21E8 &7剩余最多 " + fuel.getTicks() + " 个矿石"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:114:         * 修复: https://github.com/SlimefunGuguProject/Slimefun4/issues/853
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:116:         * 为了修复该问题应该对该列表进行排序，确保头颅先被处理，具体为什么可以看下方 breakBlock 方法。
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:183:                     * 修复: https://github.com/SlimefunGuguProject/Slimefun4/issues/853
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:185:                     * 该问题源于 ExoticGarden MagicalEssence/ExoticGardenFruit useVanillaBlockBreaking 为 true，
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:186:                     * 将调用 breakNaturally 方法而非将其作为 SlimefunItem 进行处理。
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:188:                     * 此前将 blocks 进行排序，以确保头颅为最先处理的对象，检查头颅的 Y - 1 方块是否为叶子，
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/ExplosiveTool.java:189:                     * 若为叶子则尝试获取该处的 SlimefunItem，若能获取得到则此处应为异域花园植物，将叶子处直接设置为 AIR 并移除该处 Slimefun 方块数据。
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/items/tools/PortableDustbin.java:40:            var dustbin = Bukkit.createInventory(null, 9 * 3, ChatColor.DARK_RED + "便携垃圾桶");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/listeners/BlockListener.java:435:    // 美化可旋转类 (如头颅) 物品放置
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/listeners/DebugFishListener.java:122:                                                "&c检测到损坏的通用数据物品, UUID: " + uuid + ", 请检查数据库对应数据是否存在!"));
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/listeners/VersionedMiddleClickListener.java:31:            Slimefun.logger().log(Level.WARNING, "无法初始化中键监听器版本兼容模块, 部分功能可能无法正常使用", e);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/resources/NetherIceResource.java:23:        super("nether_ice", "下界冰", SlimefunItems.NETHER_ICE, 6, true);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/resources/OilResource.java:30:        super("oil", "原油", SlimefunItems.OIL_BUCKET, 8, false);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/resources/SaltResource.java:25:        super("salt", "盐", SlimefunItems.SALT, 18, true);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/resources/UraniumResource.java:24:        super("uranium", "小块铀", SlimefunItems.SMALL_URANIUM, 2, true);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:32:        Slimefun.logger().log(Level.INFO, "加载 Wiki 页面...");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:73:                + "成功加载了 "
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:75:                + " 个物品和 "
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:77:                + " 个研究");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:81:                + " 物品来自本体, "
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:83:                + " 个物品来自 "
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:85:                + " 扩展 )");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:89:        sender.sendMessage(ChatColor.GREEN + " - 源码:      https://github.com/SlimefunGuguProject/Slimefun4");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/PostSetup.java:90:        sender.sendMessage(ChatColor.GREEN + " - Bug 反馈:  https://github.com/SlimefunGuguProject/Slimefun4/issues");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/RickFlexGroup.java:25:        super(key, new CustomItemStack(Material.NETHER_STAR, "&6&l超级神秘物品"), 1);
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/SlimefunItemSetup.java:3988:                        new SlimefunItemStack("BIRTHDAY_CAKE", Material.CAKE, "&b生日蛋糕"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/setup/SlimefunItemSetup.java:7799:                            new CustomItemStack(HeadTexture.PIGLIN_HEAD.getAsItemStack(), "&f与猪灵交易"),
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:263:            Slimefun.logger().log(Level.SEVERE, "在过去的 4 个 Tick 中发生多次错误，该方块对应的机器已被停用。");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:264:            Slimefun.logger().log(Level.SEVERE, "请在 /plugins/Slimefun/error-reports/ 文件夹中查看错误详情。");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:265:            Slimefun.logger().log(Level.SEVERE, "如果你要向他人求助，请向他人发送上述错误报告文件,而不是发送这个窗口的截图");
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:343:     * 返回一个给定区块下的 <strong>只读</strong> 的 {@link Map}
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:344:     * 代表每个 {@link ChunkPosition} 中有 {@link UniversalBlock} 属性的物品
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:345:     * Tick 的 {@link Location 位置}集合.
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:347:     * 其中包含的 {@link Location} 可以是已加载或卸载的 {@link Chunk}
+./src/main/java/io/github/thebusybiscuit/slimefun4/implementation/tasks/TickerTask.java:352:     * @return 包含所有机器 Tick {@link TickLocation 位置}的只读 {@link Map}
+./src/main/java/me/mrCookieSlime/CSCoreLibPlugin/general/Inventory/ChestMenu.java:50:    // 何意味
+./src/main/java/me/mrCookieSlime/Slimefun/Objects/handlers/BlockTicker.java:31:     * 刷新当前 ticker 执行状态
+./src/main/java/net/guizhanss/slimefun4/updater/AutoUpdateTask.java:12: * 自动更新任务.
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:10: * 聊天相关方法
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:19:     * 发送带 Slimefun 前缀的消息
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:20:     * @param sender 消息接收人
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:21:     * @param message 消息
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:28:     * 发送带 Slimefun 前缀的消息
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:29:     * @param sender 消息接收人
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:30:     * @param message 消息
+./src/main/java/net/guizhanss/slimefun4/utils/ChatUtils.java:31:     * @param function 对消息进行处理的{@link Function}
+./src/main/resources/block-storage.yml:2:# 数据库类型, 可选的有 SQLITE, MYSQL, POSTGRESQL
+./src/main/resources/block-storage.yml:3:# 注意: 在切换数据库类型时, 我们并不会自动帮你迁移数据 :)
+./src/main/resources/block-storage.yml:6:# 使用Base64编码数据字段
+./src/main/resources/block-storage.yml:9:# 区块数据加载模式
+./src/main/resources/block-storage.yml:10:# 可选的有:
+./src/main/resources/block-storage.yml:11:# - LOAD_WITH_CHUNK: 当本次开服期间内区块首次加载时加载粘液区块数据
+./src/main/resources/block-storage.yml:12:# - LOAD_ON_STARTUP: 当开服时一次性加载全部区块数据，可能会导致开服时间较长
+./src/main/resources/block-storage.yml:13:# 默认情况下推荐使用 LOAD_WITH_CHUNK 以节省不必要的内存开销
+./src/main/resources/block-storage.yml:14:# 如发现加载区块时发生明显卡顿，请更改为 LOAD_ON_STARTUP
+./src/main/resources/block-storage.yml:19:# 数据库读写线程数
+./src/main/resources/block-storage.yml:20:# 当使用 MySQL 时，建议将最大连接数设置为 读取 + 写入线程数，且读取线程数量应当大于写入线程。
+./src/main/resources/block-storage.yml:21:# 注意: 线程数并非越多越好，过多反而会导致性能下降。请分配合适的数量。
+./src/main/resources/block-storage.yml:23:# 读取线程数
+./src/main/resources/block-storage.yml:25:# 写入线程数
+./src/main/resources/block-storage.yml:30:# 延迟写入功能
+./src/main/resources/block-storage.yml:31:# 本功能用于防止某些数据被频繁写入导致队列中存在大量无意义的写入请求。
+./src/main/resources/block-storage.yml:32:# 启用本功能后，当数据发生更改后会等待 (delayedSecond) 秒，如无其它改动再写入数据库。
+./src/main/resources/block-storage.yml:33:# 强制保存时会将等待中的数据直接加入写入队列。
+./src/main/resources/block-storage.yml:35:  # 是否启用延迟写入
+./src/main/resources/block-storage.yml:37:  # 延迟写入秒数
+./src/main/resources/block-storage.yml:39:  # 强制保存间隔（单位：秒）
+./src/main/resources/block-storage.yml:44:# Sqlite 配置
+./src/main/resources/block-storage.yml:50:# MySQL 配置
+./src/main/resources/block-storage.yml:52:  # 数据库连接地址
+./src/main/resources/block-storage.yml:54:  # 数据库连接端口
+./src/main/resources/block-storage.yml:56:  # 数据库名
+./src/main/resources/block-storage.yml:58:  # 表前缀
+./src/main/resources/block-storage.yml:60:  # 连接用户名
+./src/main/resources/block-storage.yml:62:  # 连接用户密码
+./src/main/resources/block-storage.yml:64:  # 是否使用加密连接
+./src/main/resources/block-storage.yml:66:  # 最大连接数
+./src/main/resources/block-storage.yml:71:# PostgreSQL 配置
+./src/main/resources/block-storage.yml:73:  # 数据库连接地址
+./src/main/resources/block-storage.yml:75:  # 数据库连接端口
+./src/main/resources/block-storage.yml:77:  # 数据库名
+./src/main/resources/block-storage.yml:79:  # 表前缀
+./src/main/resources/block-storage.yml:81:  # 连接用户名
+./src/main/resources/block-storage.yml:83:  # 连接用户密码
+./src/main/resources/block-storage.yml:85:  # 是否使用加密连接
+./src/main/resources/block-storage.yml:87:  # 最大连接数
+./src/main/resources/languages/ja/categories.yml:3:  weapons: 武器
+./src/main/resources/languages/ja/categories.yml:5:  items: 便利アイテム
+./src/main/resources/languages/ja/categories.yml:6:  food: 食料
+./src/main/resources/languages/ja/categories.yml:7:  basic_machines: 基本機械
+./src/main/resources/languages/ja/categories.yml:8:  electricity: エネルギー・電動機械
+./src/main/resources/languages/ja/categories.yml:9:  gps: GPS関連機械
+./src/main/resources/languages/ja/categories.yml:10:  armor: 防具
+./src/main/resources/languages/ja/categories.yml:11:  magical_items: 魔法のアイテム
+./src/main/resources/languages/ja/categories.yml:12:  magical_gadgets: 魔法の小道具
+./src/main/resources/languages/ja/categories.yml:13:  misc: 雑貨
+./src/main/resources/languages/ja/categories.yml:14:  technical_gadgets: 電子機器
+./src/main/resources/languages/ja/categories.yml:15:  resources: 資源
+./src/main/resources/languages/ja/categories.yml:16:  cargo: カーゴ輸送管理
+./src/main/resources/languages/ja/categories.yml:17:  tech_misc: 電子部品
+./src/main/resources/languages/ja/categories.yml:18:  magical_armor: 魔法の防具
+./src/main/resources/languages/ja/categories.yml:21:  christmas: クリスマス（12月）
+./src/main/resources/languages/ja/categories.yml:22:  valentines_day: バレンタインデー（2月14日）
+./src/main/resources/languages/ja/categories.yml:23:  easter: 復活祭（4月）
+./src/main/resources/languages/ja/categories.yml:24:  birthday: TheBusyBiscuit生誕祭（10月26日）
+./src/main/resources/languages/ja/categories.yml:25:  halloween: ハロウィン（10月31日）
+./src/main/resources/languages/ja/categories.yml:26:  androids: プログラム制御アンドロイド
+./src/main/resources/languages/ja/messages.yml:3:  help: コマンドの使い方を表示
+./src/main/resources/languages/ja/messages.yml:4:  cheat: Slimefunガイドをチートモードで開く
+./src/main/resources/languages/ja/messages.yml:5:  give: 指定したプレイヤーにSlimefunアイテムを与える
+./src/main/resources/languages/ja/messages.yml:6:  guide: Slimefunガイドを取得
+./src/main/resources/languages/ja/messages.yml:7:  teleporter: 指定したプレイヤーのウェイポイントを表示
+./src/main/resources/languages/ja/messages.yml:9:  search: Slimefunガイド内を検索
+./src/main/resources/languages/ja/messages.yml:10:  open_guide: Slimefunガイドを開く
+./src/main/resources/languages/ja/messages.yml:11:  stats: プレイヤー情報を表示
+./src/main/resources/languages/ja/messages.yml:13:    description: 指定したプレイヤーのリサーチ状況を操作
+./src/main/resources/languages/ja/messages.yml:14:    reset: '&c%player%のリサーチ状況を初期化しました'
+./src/main/resources/languages/ja/messages.yml:15:    reset-target: '&cリサーチ状況が初期化されました'
+./src/main/resources/languages/ja/messages.yml:17:    description: 生成済みのバックパックを取り出します
+./src/main/resources/languages/ja/messages.yml:18:    invalid-id: '&4IDは非負整数にしてください！'
+./src/main/resources/languages/ja/messages.yml:19:    player-never-joined: '&4その名前のプレイヤーが見つかりません！'
+./src/main/resources/languages/ja/messages.yml:20:    backpack-does-not-exist: '&4指定したバックパックは存在しません！'
+./src/main/resources/languages/ja/messages.yml:21:    restored-backpack-given: '&aバックパックが返還されました！'
+./src/main/resources/languages/ja/messages.yml:23:    description: 手に持っているアイテムを充電する
+./src/main/resources/languages/ja/messages.yml:24:    charge-success: アイテムが充電されました！
+./src/main/resources/languages/ja/messages.yml:25:    not-rechargeable: このアイテムは充電できません！
+./src/main/resources/languages/ja/messages.yml:27:    description: Slimefunに関連する負荷の計測
+./src/main/resources/languages/ja/messages.yml:28:    please-wait: '&e数秒お待ちください… 負荷の測定中です！'
+./src/main/resources/languages/ja/messages.yml:29:    verbose-player: '&4プレイヤーはverboseフラグを使用できません！'
+./src/main/resources/languages/ja/messages.yml:30:    unknown-flag: '&4未知のフラグです: &c%flag%'
+./src/main/resources/languages/ja/messages.yml:32:    description: '開発者のためのデバッグログを実行'
+./src/main/resources/languages/ja/messages.yml:33:    current: '&7現在のテストケース: &6%test_case%'
+./src/main/resources/languages/ja/messages.yml:34:    none-running: '&7現在実行中のテストケースはありません'
+./src/main/resources/languages/ja/messages.yml:35:    running: '&7テストでデバッグモードを実行中: &6%test%'
+./src/main/resources/languages/ja/messages.yml:36:    disabled: '&7デバッグモードを無効化しました.'
+./src/main/resources/languages/ja/messages.yml:38:  profile-loading: 'ロード中…'
+./src/main/resources/languages/ja/messages.yml:40:  locked: 'ロック中'
+./src/main/resources/languages/ja/messages.yml:41:  work-in-progress: 'まだこの項目は未完成です！'
+./src/main/resources/languages/ja/messages.yml:43:    - 'このカテゴリを開放するには'
+./src/main/resources/languages/ja/messages.yml:44:    - '以下のカテゴリの全アイテムを'
+./src/main/resources/languages/ja/messages.yml:47:    message: '&b検索ワードをチャットで入力してください'
+./src/main/resources/languages/ja/messages.yml:48:    name: '&7検索…'
+./src/main/resources/languages/ja/messages.yml:49:    tooltip: '&bクリックでアイテムの検索'
+./src/main/resources/languages/ja/messages.yml:50:    inventory: '検索結果: %item%'
+./src/main/resources/languages/ja/messages.yml:52:    open-itemgroup: 'クリックで開く'
+./src/main/resources/languages/ja/messages.yml:53:    versions-notice: 'バグ報告をお願いします！'
+./src/main/resources/languages/ja/messages.yml:54:    wiki: 'このアイテムを公式Wikiで確認する'
+./src/main/resources/languages/ja/messages.yml:56:      machine: '使用可能なレシピ'
+./src/main/resources/languages/ja/messages.yml:57:      miner: '採掘可能な資源'
+./src/main/resources/languages/ja/messages.yml:58:      generator: '使用可能な燃料'
+./src/main/resources/languages/ja/messages.yml:59:      gold-pan: '入手可能な資源'
+./src/main/resources/languages/ja/messages.yml:60:      climbing-pick: 'クライミング可能な地表'
+./src/main/resources/languages/ja/messages.yml:62:    no-multiblocks: '&4マルチブロックは取得できません'
+./src/main/resources/languages/ja/messages.yml:64:    previous: '前のページ'
+./src/main/resources/languages/ja/messages.yml:65:    next: '次のページ'
+./src/main/resources/languages/ja/messages.yml:67:    title: '戻る'
+./src/main/resources/languages/ja/messages.yml:68:    guide: 'Slimefunガイドへ戻る'
+./src/main/resources/languages/ja/messages.yml:69:    settings: '設定画面へ戻る'
+./src/main/resources/languages/ja/messages.yml:71:    updated: '&a言語設定を変更しました: &b%lang%'
+./src/main/resources/languages/ja/messages.yml:72:    selected-language: '選択中の言語:'
+./src/main/resources/languages/ja/messages.yml:73:    select: 'クリックでこの言語を選択'
+./src/main/resources/languages/ja/messages.yml:74:    select-default: 'クリックでデフォルトを選択'
+./src/main/resources/languages/ja/messages.yml:75:    change: 'クリックで新しく言語を指定'
+./src/main/resources/languages/ja/messages.yml:78:      - '&7Slimefunで表示される言語を'
+./src/main/resources/languages/ja/messages.yml:79:      - '&7指定できます。アイテム名は'
+./src/main/resources/languages/ja/messages.yml:80:      - '&7現時点では翻訳できません。'
+./src/main/resources/languages/ja/messages.yml:82:      name: '&a他の言語をお探しですか？'
+./src/main/resources/languages/ja/messages.yml:83:      lore: 'クリックで他の言語に翻訳する'
+./src/main/resources/languages/ja/messages.yml:88:          - '&b学習のアニメーション：&aあり'
+./src/main/resources/languages/ja/messages.yml:90:          - '&7アイテムをリサーチする時に'
+./src/main/resources/languages/ja/messages.yml:91:          - '&7リサーチ中の情報をチャットへ表示'
+./src/main/resources/languages/ja/messages.yml:92:          - '&7するかを切り替えることができます。'
+./src/main/resources/languages/ja/messages.yml:93:        click: '&eクリックで学習のアニメーションを無効化'
+./src/main/resources/languages/ja/messages.yml:96:          - '&b学習のアニメーション：&4なし'
+./src/main/resources/languages/ja/messages.yml:98:          - '&7アイテムをリサーチする時に'
+./src/main/resources/languages/ja/messages.yml:99:          - '&7リサーチ中の情報をチャットへ表示'
+./src/main/resources/languages/ja/messages.yml:100:          - '&7するかを切り替えることができます。'
+./src/main/resources/languages/ja/messages.yml:101:        click: '&eクリックで学習のアニメーションを再生する'
+./src/main/resources/languages/ja/messages.yml:104:    settings: '設定・情報'
+./src/main/resources/languages/ja/messages.yml:105:    languages: '言語の選択'
+./src/main/resources/languages/ja/messages.yml:106:    credits: 'Slimefun4 開発者'
+./src/main/resources/languages/ja/messages.yml:109:    bugs: 'バグ報告'
+./src/main/resources/languages/ja/messages.yml:111:    versions: 'バージョン一覧'
+./src/main/resources/languages/ja/messages.yml:115:    profile-link: 'クリックでGitHubのプロファイルを開く'
+./src/main/resources/languages/ja/messages.yml:116:    open: 'クリックでコントリビュータを表示'
+./src/main/resources/languages/ja/messages.yml:118:      - '&7Slimefunは多くのコミュニティの人々に支えられている'
+./src/main/resources/languages/ja/messages.yml:120:      - '&7数年にわたり&e%contributors%&7人以上の人々が，'
+./src/main/resources/languages/ja/messages.yml:121:      - '&7Slimefunに取り組んできました。'
+./src/main/resources/languages/ja/messages.yml:123:      developer: '&6開発者'
+./src/main/resources/languages/ja/messages.yml:124:      wiki: '&3ウィキ編集者'
+./src/main/resources/languages/ja/messages.yml:125:      resourcepack: '&cリソースパック作者'
+./src/main/resources/languages/ja/messages.yml:126:      translator: '&9訳者'
+./src/main/resources/languages/ja/messages.yml:128:  not-researched: '&4あなたにはこれを理解する知識が足りません。&f"%item%&f" &cのロックを解除してください。'
+./src/main/resources/languages/ja/messages.yml:129:  not-enough-xp: '&4リサーチの遂行に必要な経験値が足りません'
+./src/main/resources/languages/ja/messages.yml:130:  unlocked: '&bリサーチが完了しました &7"%research%"'
+./src/main/resources/languages/ja/messages.yml:131:  only-players: '&4プレイヤー専用コマンドです'
+./src/main/resources/languages/ja/messages.yml:132:  unknown-player: '&4プレイヤーが見つかりません: &c%player%'
+./src/main/resources/languages/ja/messages.yml:133:  no-permission: '&4権限がありません'
+./src/main/resources/languages/ja/messages.yml:134:  usage: '&4使用法: &c%usage%'
+./src/main/resources/languages/ja/messages.yml:136:  invalid-item: '&4%item% &cは正しくないアイテムです'
+./src/main/resources/languages/ja/messages.yml:137:  invalid-amount: '&4%amount% &cの部分には、正の整数を指定してください'
+./src/main/resources/languages/ja/messages.yml:138:  given-item: '&b%item%を%amount%個与えられました'
+./src/main/resources/languages/ja/messages.yml:139:  give-item: '&b%player%に%item%を%amount%個与えました'
+./src/main/resources/languages/ja/messages.yml:140:  invalid-research: '&4%research%&cは正しくないリサーチです'
+./src/main/resources/languages/ja/messages.yml:141:  give-research: '&b%player%のリサーチ%research%を完了させました'
+./src/main/resources/languages/ja/messages.yml:142:  hungry: '&c空腹のため使えません'
+./src/main/resources/languages/ja/messages.yml:143:  disabled-in-world: '&4&lこのワールドでは使用できません'
+./src/main/resources/languages/ja/messages.yml:144:  disabled-item: '&4&lこのアイテムは無効化されています'
+./src/main/resources/languages/ja/messages.yml:145:  no-tome-yourself: '&c自身の&4Tome of Knowledge&cは使えません'
+./src/main/resources/languages/ja/messages.yml:146:  multimeter: '&bエネルギー残量: &3%stored% &b/ &3%capacity%'
+./src/main/resources/languages/ja/messages.yml:147:  piglin-barter: '&4Slimefunアイテムはピグリンとの物々交換に使用できません'
+./src/main/resources/languages/ja/messages.yml:148:  bee-suit-slow-fall: '&e蜂の羽が着地を安全でゆっくりにした'
+./src/main/resources/languages/ja/messages.yml:149:  deprecated-item: '&4このアイテムは廃止予定です。近日中にSlimefunから削除されます。'
+./src/main/resources/languages/ja/messages.yml:150:  researching-is-disabled: '%cこのサーバーではリサーチが無効化されていました。すべてがデフォルトでアンロックされました！'
+./src/main/resources/languages/ja/messages.yml:152:    mode-change: '&b%device% モード変更: &9%mode%'
+./src/main/resources/languages/ja/messages.yml:153:    not-shears: '&cMulti Toolはハサミとして利用できません！'
+./src/main/resources/languages/ja/messages.yml:155:    select-a-recipe: '&7クラフトしたいアイテムを持ち、このブロックに &eスニーク+右クリックしてください'
+./src/main/resources/languages/ja/messages.yml:156:    recipe-set: '&aこの機械にレシピをうまく設定しました。'
+./src/main/resources/languages/ja/messages.yml:157:    recipe-removed: '&eこの機械からレシピをうまく削除しました。いつでも新しいレシピを設定できます！'
+./src/main/resources/languages/ja/messages.yml:158:    no-recipes: '&c持っているアイテムのレシピが見当たりませんでした'
+./src/main/resources/languages/ja/messages.yml:159:    missing-chest: '&cチェストがありません！自動クラフターはチェストの上に設置が必要とするです'
+./src/main/resources/languages/ja/messages.yml:160:    select: 'このレシピを選択'
+./src/main/resources/languages/ja/messages.yml:161:    temporarily-disabled: '&eこの自動クラフターは一時的に無効化されました。いつでも再び有効化できます！'
+./src/main/resources/languages/ja/messages.yml:162:    re-enabled: '&eこの自動クラフターは再び有効化されました！'
+./src/main/resources/languages/ja/messages.yml:164:      &cこのアイテムは、サーバーによって無効化されているか、あなたがまだアンロックしていません。
+./src/main/resources/languages/ja/messages.yml:165:      &7このアイテムを作成したことが無い場合、一度作成してみることでアンロックされます。
+./src/main/resources/languages/ja/messages.yml:168:        - '&a現在このレシピは有効化されています'
+./src/main/resources/languages/ja/messages.yml:170:        - '&e左クリック &7でレシピを一時的に無効化します'
+./src/main/resources/languages/ja/messages.yml:171:        - '&e右クリック &7でこのレシピを削除します'
+./src/main/resources/languages/ja/messages.yml:173:        - '&a現在このレシピは一時的に無効化されています'
+./src/main/resources/languages/ja/messages.yml:175:        - '&e左クリック &7でこのレシピを再び有効化します'
+./src/main/resources/languages/ja/messages.yml:176:        - '&e右クリック &7でこのレシピを削除します'
+./src/main/resources/languages/ja/messages.yml:178:    anvil: '&a&oタリスマンがツールの損壊を防いだ'
+./src/main/resources/languages/ja/messages.yml:179:    miner: '&a&oタリスマンがドロップを倍にした'
+./src/main/resources/languages/ja/messages.yml:180:    farmer: '&a&o御守がドロップを二倍にした'
+./src/main/resources/languages/ja/messages.yml:181:    hunter: '&a&oタリスマンがドロップを倍にした'
+./src/main/resources/languages/ja/messages.yml:182:    lava: '&a&oタリスマンが炎上から身を護った'
+./src/main/resources/languages/ja/messages.yml:183:    water: '&a&oタリスマンが水没から身を護った'
+./src/main/resources/languages/ja/messages.yml:184:    angel: '&a&oタリスマンが落下から身を護った'
+./src/main/resources/languages/ja/messages.yml:185:    fire: '&a&oタリスマンが炎上から身を護った'
+./src/main/resources/languages/ja/messages.yml:186:    magician: '&a&oタリスマンが追加エンチャントを付与した'
+./src/main/resources/languages/ja/messages.yml:187:    traveller: '&a&oタリスマンが加速効果を付与した'
+./src/main/resources/languages/ja/messages.yml:188:    warrior: '&a&oタリスマンが肉体を強化した'
+./src/main/resources/languages/ja/messages.yml:189:    knight: '&a&oタリスマンが再生効果を付与した'
+./src/main/resources/languages/ja/messages.yml:190:    whirlwind: '&a&oタリスマンが飛び道具から身を護った'
+./src/main/resources/languages/ja/messages.yml:191:    wizard: '&a&oタリスマンが高レベルの幸運を付与したが、他のエンチャントレベルは下がってしまった'
+./src/main/resources/languages/ja/messages.yml:192:    caveman: '&a&oタリスマンが採掘速度を上昇させた'
+./src/main/resources/languages/ja/messages.yml:193:    wise: '&a&oタリスマンが経験値のドロップを倍にした'
+./src/main/resources/languages/ja/messages.yml:195:    fail: '&c一度に複数アイテムとのバインディングはできません'
+./src/main/resources/languages/ja/messages.yml:196:    success: '&aアイテムとのバインディングが確立した！リスポーン時に当該アイテムは手繰り寄せられます'
+./src/main/resources/languages/ja/messages.yml:199:    no-enchantment: '&cこのアイテムに付与できるエンチャントが見つかりません。'
+./src/main/resources/languages/ja/messages.yml:200:    success: '&aこのアイテムに付与できるエンチャントをランダムに付与しました。'
+./src/main/resources/languages/ja/messages.yml:202:    start: '&7どこからか古代の知識が聞こえてくる…'
+./src/main/resources/languages/ja/messages.yml:203:    progress: '&b%research%&7に取り組み始めた… &e(%progress%)'
+./src/main/resources/languages/ja/messages.yml:205:    no-anchor: '&c計測するために、開始点を指定してください！'
+./src/main/resources/languages/ja/messages.yml:206:    wrong-world: '&cアンカーが別のワールドに指定されています！'
+./src/main/resources/languages/ja/messages.yml:207:    distance: '&7測定完了。&e距離: %distance%'
+./src/main/resources/languages/ja/messages.yml:208:    anchor-set: '&aアンカーを指定:&e %anchor%'
+./src/main/resources/languages/ja/messages.yml:210:    dual-wielding: '&4Climbing Pickを両手に持って使用！'
+./src/main/resources/languages/ja/messages.yml:211:    wrong-material: '&cこの地表はクライミングできません。Slimefunガイドを確認してください！'
+./src/main/resources/languages/ja/messages.yml:212:  fire-extinguish: '&7消火しました'
+./src/main/resources/languages/ja/messages.yml:213:  cannot-place: '&cこの場所には設置できません'
+./src/main/resources/languages/ja/messages.yml:214:  no-pvp: '&cpvpが許可されているワールドでのみ利用できます'
+./src/main/resources/languages/ja/messages.yml:215:  radiation: '&4多量に被ばくしている！ &c放射性物質を捨てるか、 Hazmat防具一式を装備しよう！'
+./src/main/resources/languages/ja/messages.yml:216:  opening-guide: '&bSlimefunガイドを開いている途中です、少々お待ちください…'
+./src/main/resources/languages/ja/messages.yml:217:  opening-backpack: '&bバックパックを開いている途中です、少々お待ちください…'
+./src/main/resources/languages/ja/messages.yml:218:  no-iron-golem-heal: '&c鉄インゴットではないので、アイアンゴーレムの回復には使えません！'
+./src/main/resources/languages/ja/messages.yml:219:  link-prompt: '&eクリックで開く:'
+./src/main/resources/languages/ja/messages.yml:220:  diet-cookie: '&e体が軽くなったように感じる…'
+./src/main/resources/languages/ja/messages.yml:222:    - '&7フォーチュンクッキー工場に囚われたの、助けて！'
+./src/main/resources/languages/ja/messages.yml:223:    - '&7あなたは明日死ぬでしょう…     クリーパーによって…'
+./src/main/resources/languages/ja/messages.yml:224:    - '&7何か悪いことが起こりそう！！！'
+./src/main/resources/languages/ja/messages.yml:225:    - '&7来週、あなたはここが現実世界ではなく、ゲームの世界だと気付くはずです'
+./src/main/resources/languages/ja/messages.yml:226:    - '&7このクッキーは少し待つと美味しくなるでしょう'
+./src/main/resources/languages/ja/messages.yml:227:    - '&7あなたが最後に聞くことになるであろう言葉は「皆殺しだ！！！」'
+./src/main/resources/languages/ja/messages.yml:228:    - '&7絶対にクリーパーを抱きしめないでください…案外いい感じですが、全てを失います'
+./src/main/resources/languages/ja/messages.yml:229:    - '&7答えは……「42」です'
+./src/main/resources/languages/ja/messages.yml:230:    - '&7Walshyさえいれば、1日だけ全てうまくいきます'
+./src/main/resources/languages/ja/messages.yml:231:    - '&7直下掘りしないようにね！'
+./src/main/resources/languages/ja/messages.yml:232:    - '&7これはちょっとした切り傷です！'
+./src/main/resources/languages/ja/messages.yml:233:    - '&7常に前向きに生きていこう！'
+./src/main/resources/languages/ja/messages.yml:234:    - '&7これはビスケットなんかではなくクッキーに違いない'
+./src/main/resources/languages/ja/messages.yml:235:    - '&7ネオンサインが眩しい！'
+./src/main/resources/languages/ja/messages.yml:236:  above-limit-level: '&c%level%レベルより高いレベルのエンチャントの操作はできません！'
+./src/main/resources/languages/ja/messages.yml:238:    no-ores: '&c近くに鉱石が見当たりません'
+./src/main/resources/languages/ja/messages.yml:240:  pattern-not-found: '&eレシピが確認できません、アイテムを正しく配置してください'
+./src/main/resources/languages/ja/messages.yml:241:  unknown-material: '&eアイテムを識別できません、レシピ通りに配置してください'
+./src/main/resources/languages/ja/messages.yml:242:  wrong-item: '&eそのアイテムは識別できません、レシピから正しいアイテムを確認してください'
+./src/main/resources/languages/ja/messages.yml:243:  full-inventory: '&eインベントリが一杯です！'
+./src/main/resources/languages/ja/messages.yml:244:  in-use: '&cこのブロックは他のプレイヤーが開いています'
+./src/main/resources/languages/ja/messages.yml:245:  ignition-chamber-no-flint: '&cIgnition Chamberに火打石と打ち金がありません'
+./src/main/resources/languages/ja/messages.yml:246:  inventory-empty: '&6マルチブロックが完成しました。ディスペンサーの中にアイテムを入れ、もう一度クリックしてアイテムをクラフトしましょう！'
+./src/main/resources/languages/ja/messages.yml:248:    not-enough-pedestals: '&4祭壇にAncient Pedestalが不足しています &c(%pedestals% / 8)'
+./src/main/resources/languages/ja/messages.yml:249:    unknown-catalyst: '&4不明な素材です！&c正しいレシピを使用してください'
+./src/main/resources/languages/ja/messages.yml:250:    unknown-recipe: '&4不明なレシピです！&c正しいレシピを使用してください'
+./src/main/resources/languages/ja/messages.yml:252:    obstructed: '&4Ancient Pedestalが塞がれています！&c上のブロックを破壊してください'
+./src/main/resources/languages/ja/messages.yml:254:    enter-text: '&7指定したい文字列をチャットに入力してください&r（カラーコード対応）'
+./src/main/resources/languages/ja/messages.yml:257:    no-destinations: '&4他の階が見つかりません'
+./src/main/resources/languages/ja/messages.yml:258:    pick-a-floor: '&3- 行先の選択 -'
+./src/main/resources/languages/ja/messages.yml:259:    current-floor: '&e現在の階:'
+./src/main/resources/languages/ja/messages.yml:260:    click-to-teleport: '&eクリック&7でこの階に移動:'
+./src/main/resources/languages/ja/messages.yml:261:    editor-title: 'エレベーターの設定'
+./src/main/resources/languages/ja/messages.yml:263:    teleporting: '&3テレポート中…'
+./src/main/resources/languages/ja/messages.yml:264:    teleported: '&3テレポート完了！'
+./src/main/resources/languages/ja/messages.yml:265:    cancelled: '&4テレポート中断！'
+./src/main/resources/languages/ja/messages.yml:266:    invulnerability: '&b&l30秒間の無敵が付与されました！'
+./src/main/resources/languages/ja/messages.yml:270:      time: '推定時間'
+./src/main/resources/languages/ja/messages.yml:273:    transmitters: 'GPS送信機一覧'
+./src/main/resources/languages/ja/messages.yml:274:    waypoints: 'ウェイポイント一覧'
+./src/main/resources/languages/ja/messages.yml:276:    must-be-placed: '&4チェストや機械に対して設置してください！'
+./src/main/resources/languages/ja/messages.yml:277:    not-connected: '&4接続されていません!'
+./src/main/resources/languages/ja/messages.yml:279:    no-fuel: '&cIndustrial Minerは燃料切れです！上のチェストに燃料を補充してください。'
+./src/main/resources/languages/ja/messages.yml:280:    piston-facing: '&cIndustrial Minerのピストンは上向きに設置してください！'
+./src/main/resources/languages/ja/messages.yml:281:    piston-space: '&cピストンの可動するスペースが必要です！'
+./src/main/resources/languages/ja/messages.yml:282:    destroyed: '&cIndustrial Minerは破壊されました。'
+./src/main/resources/languages/ja/messages.yml:283:    already-running: '&cこのIndustrial Minerは稼働中です！'
+./src/main/resources/languages/ja/messages.yml:284:    full-chest: '&cIndustrial Minerのチェストが一杯です！'
+./src/main/resources/languages/ja/messages.yml:285:    no-permission: '&4Industrial Minerを使う権限がありません！'
+./src/main/resources/languages/ja/messages.yml:286:    finished: '&eIndustrial Minerの稼働完了！合計で%ores%個の鉱石を入手しました！'
+./src/main/resources/languages/ja/messages.yml:288:  not-working: '&4Slimefunアイテムは金床を利用できません！'
+./src/main/resources/languages/ja/messages.yml:291:  not-working: '&4Slimefunアイテムは醸造台で使えません！'
+./src/main/resources/languages/ja/messages.yml:293:  not-working: '&4Slimefunアイテムは製図台を使用できません！'
+./src/main/resources/languages/ja/messages.yml:295:  not-working: '&4スライムファンアイテムは鍛冶の材料として使用できません'
+./src/main/resources/languages/ja/messages.yml:297:  no-trading: '&4Slimefunアイテムは村人との取引に使用できません！'
+./src/main/resources/languages/ja/messages.yml:299:  already-open: '&cこのバックパックはどこかで使用中です！'
+./src/main/resources/languages/ja/messages.yml:300:  no-stack: '&cバックパックはスタックされていると使用できません！'
+./src/main/resources/languages/ja/messages.yml:302:  not-enhanced: '&4Slimefunアイテムは作業台を利用できません！'
+./src/main/resources/languages/ja/messages.yml:304:  no-discoloring: '&4Slimefunアイテムの脱色はできません'
+./src/main/resources/languages/ja/messages.yml:306:  deathpoint: '&4死亡地点 &7%date%'
+./src/main/resources/languages/ja/messages.yml:310:    new: '&eウェイポイント名をチャットで入力してください&7（カラーコード対応）'
+./src/main/resources/languages/ja/messages.yml:311:    added: '&a新しいウェイポイントを登録しました'
+./src/main/resources/languages/ja/messages.yml:312:    max: '&4ウェイポイント数の上限に到達しています'
+./src/main/resources/languages/ja/messages.yml:313:    duplicate: '&4同じ名前のウェイポイントが存在します: &f%waypoint%'
+./src/main/resources/languages/ja/messages.yml:315:    - '&4GPSネットワークの複雑さ不足: &c%complexity%'
+./src/main/resources/languages/ja/messages.yml:317:    - '&4b) GPSネットワークの複雑さが不足している'
+./src/main/resources/languages/ja/messages.yml:319:    scan-required: '&4惑星スキャンが必要です！&cGEO-Scannerでスキャンしてください！'
+./src/main/resources/languages/ja/messages.yml:321:  no-access: '&4アクセス権がありません'
+./src/main/resources/languages/ja/messages.yml:323:  started: '&7アンドロイド動作開始'
+./src/main/resources/languages/ja/messages.yml:324:  stopped: '&7アンドロイド動作停止'
+./src/main/resources/languages/ja/messages.yml:326:    already-uploaded: '&4このスクリプトはアップロード済みです'
+./src/main/resources/languages/ja/messages.yml:328:    too-long: '&cこのスクリプトは長すぎて編集できません！'
+./src/main/resources/languages/ja/messages.yml:330:      START: '&2開始'
+./src/main/resources/languages/ja/messages.yml:331:      REPEAT: '&9繰り返し'
+./src/main/resources/languages/ja/messages.yml:332:      WAIT: '&e0.5秒待機'
+./src/main/resources/languages/ja/messages.yml:333:      GO_FORWARD: '&7前へ移動'
+./src/main/resources/languages/ja/messages.yml:334:      GO_UP: '&7上へ移動'
+./src/main/resources/languages/ja/messages.yml:335:      GO_DOWN: '&7下へ移動'
+./src/main/resources/languages/ja/messages.yml:336:      TURN_LEFT: '&7左へ旋回'
+./src/main/resources/languages/ja/messages.yml:337:      TURN_RIGHT: '&7右へ旋回'
+./src/main/resources/languages/ja/messages.yml:338:      DIG_UP: '&b上を採掘'
+./src/main/resources/languages/ja/messages.yml:339:      DIG_FORWARD: '&b前を採掘'
+./src/main/resources/languages/ja/messages.yml:340:      DIG_DOWN: '&b下を採掘'
+./src/main/resources/languages/ja/messages.yml:341:      MOVE_AND_DIG_UP: '&b上へ移動・採掘'
+./src/main/resources/languages/ja/messages.yml:342:      MOVE_AND_DIG_FORWARD: '&b前へ移動・採掘'
+./src/main/resources/languages/ja/messages.yml:343:      MOVE_AND_DIG_DOWN: '&b下へ移動・採掘'
+./src/main/resources/languages/ja/messages.yml:344:      ATTACK_MOBS_ANIMALS: '&4攻撃&c（モンスター・動物）'
+./src/main/resources/languages/ja/messages.yml:345:      ATTACK_MOBS: '&4攻撃&c（モンスター）'
+./src/main/resources/languages/ja/messages.yml:346:      ATTACK_ANIMALS: '&4攻撃&c（動物）'
+./src/main/resources/languages/ja/messages.yml:347:      ATTACK_ANIMALS_ADULT: '&4攻撃&c（動物&7[親]&c）'
+./src/main/resources/languages/ja/messages.yml:348:      CHOP_TREE: '&c伐採・植林'
+./src/main/resources/languages/ja/messages.yml:349:      CATCH_FISH: '&b釣り'
+./src/main/resources/languages/ja/messages.yml:350:      FARM_FORWARD: '&b収穫・植え直し'
+./src/main/resources/languages/ja/messages.yml:351:      FARM_DOWN: '&b収穫・植え直し&7（下方）'
+./src/main/resources/languages/ja/messages.yml:352:      FARM_EXOTIC_FORWARD: '&bExoticGardenの収穫・植え直し'
+./src/main/resources/languages/ja/messages.yml:353:      FARM_EXOTIC_DOWN: '&bExoticGardenの収穫・植え直し&7（下方）'
+./src/main/resources/languages/ja/messages.yml:354:      INTERFACE_ITEMS: '&9所持アイテムをInterfaceに入れる'
+./src/main/resources/languages/ja/messages.yml:355:      INTERFACE_FUEL: '&c燃料をInterfaceから取り出す'
+./src/main/resources/languages/ja/messages.yml:358:      - '&eスクリプトの名前を入力してください'
+./src/main/resources/languages/ja/messages.yml:361:      - '&bアップロード中…'
+./src/main/resources/languages/ja/messages.yml:362:      - '&aスクリプトのアップロード完了！'
+./src/main/resources/languages/ja/messages.yml:364:      own: '&4自身のスクリプトは評価できません！'
+./src/main/resources/languages/ja/messages.yml:365:      already: '&4このスクリプトは評価済みです！'
+./src/main/resources/languages/ja/messages.yml:368:  en: '英語'
+./src/main/resources/languages/ja/messages.yml:369:  de: 'ドイツ語'
+./src/main/resources/languages/ja/messages.yml:370:  fr: 'フランス語'
+./src/main/resources/languages/ja/messages.yml:371:  it: 'イタリア語'
+./src/main/resources/languages/ja/messages.yml:372:  es: 'スペイン語'
+./src/main/resources/languages/ja/messages.yml:373:  pl: 'ポーランド語'
+./src/main/resources/languages/ja/messages.yml:374:  sv: 'スウェーデン語'
+./src/main/resources/languages/ja/messages.yml:375:  nl: 'オランダ語'
+./src/main/resources/languages/ja/messages.yml:376:  cs: 'チェコ語'
+./src/main/resources/languages/ja/messages.yml:377:  hu: 'ハンガリー語'
+./src/main/resources/languages/ja/messages.yml:378:  lv: 'ラトビア語'
+./src/main/resources/languages/ja/messages.yml:379:  ru: 'ロシア語'
+./src/main/resources/languages/ja/messages.yml:380:  sk: 'スロバキア語'
+./src/main/resources/languages/ja/messages.yml:381:  zh-CN: '中国語（中国）'
+./src/main/resources/languages/ja/messages.yml:382:  zh-TW: '中国語（台湾）'
+./src/main/resources/languages/ja/messages.yml:383:  vi: 'ベトナム語'
+./src/main/resources/languages/ja/messages.yml:384:  id: 'インドネシア語'
+./src/main/resources/languages/ja/messages.yml:385:  el: 'ギリシャ語'
+./src/main/resources/languages/ja/messages.yml:386:  he: 'ヘブライ語'
+./src/main/resources/languages/ja/messages.yml:387:  pt: 'ポルトガル語（ポルトガル）'
+./src/main/resources/languages/ja/messages.yml:388:  pt-BR: 'ポルトガル語（ブラジル）'
+./src/main/resources/languages/ja/messages.yml:389:  ar: 'アラビア語'
+./src/main/resources/languages/ja/messages.yml:390:  af: 'アフリカーンス語'
+./src/main/resources/languages/ja/messages.yml:391:  da: 'デンマーク語'
+./src/main/resources/languages/ja/messages.yml:392:  fi: 'フィンランド語'
+./src/main/resources/languages/ja/messages.yml:393:  uk: 'ウクライナ語'
+./src/main/resources/languages/ja/messages.yml:394:  ms: 'マレー語'
+./src/main/resources/languages/ja/messages.yml:395:  'no': 'ノルウェー語'
+./src/main/resources/languages/ja/messages.yml:396:  ja: '日本語'
+./src/main/resources/languages/ja/messages.yml:397:  fa: 'ペルシア語'
+./src/main/resources/languages/ja/messages.yml:398:  th: 'タイ語'
+./src/main/resources/languages/ja/messages.yml:399:  tl: 'タガログ語'
+./src/main/resources/languages/ja/messages.yml:400:  ro: 'ルーマニア語'
+./src/main/resources/languages/ja/messages.yml:401:  bg: 'ブルガリア語'
+./src/main/resources/languages/ja/messages.yml:402:  ko: '韓国語'
+./src/main/resources/languages/ja/messages.yml:403:  tr: 'トルコ語'
+./src/main/resources/languages/ja/messages.yml:404:  hr: 'クロアチア語'
+./src/main/resources/languages/ja/messages.yml:405:  mk: 'マケドニア語'
+./src/main/resources/languages/ja/messages.yml:406:  sr: 'セルビア語'
+./src/main/resources/languages/ja/messages.yml:407:  be: 'ベラルーシ語'
+./src/main/resources/languages/ja/messages.yml:408:  si-LK: 'シンハラ語'
+./src/main/resources/languages/ja/messages.yml:409:  lt: 'リトアニア語'
+./src/main/resources/languages/ja/recipes.yml:6:      - '図面通りに設置して建造する。'
+./src/main/resources/languages/ja/recipes.yml:9:    name: '拡張作業台（Enhanced Crafting Table）'
+./src/main/resources/languages/ja/recipes.yml:11:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:12:      - '機械: Enhanced Crafting Table'
+./src/main/resources/languages/ja/recipes.yml:13:      - '通常の作業台では不十分です！'
+./src/main/resources/languages/ja/recipes.yml:17:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:18:      - '機械: Armor Forge'
+./src/main/resources/languages/ja/recipes.yml:20:    name: '砥石（Grind Stone）'
+./src/main/resources/languages/ja/recipes.yml:22:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:23:      - '機械: Grind Stone'
+./src/main/resources/languages/ja/recipes.yml:25:    name: '製錬機（Smeltery）'
+./src/main/resources/languages/ja/recipes.yml:27:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:28:      - '機械: Smeltery'
+./src/main/resources/languages/ja/recipes.yml:30:    name: '鉱石粉砕機（Ore Crusher）'
+./src/main/resources/languages/ja/recipes.yml:32:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:33:      - '機械: Ore Crusher'
+./src/main/resources/languages/ja/recipes.yml:37:      - 'モブを倒して'
+./src/main/resources/languages/ja/recipes.yml:38:      - '入手するアイテム'
+./src/main/resources/languages/ja/recipes.yml:40:    name: '選鉱盤（Gold Pan）'
+./src/main/resources/languages/ja/recipes.yml:42:      - 'このアイテムの入手に使用する'
+./src/main/resources/languages/ja/recipes.yml:43:      - '機械: Gold Pan'
+./src/main/resources/languages/ja/recipes.yml:45:    name: '圧縮機（Compressor）'
+./src/main/resources/languages/ja/recipes.yml:47:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:48:      - '機械: Compressor'
+./src/main/resources/languages/ja/recipes.yml:50:    name: '圧力チャンバー（Pressure Chamber）'
+./src/main/resources/languages/ja/recipes.yml:52:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:53:      - '機械: Pressure Chamber'
+./src/main/resources/languages/ja/recipes.yml:55:    name: '鉱石洗浄機（Ore Washer）'
+./src/main/resources/languages/ja/recipes.yml:57:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:58:      - '機械: Ore Washer'
+./src/main/resources/languages/ja/recipes.yml:62:      - 'このジュースの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:63:      - '機械: Juicer'
+./src/main/resources/languages/ja/recipes.yml:65:    name: '魔法作業台（Magic Workbench）'
+./src/main/resources/languages/ja/recipes.yml:67:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:68:      - '機械: Magic Workbench'
+./src/main/resources/languages/ja/recipes.yml:70:    name: '古の祭壇（Ancient Altar）'
+./src/main/resources/languages/ja/recipes.yml:72:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:73:      - '機械: Ancient Altar'
+./src/main/resources/languages/ja/recipes.yml:74:      - '詳細はAncient Altarに記載'
+./src/main/resources/languages/ja/recipes.yml:76:    name: '加熱圧力チャンバー（Heated Pressure Chamber）'
+./src/main/resources/languages/ja/recipes.yml:78:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:79:      - '機械: Heated Pressure Chamber'
+./src/main/resources/languages/ja/recipes.yml:81:    name: '食品加工機（Food Fabricator）'
+./src/main/resources/languages/ja/recipes.yml:83:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:84:      - '機械: Food Fabricator'
+./src/main/resources/languages/ja/recipes.yml:86:    name: '食品コンポスター（Food Composter）'
+./src/main/resources/languages/ja/recipes.yml:88:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:89:      - '機械: Food Composter'
+./src/main/resources/languages/ja/recipes.yml:91:    name: '凍結機（Freezer）'
+./src/main/resources/languages/ja/recipes.yml:93:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:94:      - '機械: Freezer'
+./src/main/resources/languages/ja/recipes.yml:96:    name: 'GEO採掘機（GEO Miner）'
+./src/main/resources/languages/ja/recipes.yml:98:      - 'このアイテムの採掘に使用する'
+./src/main/resources/languages/ja/recipes.yml:99:      - '機械: GEO Miner'
+./src/main/resources/languages/ja/recipes.yml:101:    name: '原子炉（Reactor）'
+./src/main/resources/languages/ja/recipes.yml:103:      - 'このアイテムを副産物として入手できる'
+./src/main/resources/languages/ja/recipes.yml:104:      - '機械: Nuclear Reactor'
+./src/main/resources/languages/ja/recipes.yml:106:    name: '原油ポンプ（Oil Pump）'
+./src/main/resources/languages/ja/recipes.yml:108:      - 'このアイテムの収集に使用する'
+./src/main/resources/languages/ja/recipes.yml:109:      - '機械: Oil Pump'
+./src/main/resources/languages/ja/recipes.yml:111:    name: '封印のツルハシ（Pickaxe of Containment）'
+./src/main/resources/languages/ja/recipes.yml:113:      - 'このブロックを入手するには'
+./src/main/resources/languages/ja/recipes.yml:115:      - '使用してスポナーを採掘する'
+./src/main/resources/languages/ja/recipes.yml:117:    name: '精製機（Refinery）'
+./src/main/resources/languages/ja/recipes.yml:119:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:120:      - '機械: Refinery'
+./src/main/resources/languages/ja/recipes.yml:122:    name: 'ピグリンとの物々交換'
+./src/main/resources/languages/ja/recipes.yml:124:      - 'このアイテムは金インゴットを'
+./src/main/resources/languages/ja/recipes.yml:125:      - 'ピグリンとの物々交換で入手'
+./src/main/resources/languages/ja/recipes.yml:128:    name: '定形レシピ'
+./src/main/resources/languages/ja/recipes.yml:130:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:131:      - '機械: 作業台'
+./src/main/resources/languages/ja/recipes.yml:132:      - '並べ方は固定'
+./src/main/resources/languages/ja/recipes.yml:134:    name: '不定形レシピ'
+./src/main/resources/languages/ja/recipes.yml:136:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:137:      - '機械: 作業台'
+./src/main/resources/languages/ja/recipes.yml:138:      - '並べ方は自由'
+./src/main/resources/languages/ja/recipes.yml:140:    name: 'かまどでの精錬'
+./src/main/resources/languages/ja/recipes.yml:142:      - 'このアイテムの精錬に使用する'
+./src/main/resources/languages/ja/recipes.yml:143:      - '機械: かまど'
+./src/main/resources/languages/ja/recipes.yml:145:    name: '溶鉱炉での精錬'
+./src/main/resources/languages/ja/recipes.yml:147:      - 'このアイテムの精錬に使用する'
+./src/main/resources/languages/ja/recipes.yml:148:      - '機械: 溶鉱炉'
+./src/main/resources/languages/ja/recipes.yml:150:    name: '燻製器'
+./src/main/resources/languages/ja/recipes.yml:152:      - 'このアイテムの燻製に使用する'
+./src/main/resources/languages/ja/recipes.yml:153:      - '機械: 燻製器'
+./src/main/resources/languages/ja/recipes.yml:155:    name: '焚き火'
+./src/main/resources/languages/ja/recipes.yml:157:      - 'このアイテムの精錬に使用する'
+./src/main/resources/languages/ja/recipes.yml:158:      - '機械: 焚き火'
+./src/main/resources/languages/ja/recipes.yml:160:    name: '石切台'
+./src/main/resources/languages/ja/recipes.yml:162:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:163:      - '機械: 石切台'
+./src/main/resources/languages/ja/recipes.yml:165:    name: '鍛冶台'
+./src/main/resources/languages/ja/recipes.yml:167:      - 'このアイテムの作成に使用する'
+./src/main/resources/languages/ja/recipes.yml:168:      - '機械: 鍛冶台'
+./src/main/resources/languages/ja/researches.yml:3:  walking_sticks: 転ばぬ先の杖
+./src/main/resources/languages/ja/researches.yml:6:  portable_dustbin: ポイ捨て禁止
+./src/main/resources/languages/ja/researches.yml:8:  armor_forge: 防具作成術
+./src/main/resources/languages/ja/researches.yml:9:  glowstone_armor: グロウストーン防具
+./src/main/resources/languages/ja/researches.yml:10:  lumps: 魔法の欠片
+./src/main/resources/languages/ja/researches.yml:12:  ender_armor: エンダー防具
+./src/main/resources/languages/ja/researches.yml:13:  magic_eye_of_ender: 魔法のエンダーアイ
+./src/main/resources/languages/ja/researches.yml:14:  magic_sugar: 魔法の砂糖
+./src/main/resources/languages/ja/researches.yml:16:  slime_armor: スライム防具Ⅰ
+./src/main/resources/languages/ja/researches.yml:17:  sword_of_beheading: 処刑人の剣
+./src/main/resources/languages/ja/researches.yml:18:  basic_circuit_board: 基本電子回路
+./src/main/resources/languages/ja/researches.yml:19:  advanced_circuit_board: 発展電子回路
+./src/main/resources/languages/ja/researches.yml:20:  smeltery: 製錬機
+./src/main/resources/languages/ja/researches.yml:21:  steel: 鋼鉄時代
+./src/main/resources/languages/ja/researches.yml:24:  steel_plate: 鋼鉄の加工
+./src/main/resources/languages/ja/researches.yml:25:  steel_thruster: 推進機
+./src/main/resources/languages/ja/researches.yml:30:  solar_panel_and_helmet: 太陽光の利用
+./src/main/resources/languages/ja/researches.yml:31:  elemental_staff: 属性の杖
+./src/main/resources/languages/ja/researches.yml:32:  grind_stone: 砥石
+./src/main/resources/languages/ja/researches.yml:33:  cactus_armor: サボテン防具
+./src/main/resources/languages/ja/researches.yml:35:  magical_book_cover: 魔法の本の作り方
+./src/main/resources/languages/ja/researches.yml:36:  slimefun_metals: 新たな金属
+./src/main/resources/languages/ja/researches.yml:37:  ore_crusher: 鉱石粉砕
+./src/main/resources/languages/ja/researches.yml:38:  bronze: ブロンズの時代
+./src/main/resources/languages/ja/researches.yml:39:  alloys: 合金Ⅰ
+./src/main/resources/languages/ja/researches.yml:40:  compressor_and_carbon: 石炭紀
+./src/main/resources/languages/ja/researches.yml:41:  gilded_iron_armor: 金メッキ防具
+./src/main/resources/languages/ja/researches.yml:42:  synthetic_diamond: 人工ダイヤモンド
+./src/main/resources/languages/ja/researches.yml:43:  pressure_chamber: 圧力室
+./src/main/resources/languages/ja/researches.yml:44:  synthetic_sapphire: 合成サファイア
+./src/main/resources/languages/ja/researches.yml:45:  damascus_steel: ダマスカス鋼の時代
+./src/main/resources/languages/ja/researches.yml:46:  damascus_steel_armor: ダマスカス鋼防具
+./src/main/resources/languages/ja/researches.yml:47:  reinforced_alloy: 強化鋼の時代
+./src/main/resources/languages/ja/researches.yml:49:  magic_workbench: 魔法の作業台
+./src/main/resources/languages/ja/researches.yml:50:  wind_staff: 風属性の杖
+./src/main/resources/languages/ja/researches.yml:51:  reinforced_armor: 強化鋼防具
+./src/main/resources/languages/ja/researches.yml:52:  ore_washer: 鉱石洗浄
+./src/main/resources/languages/ja/researches.yml:53:  gold_carats: 純金
+./src/main/resources/languages/ja/researches.yml:55:  fire_staff: 火属性の杖
+./src/main/resources/languages/ja/researches.yml:56:  smelters_pickaxe: 精錬のピッケル
+./src/main/resources/languages/ja/researches.yml:58:  anvil_talisman: 金床のタリスマン
+./src/main/resources/languages/ja/researches.yml:59:  miner_talisman: 採掘者のタリスマン
+./src/main/resources/languages/ja/researches.yml:60:  hunter_talisman: 狩人のタリスマン
+./src/main/resources/languages/ja/researches.yml:61:  lava_talisman: 溶岩歩行のタリスマン
+./src/main/resources/languages/ja/researches.yml:62:  water_talisman: 水中呼吸のタリスマン
+./src/main/resources/languages/ja/researches.yml:63:  angel_talisman: 天使のタリスマン
+./src/main/resources/languages/ja/researches.yml:64:  fire_talisman: 消防士のタリスマン
+./src/main/resources/languages/ja/researches.yml:65:  lava_crystal: 溶岩のクリスタル
+./src/main/resources/languages/ja/researches.yml:66:  magician_talisman: 奇術師のタリスマン
+./src/main/resources/languages/ja/researches.yml:67:  traveller_talisman: 探索者のタリスマン
+./src/main/resources/languages/ja/researches.yml:68:  warrior_talisman: 戦士のタリスマン
+./src/main/resources/languages/ja/researches.yml:69:  knight_talisman: 騎士のタリスマン
+./src/main/resources/languages/ja/researches.yml:70:  gilded_iron: 金メッキ
+./src/main/resources/languages/ja/researches.yml:71:  synthetic_emerald: 合成エメラルド
+./src/main/resources/languages/ja/researches.yml:72:  chainmail_armor: チェーンメイル防具
+./src/main/resources/languages/ja/researches.yml:73:  whirlwind_talisman: 旋風のタリスマン
+./src/main/resources/languages/ja/researches.yml:74:  wizard_talisman: 魔術師のタリスマン
+./src/main/resources/languages/ja/researches.yml:75:  lumber_axe: 木こりの斧
+./src/main/resources/languages/ja/researches.yml:76:  hazmat_suit: 危険物取扱装備
+./src/main/resources/languages/ja/researches.yml:77:  uranium: 放射性物質
+./src/main/resources/languages/ja/researches.yml:78:  crushed_ore: 鉱石の洗浄
+./src/main/resources/languages/ja/researches.yml:79:  redstone_alloy: レッドストーン合金
+./src/main/resources/languages/ja/researches.yml:80:  carbonado_tools: 上級ガジェット
+./src/main/resources/languages/ja/researches.yml:81:  first_aid: 応急手当
+./src/main/resources/languages/ja/researches.yml:82:  gold_armor: 純金防具
+./src/main/resources/languages/ja/researches.yml:83:  night_vision_googles: 暗視ゴーグル
+./src/main/resources/languages/ja/researches.yml:84:  pickaxe_of_containment: 魂封じのピッケル
+./src/main/resources/languages/ja/researches.yml:87:  slime_steel_armor: スライム防具Ⅱ
+./src/main/resources/languages/ja/researches.yml:88:  blade_of_vampires: 吸血鬼の剣
+./src/main/resources/languages/ja/researches.yml:89:  water_staff: 水属性の杖
+./src/main/resources/languages/ja/researches.yml:90:  24k_gold_block: 黄金の国
+./src/main/resources/languages/ja/researches.yml:92:  farmer_shoes: 農家の靴
+./src/main/resources/languages/ja/researches.yml:93:  explosive_tools: 爆発のピッケル
+./src/main/resources/languages/ja/researches.yml:94:  automated_panning_machine: 自動パンニング
+./src/main/resources/languages/ja/researches.yml:95:  boots_of_the_stomper: 衝撃拡散のブーツ
+./src/main/resources/languages/ja/researches.yml:96:  pickaxe_of_the_seeker: 探索のピッケル
+./src/main/resources/languages/ja/researches.yml:103:  nickel_and_cobalt: 合金Ⅱ
+./src/main/resources/languages/ja/researches.yml:104:  magnet: 磁性金属
+./src/main/resources/languages/ja/researches.yml:105:  infused_magnet: 魔法の磁石
+./src/main/resources/languages/ja/researches.yml:111:  seismic_axe: 地震の斧
+./src/main/resources/languages/ja/researches.yml:112:  pickaxe_of_vein_mining: 鉱脈のピッケル
+./src/main/resources/languages/ja/researches.yml:113:  bound_weapons: ソウルバウンド武器
+./src/main/resources/languages/ja/researches.yml:114:  bound_tools: ソウルバウンド道具
+./src/main/resources/languages/ja/researches.yml:115:  bound_armor: ソウルバウンド防具
+./src/main/resources/languages/ja/researches.yml:117:  repaired_spawner: スポナーの修理士
+./src/main/resources/languages/ja/researches.yml:118:  enhanced_furnace: 強化かまどⅠ
+./src/main/resources/languages/ja/researches.yml:119:  more_enhanced_furnaces: 強化かまどⅡ
+./src/main/resources/languages/ja/researches.yml:120:  high_tier_enhanced_furnaces: 強化かまどⅢ
+./src/main/resources/languages/ja/researches.yml:121:  reinforced_furnace: 強化かまどⅣ
+./src/main/resources/languages/ja/researches.yml:122:  carbonado_furnace: 強化かまどⅤ
+./src/main/resources/languages/ja/researches.yml:124:  block_placer: ブロック設置機
+./src/main/resources/languages/ja/researches.yml:125:  scroll_of_dimensional_teleposition: 逆転劇
+./src/main/resources/languages/ja/researches.yml:127:  tome_of_knowledge_sharing: 共有知識
+./src/main/resources/languages/ja/researches.yml:128:  flask_of_knowledge: 経験値備蓄術
+./src/main/resources/languages/ja/researches.yml:129:  hardened_glass: 耐爆ガラス
+./src/main/resources/languages/ja/researches.yml:130:  golden_apple_juice: 金のジュース
+./src/main/resources/languages/ja/researches.yml:131:  cooler: 満腹感
+./src/main/resources/languages/ja/researches.yml:132:  ancient_altar: 古の祭壇
+./src/main/resources/languages/ja/researches.yml:133:  wither_proof_obsidian: 耐ウィザー黒曜石
+./src/main/resources/languages/ja/researches.yml:134:  ancient_runes: 太古のルーン
+./src/main/resources/languages/ja/researches.yml:135:  special_runes: 古雅なルーン
+./src/main/resources/languages/ja/researches.yml:136:  infernal_bonemeal: 地獄の骨粉
+./src/main/resources/languages/ja/researches.yml:137:  rainbow_blocks: 虹ブロック
+./src/main/resources/languages/ja/researches.yml:138:  infused_hopper: 魔法のホッパー
+./src/main/resources/languages/ja/researches.yml:139:  wither_proof_glass: 耐ウィザーガラス
+./src/main/resources/languages/ja/researches.yml:143:  oil: 油田
+./src/main/resources/languages/ja/researches.yml:144:  fuel: 精製
+./src/main/resources/languages/ja/researches.yml:148:  solar_generators: 太陽光発電所
+./src/main/resources/languages/ja/researches.yml:149:  electric_furnaces: 電気炉Ⅰ
+./src/main/resources/languages/ja/researches.yml:150:  electric_ore_grinding: 粉砕粉砕
+./src/main/resources/languages/ja/researches.yml:151:  heated_pressure_chamber: 加熱圧力室Ⅰ
+./src/main/resources/languages/ja/researches.yml:152:  coal_generator: 火力発電所
+./src/main/resources/languages/ja/researches.yml:153:  bio_reactor: バイオマス発電所
+./src/main/resources/languages/ja/researches.yml:154:  auto_enchanting: エンチャント操作術
+./src/main/resources/languages/ja/researches.yml:155:  auto_anvil: 電動修理術
+./src/main/resources/languages/ja/researches.yml:157:  gps_setup: GPS時代の夜明け
+./src/main/resources/languages/ja/researches.yml:158:  gps_emergency_transmitter: 緊急戦線復帰
+./src/main/resources/languages/ja/researches.yml:161:  geo_scanner: 惑星スキャン
+./src/main/resources/languages/ja/researches.yml:162:  combustion_reactor: 燃焼発電所
+./src/main/resources/languages/ja/researches.yml:163:  teleporter: テレポーター構成機器
+./src/main/resources/languages/ja/researches.yml:164:  teleporter_activation_plates: テレポーター起動装置
+./src/main/resources/languages/ja/researches.yml:165:  better_solar_generators: 強化太陽光発電所
+./src/main/resources/languages/ja/researches.yml:166:  better_gps_transmitters: 中級GPS送信機
+./src/main/resources/languages/ja/researches.yml:168:  energized_solar_generator: 全日制太陽光発電所
+./src/main/resources/languages/ja/researches.yml:169:  energized_gps_transmitter: 上級GPS送信機
+./src/main/resources/languages/ja/researches.yml:171:  butcher_androids: 屠殺アンドロイド
+./src/main/resources/languages/ja/researches.yml:172:  organic_food: オーガニック食品
+./src/main/resources/languages/ja/researches.yml:173:  auto_breeder: 自動交配
+./src/main/resources/languages/ja/researches.yml:174:  advanced_android: 強化アンドロイド
+./src/main/resources/languages/ja/researches.yml:175:  advanced_butcher_android: 強化屠殺アンドロイド
+./src/main/resources/languages/ja/researches.yml:176:  advanced_fisherman_android: 強化釣師アンドロイド
+./src/main/resources/languages/ja/researches.yml:177:  animal_growth_accelerator: 動物成長促進術
+./src/main/resources/languages/ja/researches.yml:178:  xp_collector: 経験値回収
+./src/main/resources/languages/ja/researches.yml:179:  organic_fertilizer: 有機肥料
+./src/main/resources/languages/ja/researches.yml:180:  crop_growth_accelerator: 作物成長促進術Ⅰ
+./src/main/resources/languages/ja/researches.yml:181:  better_crop_growth_accelerator: 作物成長促進術Ⅱ
+./src/main/resources/languages/ja/researches.yml:182:  reactor_essentials: 原子炉必需品
+./src/main/resources/languages/ja/researches.yml:183:  nuclear_reactor: 原子力発電所
+./src/main/resources/languages/ja/researches.yml:185:  cargo_basics: カーゴ素材
+./src/main/resources/languages/ja/researches.yml:186:  cargo_nodes: カーゴ運搬術
+./src/main/resources/languages/ja/researches.yml:187:  electric_ingot_machines: 自動インゴット作成Ⅰ
+./src/main/resources/languages/ja/researches.yml:188:  medium_tier_electric_ingot_machines: 自動インゴット作成Ⅱ
+./src/main/resources/languages/ja/researches.yml:189:  high_tier_electric_ingot_machines: 自動インゴット作成Ⅱ
+./src/main/resources/languages/ja/researches.yml:190:  automated_crafting_chamber: 自動クラフト
+./src/main/resources/languages/ja/researches.yml:191:  better_food_fabricator: オーガニック食品生成所
+./src/main/resources/languages/ja/researches.yml:192:  reactor_access_port: 原子炉とのやりとり
+./src/main/resources/languages/ja/researches.yml:193:  fluid_pump: 液体ポンプ
+./src/main/resources/languages/ja/researches.yml:194:  better_freezer: 冷凍庫
+./src/main/resources/languages/ja/researches.yml:196:  trash_can: ごみ処理施設
+./src/main/resources/languages/ja/researches.yml:197:  advanced_output_node: カーゴ配送強化
+./src/main/resources/languages/ja/researches.yml:199:  electric_smeltery: 電気精錬所Ⅰ
+./src/main/resources/languages/ja/researches.yml:200:  better_electric_furnace: 電気炉Ⅱ
+./src/main/resources/languages/ja/researches.yml:202:  empowered_android: 上級アンドロイド
+./src/main/resources/languages/ja/researches.yml:203:  empowered_butcher_android: 上級屠殺アンドロイド
+./src/main/resources/languages/ja/researches.yml:204:  empowered_fisherman_android: 上級釣師アンドロイド
+./src/main/resources/languages/ja/researches.yml:206:  wither_assembler: 全自動ウィザートラップ
+./src/main/resources/languages/ja/researches.yml:207:  better_heated_pressure_chamber: 加熱圧力室Ⅱ
+./src/main/resources/languages/ja/researches.yml:211:  electric_crucible: 電気るつぼⅠ
+./src/main/resources/languages/ja/researches.yml:212:  better_electric_crucibles: 電気るつぼⅡ
+./src/main/resources/languages/ja/researches.yml:213:  advanced_electric_smeltery: 電気精錬所Ⅱ
+./src/main/resources/languages/ja/researches.yml:214:  advanced_farmer_android: 強化農耕アンドロイド
+./src/main/resources/languages/ja/researches.yml:215:  lava_generator: 溶岩発電所
+./src/main/resources/languages/ja/researches.yml:217:  nether_star_reactor: ネザースター発電所
+./src/main/resources/languages/ja/researches.yml:218:  blistering_ingots: 猛烈な放射能
+./src/main/resources/languages/ja/researches.yml:219:  automatic_ignition_chamber: 自動再点火室
+./src/main/resources/languages/ja/researches.yml:220:  output_chest: 基本機械搬出術
+./src/main/resources/languages/ja/researches.yml:221:  copper_wire: ジュール熱
+./src/main/resources/languages/ja/researches.yml:223:  auto_drier: 乾燥機
+./src/main/resources/languages/ja/researches.yml:225:  storm_staff: 雷属性の杖
+./src/main/resources/languages/ja/researches.yml:227:  geo_miner: 惑星採掘術
+./src/main/resources/languages/ja/researches.yml:228:  lightning_rune: 雷のルーン
+./src/main/resources/languages/ja/researches.yml:229:  totem_of_undying: 不死のトーテム
+./src/main/resources/languages/ja/researches.yml:230:  charging_bench: 充電装置
+./src/main/resources/languages/ja/researches.yml:232:  electric_press: 電動プレス
+./src/main/resources/languages/ja/researches.yml:233:  magnesium_generator: マグネシウム発電所
+./src/main/resources/languages/ja/researches.yml:234:  kelp_cookie: 昆布クッキー
+./src/main/resources/languages/ja/researches.yml:235:  makeshift_smeltery: 間に合わせの製錬所
+./src/main/resources/languages/ja/researches.yml:237:  industrial_miner: 工業的採掘
+./src/main/resources/languages/ja/researches.yml:238:  advanced_industrial_miner: よりよい採掘
+./src/main/resources/languages/ja/researches.yml:239:  magical_zombie_pills: ゾンビ化解除
+./src/main/resources/languages/ja/researches.yml:240:  auto_brewer: 工業的醸造
+./src/main/resources/languages/ja/researches.yml:241:  enchantment_rune: 太古のエンチャント
+./src/main/resources/languages/ja/researches.yml:242:  lead_clothing: 鉛の布
+./src/main/resources/languages/ja/researches.yml:244:  iron_golem_assembler: 人造アイアンゴーレム
+./src/main/resources/languages/ja/researches.yml:246:  shulker_shell: 合成シュルカー
+./src/main/resources/languages/ja/researches.yml:247:  villager_rune: 村人の初期化
+./src/main/resources/languages/ja/researches.yml:248:  caveman_talisman: 洞窟暮らしのタリスマン
+./src/main/resources/languages/ja/researches.yml:250:  elytra_cap: 衝撃緩和装備
+./src/main/resources/languages/ja/researches.yml:251:  energy_connectors: 有線接続
+./src/main/resources/languages/ja/researches.yml:252:  bee_armor: 蜂アーマー
+./src/main/resources/languages/ja/researches.yml:253:  wise_talisman: 知恵のタリスマン
+./src/main/resources/languages/ja/researches.yml:254:  book_binder: エンチャントの本の製本
+./src/main/resources/languages/ja/researches.yml:255:  auto_crafting: 自動クラフト
+./src/main/resources/languages/ja/researches.yml:256:  produce_collector: 自動搾乳
+./src/main/resources/languages/ja/researches.yml:257:  improved_generators: 発電機の改良型
+./src/main/resources/languages/ja/researches.yml:258:  ingredients_and_cheese: スライムファン料理
+./src/main/resources/languages/ja/researches.yml:259:  medium_tier_auto_enchanting: 高度なエンチャント操作術
+./src/main/resources/languages/ja/researches.yml:261:  farmer_talisman: 農家の御守
+./src/main/resources/languages/ja/resources.yml:3:  results: GEOスキャン結果
+./src/main/resources/languages/ja/resources.yml:4:  chunk: スキャン対象チャンク
+./src/main/resources/languages/ja/resources.yml:6:  unit: 塊
+./src/main/resources/languages/ja/resources.yml:7:  units: 塊
+./src/main/resources/languages/ja/resources.yml:10:    oil: 原油
+./src/main/resources/languages/ja/resources.yml:12:    salt: 塩
+./src/main/resources/languages/ja/resources.yml:15:    iron_ore_chunk: 鉄
+./src/main/resources/languages/ja/resources.yml:16:    gold_ore_chunk: 金
+./src/main/resources/languages/ja/resources.yml:17:    copper_ore_chunk: 銅
+./src/main/resources/languages/ja/resources.yml:18:    tin_ore_chunk: 錫
+./src/main/resources/languages/ja/resources.yml:19:    silver_ore_chunk: 銀
+./src/main/resources/languages/ja/resources.yml:21:    lead_ore_chunk: 鉛
+./src/main/resources/languages/ja/resources.yml:22:    zinc_ore_chunk: 亜鉛
+./src/main/resources/profile-storage.yml:2:# 数据库类型, 可选的有 SQLITE, MYSQL, POSTGRESQL
+./src/main/resources/profile-storage.yml:3:# 注意: 在切换数据库类型时, 我们并不会自动帮你迁移数据 :)
+./src/main/resources/profile-storage.yml:4:# 注意: 当使用MYSQL跨服时，请务必将 config.yml 中的 allow-open-when-owner-offline 设置为 false
+./src/main/resources/profile-storage.yml:5:#      以防止玩家在不同服务器打开同一个背包刷物品。
+./src/main/resources/profile-storage.yml:8:# 使用Base64编码数据字段
+./src/main/resources/profile-storage.yml:13:# 数据库读写线程数
+./src/main/resources/profile-storage.yml:14:# 当使用MYSQL时，建议 最大连接数 = 读取 + 写入线程数，且读取线程数量应当大于写入线程。
+./src/main/resources/profile-storage.yml:15:# 注意: 线程数并非越多越好，过多反而会导致性能下降。请分配合适的数量。
+./src/main/resources/profile-storage.yml:17:# 读取线程数
+./src/main/resources/profile-storage.yml:19:# 写入线程数
+./src/main/resources/profile-storage.yml:24:# Sqlite 配置
+./src/main/resources/profile-storage.yml:30:# MySQL 配置
+./src/main/resources/profile-storage.yml:32:  # 数据库连接地址
+./src/main/resources/profile-storage.yml:34:  # 数据库连接端口
+./src/main/resources/profile-storage.yml:36:  # 数据库名
+./src/main/resources/profile-storage.yml:38:  # 表前缀
+./src/main/resources/profile-storage.yml:40:  # 连接用户名
+./src/main/resources/profile-storage.yml:42:  # 连接用户密码
+./src/main/resources/profile-storage.yml:44:  # 是否使用加密连接
+./src/main/resources/profile-storage.yml:46:  # 最大连接数
+./src/main/resources/profile-storage.yml:51:# PostgreSQL 配置
+./src/main/resources/profile-storage.yml:53:  # 数据库连接地址
+./src/main/resources/profile-storage.yml:55:  # 数据库连接端口
+./src/main/resources/profile-storage.yml:57:  # 数据库名
+./src/main/resources/profile-storage.yml:59:  # 表前缀
+./src/main/resources/profile-storage.yml:61:  # 连接用户名
+./src/main/resources/profile-storage.yml:63:  # 连接用户密码
+./src/main/resources/profile-storage.yml:65:  # 是否使用加密连接
+./src/main/resources/profile-storage.yml:67:  # 最大连接数

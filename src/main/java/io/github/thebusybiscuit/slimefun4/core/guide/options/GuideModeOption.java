@@ -52,10 +52,12 @@ class GuideModeOption implements SlimefunGuideOption<SlimefunGuideMode> {
             }
 
             ItemMeta meta = item.getItemMeta();
-            meta.setDisplayName(ChatColor.GRAY + "Styl Slimefun průvodce: " + ChatColor.YELLOW + selectedMode.getDisplayName());
+            meta.setDisplayName(
+                    ChatColor.GRAY + "Styl Slimefun průvodce: " + ChatColor.YELLOW + selectedMode.getDisplayName());
             List<String> lore = new ArrayList<>();
             lore.add("");
-            lore.add((selectedMode == SlimefunGuideMode.SURVIVAL_MODE ? ChatColor.GREEN : ChatColor.GRAY) + "Normální mód");
+            lore.add((selectedMode == SlimefunGuideMode.SURVIVAL_MODE ? ChatColor.GREEN : ChatColor.GRAY)
+                    + "Normální mód");
             lore.add((selectedMode == SlimefunGuideMode.CHEAT_MODE ? ChatColor.GREEN : ChatColor.GRAY) + "Cheat mód");
             lore.add("");
             lore.add(ChatColor.GRAY + "\u21E8 " + ChatColor.YELLOW + "Klikni pro změnu stylu průvodce");

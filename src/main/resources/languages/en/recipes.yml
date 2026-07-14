@@ -1,168 +1,200 @@
----
 slimefun:
+
   multiblock:
     name: 'Multiblock'
     lore:
-      - 'Postav ukázanou konstrukci,'
-      - 'jak je ukázáno. Nevyrábí se.'
+    - 'Build the shown structure'
+    - 'as shown. It is not crafted.'
+
   enhanced_crafting_table:
-    name: 'Vylepšený pracovní stůl'
+    name: 'Enhanced Crafting Table'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za pomocí Enhanced Crafting Table'
-      - 'Normální pracovní stůl nebude stačit!'
+    - 'Craft this Item as shown'
+    - 'in an Enhanced Crafting Table.'
+    - 'A normal Crafting Table will not suffice!'
+
   armor_forge:
-    name: 'Výheň pro zbroj'
+    name: 'Armor Forge'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Armor Forge'
+    - 'Craft this Item as shown'
+    - 'using an Armor Forge'
+
   grind_stone:
-    name: 'Brusný kámen'
+    name: 'Grind Stone'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití brusného kamene'
+    - 'Craft this Item as shown'
+    - 'using a Grind Stone'
+
   smeltery:
-    name: 'Tavírna'
+    name: 'Smeltery'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Smeltery'
+    - 'Craft this Item as shown'
+    - 'using a Smeltery'
+
   ore_crusher:
-    name: 'Drtič rud'
+    name: 'Ore Crusher'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Ore Crusher'
+    - 'Craft this Item as shown'
+    - 'using an Ore Crusher'
+
   mob_drop:
-    name: 'Kořist z monstra'
+    name: 'Mob Drop'
     lore:
-      - 'Zabij tohle stvoření'
-      - 'k získání tohoto předmětu'
+    - 'Kill that Mob to'
+    - 'obtain this item'
+
   gold_pan:
-    name: 'Rýžovací pánev'
+    name: 'Gold Pan'
     lore:
-      - 'Použij Gold Pan k'
-      - 'získání tohoto předmětu'
+    - 'Use a Gold Pan to'
+    - 'obtain this item'
+
   compressor:
-    name: 'Kompresor'
+    name: 'Compressor'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Compressor'
+    - 'Craft this Item as shown'
+    - 'using a Compressor'
+
   pressure_chamber:
-    name: 'Tlaková komora'
+    name: 'Pressure Chamber'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Pressure Chamber'
+    - 'Craft this Item as shown'
+    - 'using a Pressure Chamber'
+
   ore_washer:
-    name: 'Čištič rud'
+    name: 'Ore Washer'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Ore Washer'
+    - 'Craft this Item as shown'
+    - 'using an Ore Washer'
+
   juicer:
-    name: 'Odšťavňovač'
+    name: 'Juicer'
     lore:
-      - 'Vyrob tento džus, jak je je ukázáno,'
-      - 'za použití Juicer'
+    - 'Craft this Juice as shown'
+    - 'using a Juicer'
+
   magic_workbench:
-    name: 'Magický pracovní stůl'
+    name: 'Magic Workbench'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Magic Workbench'
+    - 'Craft this Item as shown'
+    - 'using a Magic Workbench'
+
   ancient_altar:
-    name: 'Starověký oltář'
+    name: 'Ancient Altar'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Ancient Altar.'
-      - 'Podívej se na Ancient Altar pro více informací'
+    - 'Craft this Item as shown'
+    - 'using an Ancient Altar.'
+    - 'Look up the Ancient Altar for more Info'
+    
   heated_pressure_chamber:
-    name: 'Zahřívaná tlaková komora'
+    name: 'Heated Pressure Chamber'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Heated Pressure Chamber'
+    - 'Craft this Item as shown'
+    - 'using a Heated Pressure Chamber'
+    
   food_fabricator:
-    name: 'Fabrikátor jídla'
+    name: 'Food Fabricator'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Food Fabricator'
+    - 'Craft this Item as shown'
+    - 'using a Food Fabricator'
+    
   food_composter:
-    name: 'Komposter na jídlo'
+    name: 'Food Composter'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Food Composter'
+    - 'Craft this Item as shown'
+    - 'using a Food Composter'
+    
   freezer:
-    name: 'Mrazák'
+    name: 'Freezer'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Freezer'
+    - 'Craft this Item as shown'
+    - 'using a Freezer'
+    
   geo_miner:
-    name: 'GEO horník'
+    name: 'GEO Miner'
     lore:
-      - 'Tento předmět lze shromažďovat'
-      - 'pomocí GEO Miner'
+    - 'This Item can be gathered'
+    - 'by using a GEO Miner'
+    
   nuclear_reactor:
-    name: 'Jaderný reaktor'
+    name: 'Nuclear Reactor'
     lore:
-      - 'Tento předmět je vedlejší produkt'
-      - 'při provozování v Nuclear Reactor'
+    - 'This Item is a byproduct'
+    - 'of running a Nuclear Reactor'
+    
   oil_pump:
-    name: 'Ropná pumpa'
+    name: 'Oil Pump'
     lore:
-      - 'Tento předmět lze shromažďovat'
-      - 'pomocí Oil Pump'
+    - 'This Item can be gathered'
+    - 'by using an Oil Pump'
+    
   pickaxe_of_containment:
-    name: 'Krumpáč zadržení'
+    name: 'Pickaxe of Containment'
     lore:
-      - 'Tento blok lze získat'
-      - 'těžbou líhně pomocí'
-      - 'Pickaxe of Containment'
+    - 'This Block can be obtained'
+    - 'by mining a Spawner with'
+    - 'the Pickaxe of Containment'
+    
   refinery:
-    name: 'Rafinérie'
+    name: 'Refinery'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití Rafinery'
+    - 'Craft this Item as shown'
+    - 'using a Refinery'
+    
   barter_drop:
-    name: 'Odměna z obchodování s pigliny'
+    name: 'Piglin Bartering Drop'
     lore:
-      - 'Vyměňuj s pigliny zlaté'
-      - 'ingoty k získání tohoto předmětu'
+    - 'Barter with Piglins using'
+    - 'Gold Ingots to obtain this Item'
+    
 minecraft:
+
   shaped:
-    name: 'Recept na výrobu ve tvaru'
+    name: 'Shaped Crafting Recipe'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'v normálním pracovním stole'
-      - 'Tvar je důležitý.'
+    - 'Craft this Item as shown'
+    - 'in a normal Crafting Table.'
+    - 'The shape is important.'
+    
   shapeless:
-    name: 'U receptu nezáleží na tvaru'
+    name: 'Shapeless Crafting Recipe'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'v normálním pracovním stole'
-      - 'Tento recept je beztvarý.'
+    - 'Craft this Item as shown'
+    - 'in a normal Crafting Table.'
+    - 'This Recipe is shapeless.'
+    
   furnace:
-    name: 'Recept na pec'
+    name: 'Furnace Recipe'
     lore:
-      - 'Roztav tento předmět v peci'
-      - 'k vyrobení vysněného předmětu'
+    - 'Smelt this item in a Furnace'
+    - 'to craft your desired item'
+    
   blasting:
-    name: 'Recept na tavicí pec'
+    name: 'Blast Furnace Recipe'
     lore:
-      - 'Roztav tento předmět v tavící peci'
-      - 'k vyrobení vysněného předmětu'
+    - 'Smelt this item in a Blast Furnace'
+    - 'to craft your desired item'
+    
   smoking:
-    name: 'Recept na troubu'
+    name: 'Smoker Recipe'
     lore:
-      - 'Upeč tenhle předmět v troubě'
-      - 'k vyrobení vysněného předmětu'
+    - 'Smelt this item in a Smoker'
+    - 'to craft your desired item'
+    
   campfire:
-    name: 'Recept na táborák'
+    name: 'Campfire Recipe'
     lore:
-      - 'Upeč tenhle předmět v táboráku'
-      - 'k vyrobení vysněného předmětu'
+    - 'Smelt this item over a Campfire'
+    - 'to craft your desired item'
+    
   stonecutting:
-    name: 'Recept na řezačku kamene'
+    name: 'Stonecutter Recipe'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití řezačky kamene'
+    - 'Craft this Item as shown'
+    - 'using a Stonecutter'
+    
   smithing:
-    name: 'Recept na kovářský stůl '
+    name: 'Smithing Table Recipe'
     lore:
-      - 'Vyrob tento předmět, jak je ukázáno,'
-      - 'za použití kovářského stolu'
+    - 'Craft this Item as shown'
+    - 'using a Smithing Table'

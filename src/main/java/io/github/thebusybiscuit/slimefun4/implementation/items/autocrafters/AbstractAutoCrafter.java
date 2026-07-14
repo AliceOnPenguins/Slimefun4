@@ -672,7 +672,8 @@ public abstract class AbstractAutoCrafter extends SlimefunItem implements Energy
                 Slimefun.logger()
                         .log(
                                 Level.WARNING,
-                                "在处理合成配方 " + recipe + " 的结果 " + recipe.getResult() + " 时出现了问题, 合成结果非 Slimefun 物品");
+                                "Při zpracování receptu " + recipe + " a jeho výsledku " + recipe.getResult()
+                                        + " došlo k chybě, výsledek craftění není Slimefun položka");
                 return 0;
             }
 

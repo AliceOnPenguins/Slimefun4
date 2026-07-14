@@ -29,7 +29,7 @@ public final class PostSetup {
     private PostSetup() {}
 
     public static void setupWiki() {
-        Slimefun.logger().log(Level.INFO, "加载 Wiki 页面...");
+        Slimefun.logger().log(Level.INFO, "Načítání stránek Wiki...");
 
         WikiUtils.setupJson(Slimefun.instance(), (page) -> page.replace("#", "?id="));
     }
@@ -70,24 +70,25 @@ public final class PostSetup {
                 + " - #########################");
         sender.sendMessage("");
         sender.sendMessage(ChatColor.GREEN
-                + "成功加载了 "
+                + "Úspěšně načteno "
                 + total
-                + " 个物品和 "
+                + " položek a "
                 + Slimefun.getRegistry().getResearches().size()
-                + " 个研究");
+                + " výzkumů");
         sender.sendMessage(ChatColor.GREEN
                 + "( "
                 + slimefunOnly
-                + " 物品来自本体, "
+                + " položek ze základní hry, "
                 + (total - slimefunOnly)
-                + " 个物品来自 "
+                + " položek z "
                 + Slimefun.getInstalledAddons().size()
-                + " 扩展 )");
+                + " rozšíření )");
         sender.sendMessage("");
 
         sender.sendMessage("");
-        sender.sendMessage(ChatColor.GREEN + " - 源码:      https://github.com/SlimefunGuguProject/Slimefun4");
-        sender.sendMessage(ChatColor.GREEN + " - Bug 反馈:  https://github.com/SlimefunGuguProject/Slimefun4/issues");
+        sender.sendMessage(ChatColor.GREEN + " - Zdrojový kód:      https://github.com/SlimefunGuguProject/Slimefun4");
+        sender.sendMessage(
+                ChatColor.GREEN + " - Nahlásit chybu:  https://github.com/SlimefunGuguProject/Slimefun4/issues");
 
         sender.sendMessage("");
 

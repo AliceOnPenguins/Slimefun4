@@ -69,9 +69,11 @@ public class BackupService implements Runnable {
                             createBackup(output);
                         }
 
-                        Slimefun.logger().log(Level.INFO, "Slimefun data byla úspěšně zálohována do: {0}", file.getName());
+                        Slimefun.logger()
+                                .log(Level.INFO, "Slimefun data byla úspěšně zálohována do: {0}", file.getName());
                     } else {
-                        Slimefun.logger().log(Level.WARNING, "Nepodařilo se vytvořit záložní soubor: {0}", file.getName());
+                        Slimefun.logger()
+                                .log(Level.WARNING, "Nepodařilo se vytvořit záložní soubor: {0}", file.getName());
                     }
                 } catch (IOException x) {
                     Slimefun.logger()

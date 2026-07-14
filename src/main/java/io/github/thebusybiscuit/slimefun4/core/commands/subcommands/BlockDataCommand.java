@@ -93,7 +93,8 @@ class BlockDataCommand extends SubCommand {
                 }
 
                 blockData.removeData(key);
-                ChatUtils.sendMessage(player, "&aHodnota &b%key% &atohoto bloku byla odstraněna", msg -> msg.replace("%key%", key));
+                ChatUtils.sendMessage(
+                        player, "&aHodnota &b%key% &atohoto bloku byla odstraněna", msg -> msg.replace("%key%", key));
             }
             default -> {
                 Slimefun.getLocalization()

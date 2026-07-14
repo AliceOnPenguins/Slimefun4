@@ -18,13 +18,13 @@ public enum SlimefunGuideMode {
     /**
      * This design is the standard layout used in survival mode.
      */
-    SURVIVAL_MODE("普通模式"),
+    SURVIVAL_MODE("Normální režim"),
 
     /**
      * This is an admin-only design which creates a {@link SlimefunGuide} that allows
      * you to spawn in any {@link SlimefunItem}
      */
-    CHEAT_MODE("作弊模式");
+    CHEAT_MODE("Cheat režim");
 
     private final String displayName;
 
