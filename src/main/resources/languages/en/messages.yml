@@ -16,6 +16,7 @@ commands:
 
   backpack:
     description: Retrieve a copy of an existing backpack
+    set-name: Select a backpack name by typing it in chat
     invalid-id: '&4The id must be a non-negative number!'
     player-never-joined: '&4No player with that name could be found!'
     backpack-does-not-exist: '&4The specified backpack does not exist!'
