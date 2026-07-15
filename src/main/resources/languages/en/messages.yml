@@ -16,7 +16,6 @@ commands:
 
   backpack:
     description: Retrieve a copy of an existing backpack
-    set-name: Select a backpack name by typing it in chat
     invalid-id: '&4The id must be a non-negative number!'
     player-never-joined: '&4No player with that name could be found!'
     backpack-does-not-exist: '&4The specified backpack does not exist!'
@@ -355,8 +354,11 @@ villagers:
   no-trading: '&4You cannot trade Slimefun items with Villagers!'
 
 backpack:
-  already-open: '&cSorry, this Backpack is open somewhere else!'
-  no-stack: '&cYou cannot stack Backpacks'
+  already-open: '&cSorry, this backpack is already open somewhere else!'
+  no-stack: '&cYou can''t hold two backpacks at once'
+  set-name: '&eEnter a name for the backpack'
+  not-backpack-owner: '&cThe owner of this backpack is not online, you cannot access it!'
+  not-original-item: '&cDo not change the item you are holding while entering a name!'
 
 workbench:
   not-enhanced: '&4You cannot use Slimefun items in a normal workbench'
