@@ -66,11 +66,11 @@ public final class SlimefunItems {
             "BROKEN_SPAWNER",
             Material.SPAWNER,
             "&cBroken Spawner",
-            "&7Type: &b<type>",
+            "&7Type: &b<Type>",
             "",
             "&cBroken, can be repaired using an Ancient Altar");
     public static final SlimefunItemStack REPAIRED_SPAWNER =
-            new SlimefunItemStack("REINFORCED_SPAWNER", Material.SPAWNER, "&bRepaired Spawner", "&7Type: &b<type>");
+            new SlimefunItemStack("REINFORCED_SPAWNER", Material.SPAWNER, "&bRepaired Spawner", "&7Type: &b<Type>");
     public static final SlimefunItemStack INFERNAL_BONEMEAL = new SlimefunItemStack(
             "INFERNAL_BONEMEAL",
             Material.BONE_MEAL,
