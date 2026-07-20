@@ -18,6 +18,7 @@ import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
 import org.bukkit.block.data.type.Hopper;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
@@ -25,7 +26,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
 /**
- * The {@link InfusedHopper} is a special kind of {@link Hopper} which teleports any
+ * The {@link InfusedHopper} is a special kind of {@link Hopper} which teleports
+ * any
  * nearby {@link Item} to itself.
  * The radius can be configured in the config.
  *
@@ -75,6 +77,12 @@ public class InfusedHopper extends SimpleSlimefunItem<BlockTicker> {
                 }
 
                 Location l = b.getLocation().add(0.5, 1.2, 0.5);
+
+                // Don't pull items in if something is blocking the top of the hopper
+                if (!b.getRelative(BlockFace.UP).getType().isAir()) {
+                    return;
+                }
+
                 double range = radius.getValue();
                 boolean playSound = false;
 
